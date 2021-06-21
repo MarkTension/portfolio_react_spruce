@@ -6,13 +6,9 @@
   "main": "package.json",
   "author": "Mark Tensen <tensen.mark@gmail.com>",
   "license": "UNLICENSED",
-  "homepage": "http://MarkTension.github.io/portfolio_react_spruce",
-
   "scripts": {
     "start": "sanity start",
-    "build": "sanity build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "sanity build"
   },
   "keywords": [
     "sanity"
