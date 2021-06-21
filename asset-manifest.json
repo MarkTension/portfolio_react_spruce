@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/marktension.nl/static/css/main.c1072d32.chunk.css",
-    "main.js": "/marktension.nl/static/js/main.9407deab.chunk.js",
-    "main.js.map": "/marktension.nl/static/js/main.9407deab.chunk.js.map",
-    "runtime-main.js": "/marktension.nl/static/js/runtime-main.a2ca03f1.js",
-    "runtime-main.js.map": "/marktension.nl/static/js/runtime-main.a2ca03f1.js.map",
-    "static/js/2.a5289fdc.chunk.js": "/marktension.nl/static/js/2.a5289fdc.chunk.js",
-    "static/js/2.a5289fdc.chunk.js.map": "/marktension.nl/static/js/2.a5289fdc.chunk.js.map",
-    "static/js/3.15224774.chunk.js": "/marktension.nl/static/js/3.15224774.chunk.js",
-    "static/js/3.15224774.chunk.js.map": "/marktension.nl/static/js/3.15224774.chunk.js.map",
-    "index.html": "/marktension.nl/index.html",
-    "static/css/main.c1072d32.chunk.css.map": "/marktension.nl/static/css/main.c1072d32.chunk.css.map",
-    "static/js/2.a5289fdc.chunk.js.LICENSE.txt": "/marktension.nl/static/js/2.a5289fdc.chunk.js.LICENSE.txt",
-    "static/media/dawn_chorus_1.526a4a25.png": "/marktension.nl/static/media/dawn_chorus_1.526a4a25.png",
-    "static/media/gardenArtist2.e3c6b90b.png": "/marktension.nl/static/media/gardenArtist2.e3c6b90b.png",
-    "static/media/springwalk.576d96fc.png": "/marktension.nl/static/media/springwalk.576d96fc.png"
+    "main.css": "/static/css/main.c1072d32.chunk.css",
+    "main.js": "/static/js/main.9407deab.chunk.js",
+    "main.js.map": "/static/js/main.9407deab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d84c369c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d84c369c.js.map",
+    "static/js/2.c701b468.chunk.js": "/static/js/2.c701b468.chunk.js",
+    "static/js/2.c701b468.chunk.js.map": "/static/js/2.c701b468.chunk.js.map",
+    "static/js/3.15224774.chunk.js": "/static/js/3.15224774.chunk.js",
+    "static/js/3.15224774.chunk.js.map": "/static/js/3.15224774.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c1072d32.chunk.css.map": "/static/css/main.c1072d32.chunk.css.map",
+    "static/js/2.c701b468.chunk.js.LICENSE.txt": "/static/js/2.c701b468.chunk.js.LICENSE.txt",
+    "static/media/dawn_chorus_1.526a4a25.png": "/static/media/dawn_chorus_1.526a4a25.png",
+    "static/media/gardenArtist2.e3c6b90b.png": "/static/media/gardenArtist2.e3c6b90b.png",
+    "static/media/springwalk.576d96fc.png": "/static/media/springwalk.576d96fc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2ca03f1.js",
-    "static/js/2.a5289fdc.chunk.js",
+    "static/js/runtime-main.d84c369c.js",
+    "static/js/2.c701b468.chunk.js",
     "static/css/main.c1072d32.chunk.css",
     "static/js/main.9407deab.chunk.js"
   ]
