@@ -1,6 +1,6 @@
 {
-  "name": "portfolio_spruce",
-  "homepage": "https://marktension.nl",
+  "name": "portfolio_react_spruce",
+  "homepage": "http://marktension.nl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
