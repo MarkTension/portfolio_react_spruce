@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import Sidebar from "./components/sidebar.js";
 import Landing from "./components/landing.js";
+import GenerativePortfolio from "./components/generativePortfolio.js";
+
 import Music from "./components/music.js";
 import './stylesheets/sidebar.css'
-import {Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import {isBrowser} from 'react-device-detect';
 import { BrowserRouter, Route } from "react-router-dom";
 import AllPosts from "./components/AllPosts.js";
@@ -29,6 +30,7 @@ function App() {
       <header className="App-header" width="100%" >
         <div id="home" width="100%" style={{marginLeft: isBrowser ? "15%" : "0%" ,marginRight:"0%",padding:"0%"}}>
           <Landing style={{height:"100vh"}} />
+          <GenerativePortfolio style={{height:"100vh"}} />
 
           <BrowserRouter id="blog">
             <div>
@@ -37,7 +39,6 @@ function App() {
             </div>
           </BrowserRouter>
           <Music  />
-
         </div>
         
         <SidebarIfBrowser />

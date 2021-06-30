@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import gardenImage2 from "../images/gardenArtist2.png";
+import YoutubeEmbed from "./youtubeEmbed.js";
 
 import {Item, Hoverr, HoverText, Text} from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
@@ -73,9 +74,7 @@ const Landing = props => {
 
             </Item>
 
-
-
-        </div>
+        </div> 
 
         
         );

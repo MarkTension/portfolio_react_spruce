@@ -82,7 +82,6 @@ export default function AllPosts() {
             </Flex> 
             </Link>
           ))}
-          
       </div>
     </div>
   );
