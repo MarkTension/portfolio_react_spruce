@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.0bb6c1c0.chunk.css",
-    "main.js": "/static/js/main.cf00e54c.chunk.js",
-    "main.js.map": "/static/js/main.cf00e54c.chunk.js.map",
+    "main.js": "/static/js/main.1a6251ef.chunk.js",
+    "main.js.map": "/static/js/main.1a6251ef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b166003c.js",
     "runtime-main.js.map": "/static/js/runtime-main.b166003c.js.map",
-    "static/js/2.9495c1dc.chunk.js": "/static/js/2.9495c1dc.chunk.js",
-    "static/js/2.9495c1dc.chunk.js.map": "/static/js/2.9495c1dc.chunk.js.map",
+    "static/js/2.bbc3a38c.chunk.js": "/static/js/2.bbc3a38c.chunk.js",
+    "static/js/2.bbc3a38c.chunk.js.map": "/static/js/2.bbc3a38c.chunk.js.map",
     "static/js/3.4f1193ec.chunk.js": "/static/js/3.4f1193ec.chunk.js",
     "static/js/3.4f1193ec.chunk.js.map": "/static/js/3.4f1193ec.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.0bb6c1c0.chunk.css.map": "/static/css/main.0bb6c1c0.chunk.css.map",
-    "static/js/2.9495c1dc.chunk.js.LICENSE.txt": "/static/js/2.9495c1dc.chunk.js.LICENSE.txt",
+    "static/js/2.bbc3a38c.chunk.js.LICENSE.txt": "/static/js/2.bbc3a38c.chunk.js.LICENSE.txt",
+    "static/media/SculptingInProgressGif2.ab3cf2f7.gif": "/static/media/SculptingInProgressGif2.ab3cf2f7.gif",
     "static/media/dawn_chorus_1.526a4a25.png": "/static/media/dawn_chorus_1.526a4a25.png",
     "static/media/gardenArtist2.e3c6b90b.png": "/static/media/gardenArtist2.e3c6b90b.png",
+    "static/media/sculptgif.4ae45c66.gif": "/static/media/sculptgif.4ae45c66.gif",
+    "static/media/sculptingInProgressIm.4ac0af0e.png": "/static/media/sculptingInProgressIm.4ac0af0e.png",
     "static/media/springwalk.576d96fc.png": "/static/media/springwalk.576d96fc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b166003c.js",
-    "static/js/2.9495c1dc.chunk.js",
+    "static/js/2.bbc3a38c.chunk.js",
     "static/css/main.0bb6c1c0.chunk.css",
-    "static/js/main.cf00e54c.chunk.js"
+    "static/js/main.1a6251ef.chunk.js"
   ]
 }
