@@ -71,7 +71,7 @@ const Landing = props => {
             
             <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
               For my music, please visit <a href="https://gardenwalkrecords.nl">Garden Walk Record's website</a>
-
+              Or listen Tensen Park directly on <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=Z8aIfkyyT4qpf1HxKi2TdA&dl_branch=1">Spotify</a>.
             </Item>
 
         </div> 
