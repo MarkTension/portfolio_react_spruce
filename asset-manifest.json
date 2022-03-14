@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.67aeda65.chunk.css",
-    "main.js": "/static/js/main.78530860.chunk.js",
-    "main.js.map": "/static/js/main.78530860.chunk.js.map",
+    "main.js": "/static/js/main.31e956f3.chunk.js",
+    "main.js.map": "/static/js/main.31e956f3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aa08eb75.js",
     "runtime-main.js.map": "/static/js/runtime-main.aa08eb75.js.map",
-    "static/js/2.73060174.chunk.js": "/static/js/2.73060174.chunk.js",
-    "static/js/2.73060174.chunk.js.map": "/static/js/2.73060174.chunk.js.map",
+    "static/js/2.57fe1c6a.chunk.js": "/static/js/2.57fe1c6a.chunk.js",
+    "static/js/2.57fe1c6a.chunk.js.map": "/static/js/2.57fe1c6a.chunk.js.map",
     "static/js/3.f466f424.chunk.js": "/static/js/3.f466f424.chunk.js",
     "static/js/3.f466f424.chunk.js.map": "/static/js/3.f466f424.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.67aeda65.chunk.css.map": "/static/css/main.67aeda65.chunk.css.map",
-    "static/js/2.73060174.chunk.js.LICENSE.txt": "/static/js/2.73060174.chunk.js.LICENSE.txt",
+    "static/js/2.57fe1c6a.chunk.js.LICENSE.txt": "/static/js/2.57fe1c6a.chunk.js.LICENSE.txt",
     "static/media/boids.b908ee59.png": "/static/media/boids.b908ee59.png",
     "static/media/chaos.18e483ff.jpeg": "/static/media/chaos.18e483ff.jpeg",
     "static/media/chaos2.20f377b4.jpeg": "/static/media/chaos2.20f377b4.jpeg",
@@ -19,9 +19,9 @@
     "static/media/dawn_chorus_1.526a4a25.png": "/static/media/dawn_chorus_1.526a4a25.png",
     "static/media/fireflies_satin.ae84cf05.png": "/static/media/fireflies_satin.ae84cf05.png",
     "static/media/firefly.45b2247f.png": "/static/media/firefly.45b2247f.png",
-    "static/media/fireflyAbleton.d999618f.png": "/static/media/fireflyAbleton.d999618f.png",
     "static/media/fireflyErm.05f61d44.png": "/static/media/fireflyErm.05f61d44.png",
     "static/media/physarum.3d3febfd.png": "/static/media/physarum.3d3febfd.png",
+    "static/media/physarum_screen.7f6bfc77.png": "/static/media/physarum_screen.7f6bfc77.png",
     "static/media/satin1.587921a5.png": "/static/media/satin1.587921a5.png",
     "static/media/satin2.42be06c2.png": "/static/media/satin2.42be06c2.png",
     "static/media/sculptgif.4ae45c66.gif": "/static/media/sculptgif.4ae45c66.gif",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aa08eb75.js",
-    "static/js/2.73060174.chunk.js",
+    "static/js/2.57fe1c6a.chunk.js",
     "static/css/main.67aeda65.chunk.css",
-    "static/js/main.78530860.chunk.js"
+    "static/js/main.31e956f3.chunk.js"
   ]
 }
