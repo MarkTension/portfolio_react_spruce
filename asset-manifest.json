@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7358fa56.chunk.css",
-    "main.js": "/static/js/main.a2cd8a51.chunk.js",
-    "main.js.map": "/static/js/main.a2cd8a51.chunk.js.map",
+    "main.js": "/static/js/main.096b2c27.chunk.js",
+    "main.js.map": "/static/js/main.096b2c27.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cbb05521.js",
     "runtime-main.js.map": "/static/js/runtime-main.cbb05521.js.map",
     "static/js/2.ac534e1b.chunk.js": "/static/js/2.ac534e1b.chunk.js",
@@ -24,13 +24,17 @@
     "static/media/framboos.082c9c51.jpg": "/static/media/framboos.082c9c51.jpg",
     "static/media/mandala2.f9559d46.png": "/static/media/mandala2.f9559d46.png",
     "static/media/mandala3.97334ad0.png": "/static/media/mandala3.97334ad0.png",
+    "static/media/physarum_screen.ce9d5499.webp": "/static/media/physarum_screen.ce9d5499.webp",
+    "static/media/satin1.0d431413.webp": "/static/media/satin1.0d431413.webp",
     "static/media/sculptgif.4ae45c66.gif": "/static/media/sculptgif.4ae45c66.gif",
+    "static/media/sculptingInProgressIm.cb9974b7.webp": "/static/media/sculptingInProgressIm.cb9974b7.webp",
+    "static/media/spike1.b1ed98f3.webp": "/static/media/spike1.b1ed98f3.webp",
     "static/media/springwalk.576d96fc.png": "/static/media/springwalk.576d96fc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cbb05521.js",
     "static/js/2.ac534e1b.chunk.js",
     "static/css/main.7358fa56.chunk.css",
-    "static/js/main.a2cd8a51.chunk.js"
+    "static/js/main.096b2c27.chunk.js"
   ]
 }
