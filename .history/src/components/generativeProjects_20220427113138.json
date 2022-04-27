@@ -1,0 +1,52 @@
+[
+    {
+      "title": "RL sculpting x Onformative",
+      "description1": "This project is work that I did for Onformative. It's a reinforcement learning approach to 3D sculpting.",
+      "description2": "All was done in Unity3D, and the reinforcement learning part with ml-agents. This project is still in active development",
+      "description3": "The project was focused on make a sculpting in a 3D environment. Which means, getting from a 3D block to a predefined target shape by removing mass from the initial block in a smart way. The agent needs to decide how to navigate the space, which parts to remove and how. It’s basically a simulation environment with infinite data and a clear reward structure, and therefore an excellent use-case for RL. The way to make the agent learn is rewarding it the right way: give reward when extraneous mass is removed, and penalty when mass that ought to be part of the final sculpture is removed.",
+      "image1": "sculptingInProgressIm.png",
+      "image2": "sculptingInProgressIm.png",
+      "credits": "Cedric Kiefer - art direction, Alexander Hahn 3D design, other people at Onformative",
+      "tech": "Machine Learning, Reinforcement Learning, ml-agents, realtime vfx, Unity3D, HLSL, C#, Generative Art"
+    }, 
+    {
+      "title": "boids x fireflies ~ Music generation in Ableton",
+      "description1": "With this project I'm trying to make generative music.",
+      "description2": "I've found a way to output my simulation from Unity to Ableton via the realtime ORC message protocol. Different agent types are mapped to different sounds.",
+      "description3": "Still under active development. Read more on the blog!",
+      "image1": "sculptingInProgressIm.png",
+      "image2": "sculptingInProgressIm.png",
+      "credits": "Arsiliath for computeshader training, WickedEngine blog for fluid simulation blog article, Ermentraut, 1991 for the firefly synchronization behavior",
+      "tech": "realtime vfx, Unity3D, HLSL, C#, Generative Art"
+    },
+    {
+      "title": "Quantifying interestingness in images computationally      ",
+      "description1": "In terms of complexity, systems can find themselves in complete chaos (high complexity), or in complete structure (low complexity). Both ends are not provocative to the human mind.",
+      "description2": "The space in between these two states is where the magic lies, which is called criticality in physics, or sophistication in information theory.",
+      "description3": "Scott Aaronson has a nice paper called Quantifying the Rise and Fall of Complexity in Closed Systems. I replicated his results on a cellular automata variation called The Edge of Chaos. It gives the sophistication, called compressed size in these images (they're are a little small at the bottom of each figure). Read more in the blog!",
+      "image1": "sculptingInProgressIm.png",
+      "image2": "sculptingInProgressIm.png",
+      "credits": "Scott Aaronson, Arsiliath",
+      "tech": "information theory, Unity3D, HLSL, C#, Generative Art"
+    },
+    {
+      "title": "Biosim: multispecies Slime-fungus of physarum",
+      "description1": " I've been experimenting with a bio-inspired agent simulation on the physarum slime-mold.",
+      "description2": "The orientation behavior of physarum falls in the category of stigmergy, which is a mechanism of coordination where agents collaborate on moving around by leaving pheromone trails in the environment.",
+      "description3": "I tried making the standard physarum model more complex by switching from one species to four species. Each reacting only to their own pheromone trails. Later I added repulsion with the other species; species would avoid the pheromone trails of other species. Mapping the different species to different colors, would generate nice and separated trails. Eventually I found some nice settings resultin gin self-organizing cell structures that I didn't see before.",
+      "image1": "sculptingInProgressIm.png",
+      "image2": "sculptingInProgressIm.png",
+      "credits": "Arsiliath for computeshader training, Sage Jenson for his artistic work on this, Ciphrd's blog article for some advanced technical physarum modifications",
+      "tech": "realtime vfx, Unity3D, HLSL, C#, Generative Art"
+    },
+    {
+      "title": "boids x fireflies ~ Ermentraut synchronization",
+      "description1": " Firefly synchronization is a big interest of mine. It's a complex system, and because it works with spikes it can be easily mapped to audio events. Steven Strogatz has interesting work on it.",
+      "description2": "The firefies react on their neighbor's firing behavior. Instead of using an arbitrarily connected graph network, I'm using a Boids model to place the fireflies in space, and decide on neighboring fireflies by setting a neighbor-range.",
+      "description3": "For the synchronizatino algorithm, I've been using as an example is called Firefly-inspired Heartbeat Synchronization in Overlay Networks, Babaoglu et al. This gives a nice discrete-time system in which the Ermentraut firefly model is implemented. More on this is in the blog-section. In the video you can see that the firing starts out randomly, and synchronizes more over time.      ",
+      "image1": "sculptingInProgressIm.png",
+      "image2": "sculptingInProgressIm.png",
+      "credits": "Arsiliath for computeshader training, Sage Jenson for his artistic work on this, Ciphrd's blog article for some advanced technical physarum modifications",
+      "tech": "realtime vfx, Unity3D, HLSL, C#, Generative Art"
+    }
+]

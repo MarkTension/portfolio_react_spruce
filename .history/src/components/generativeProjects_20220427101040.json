@@ -1,0 +1,18 @@
+[
+    {
+      "title": "RL sculpting x Onformative",
+      "description": "This project is work that I did for Onformative. It's a reinforcement learning approach to 3D sculpting.",
+      "description2": "All was done in Unity3D, and the reinforcement learning part with ml-agents. This project is still in active development",
+      "description3": "The project was focused on make a sculpting in a 3D environment. Which means, getting from a 3D block to a predefined target shape by removing mass from the initial block in a smart way. The agent needs to decide how to navigate the space, which parts to remove and how. It’s basically a simulation environment with infinite data and a clear reward structure, and therefore an excellent use-case for RL. The way to make the agent learn is rewarding it the right way: give reward when extraneous mass is removed, and penalty when mass that ought to be part of the final sculpture is removed.",
+      "image1": "sculptingInProgressIm.png",
+      "image1": "sculptingInProgressIm.png",
+      "credits": "Cedric Kiefer - art direction, Alexander Hahn 3D design, other people at Onformative",
+      "tech": "Machine Learning, Reinforcement Learning, ml-agents, realtime vfx, Unity3D, HLSL, C#, Generative Art"
+    }, {
+      "gender": "Male",
+      "first_name": "Carlos",
+      "last_name": "Fowler",
+      "email": "cfowler1@gnu.org",
+      "ip_address": "214.248.201.11"
+    }
+]
