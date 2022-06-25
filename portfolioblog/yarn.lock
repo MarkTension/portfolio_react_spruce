@@ -3537,10 +3537,10 @@
   "resolved" "https://registry.npmjs.org/dataloader/-/dataloader-2.0.0.tgz"
   "version" "2.0.0"
 
-"date-fns@^2.16.1":
-  "integrity" "sha512-5ycpauovVyAk0kXNZz6ZoB9AYMZB4DObse7P3BPWmyEjXNORTI8EJ6X0uaSAq4sCHzM1uajzrkr6HnsLQpxGXA=="
-  "resolved" "https://registry.npmjs.org/date-fns/-/date-fns-2.23.0.tgz"
-  "version" "2.23.0"
+"date-fns@^2.16.1", "date-fns@^2.28.0":
+  "integrity" "sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw=="
+  "resolved" "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz"
+  "version" "2.28.0"
 
 "date-now@1.0.1":
   "integrity" "sha1-u30IZDjevkGCpIX7PfP7+5nWFTw="
