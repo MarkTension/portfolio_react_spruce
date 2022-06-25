@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.38d49b14.css",
-    "main.js": "/static/js/main.3b34348e.js",
+    "main.css": "/static/css/main.a0719673.css",
+    "main.js": "/static/js/main.d337be5e.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
     "static/media/sculptgif.gif": "/static/media/sculptgif.4ae45c6608b48f41e7c1.gif",
     "static/media/SculptingInProgressGif2.gif": "/static/media/SculptingInProgressGif2.ab3cf2f75e7e501f43ce.gif",
     "static/media/sculptingInProgressGif.gif": "/static/media/sculptingInProgressGif.2ec524229ce512d8b8d9.gif",
     "static/media/dawn_chorus_1.png": "/static/media/dawn_chorus_1.526a4a25e09acf7ee935.png",
     "static/media/gardenArtist2.png": "/static/media/gardenArtist2.e3c6b90bdff0f32ea38c.png",
+    "static/media/sculptingAdvanced.png": "/static/media/sculptingAdvanced.eb03a9a6b21da3a59e05.png",
     "static/media/physarum2.PNG": "/static/media/physarum2.382dd9cbcd080ca9f964.PNG",
     "static/media/fireflies1.PNG": "/static/media/fireflies1.564f720eef5b56c398f7.PNG",
     "static/media/physarum1.PNG": "/static/media/physarum1.ba267ce912ba8c39af12.PNG",
@@ -22,14 +23,13 @@
     "static/media/cmplx2.PNG": "/static/media/cmplx2.6bd0aac02719aef5f755.PNG",
     "static/media/cmplx4.PNG": "/static/media/cmplx4.f7980a4c3f7d5cfc6f58.PNG",
     "static/media/cmplx3.PNG": "/static/media/cmplx3.8a7ef1cbdeaf828decd2.PNG",
-    "static/media/Brier-Regular.otf": "/static/media/Brier-Regular.f16c4da06f8bf3850caa.otf",
     "index.html": "/index.html",
-    "main.38d49b14.css.map": "/static/css/main.38d49b14.css.map",
-    "main.3b34348e.js.map": "/static/js/main.3b34348e.js.map",
+    "main.a0719673.css.map": "/static/css/main.a0719673.css.map",
+    "main.d337be5e.js.map": "/static/js/main.d337be5e.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38d49b14.css",
-    "static/js/main.3b34348e.js"
+    "static/css/main.a0719673.css",
+    "static/js/main.d337be5e.js"
   ]
 }
