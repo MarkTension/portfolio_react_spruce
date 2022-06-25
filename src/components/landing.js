@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import phaseGraph from "../images/landing_phasegraph.PNG";
+import phaseGraph from "../images/landing_phasegraph.webp";
 
 import { Item } from "./textConstants";
 // import { Box, Flex, Image } from "rebass";

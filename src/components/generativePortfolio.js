@@ -1,6 +1,6 @@
 import React from "react";
 import sculptgif1 from "../images/sculptgif.gif";
-import sculptIm from "../images/sculptingInProgressIm.png";
+import sculptIm from "../images/sculptingInProgressIm.webp";
 import { Box, Flex, Image } from "rebass";
 
 import { Item, ItemSmall, Title } from "./textConstants";
