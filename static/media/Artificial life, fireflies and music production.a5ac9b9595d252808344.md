@@ -16,11 +16,12 @@ I came to firefly synchronization because I'm a big fan of using complex biologi
 
 Additionally, with this work I'd like to explore data-sonification as a means for discovery, and discover if there's an argument to be made for using sound for 'perceiving' patterns instead of just visuals.
 
-#### Setting the stage with a Python experiment
+#### Setting the stage with a Python coding experiment
 The paper I used for reference was called [Firefly-inspired Heartbeat Synchronization in Overlay Networks](http://www.cs.unibo.it/babaoglu/courses/cas06-07/papers/pdf/fireflies.pdf). The main algorithm described is the Ermentraut algorithm, which adjusts the firing frequency of each agent depending on firing of its neighbours. implementing this in Python. I successfully did this in python, making a graph with the networkX library to arbitrarily connect agents with another. It looked like so:
 
-![](https://lh3.googleusercontent.com/8i4CnsWvgLz9x-aLcYABs3i3eeEEV1pBVH1Gfbd8UnsnRXw-h59Yqw-T5zMS92BjCrgBzrf8ZG-8D7ejLWJGZQL6skHcEdKXjGmqDUS3Vc-fayfKkuVX9KEF4SascMZ-e7poEj_7U6A)
-
+<p align="center">
+<img width= "70%" src="https://lh3.googleusercontent.com/8i4CnsWvgLz9x-aLcYABs3i3eeEEV1pBVH1Gfbd8UnsnRXw-h59Yqw-T5zMS92BjCrgBzrf8ZG-8D7ejLWJGZQL6skHcEdKXjGmqDUS3Vc-fayfKkuVX9KEF4SascMZ-e7poEj_7U6A" alt="ld image">
+</p>
 
 Then I plotted the synchronization over time. The below figure shows the results, with on the x-axis time, and the y-axis is each firefly (800 in total). Every time a spike happens, a blue dot is plotted in the graph. As you can see, over time the random firing converges into synchronized firing. The [code is on github](https://github.com/MarkTension/FireflySimulationErmentraut). As a bonus, there's a midi module in the code that allows using the firing behavior as a midi device to use e.g. in Ableton.
 

@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.29963322.css",
-    "main.js": "/static/js/main.8068a334.js",
+    "main.css": "/static/css/main.22a33051.css",
+    "main.js": "/static/js/main.5df9f590.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
-    "static/js/766.4b12f5e5.chunk.js": "/static/js/766.4b12f5e5.chunk.js",
+    "static/js/766.84faf99f.chunk.js": "/static/js/766.84faf99f.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
@@ -29,15 +29,15 @@
     "static/media/sculptingAdvanced.webp": "/static/media/sculptingAdvanced.b88898ee20562d0fe53b.webp",
     "static/media/A primer on Reinforcement Learning, and its application to art.md": "/static/media/A primer on Reinforcement Learning, and its application to art.e199d061996c814413d6.md",
     "static/media/Quantifying interestingness in images using information theory.md": "/static/media/Quantifying interestingness in images using information theory.a513c959406aae916646.md",
-    "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.99fbaf02bbc6c5641084.md",
+    "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.a5ac9b9595d252808344.md",
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "index.html": "/index.html",
-    "main.29963322.css.map": "/static/css/main.29963322.css.map",
-    "main.8068a334.js.map": "/static/js/main.8068a334.js.map",
+    "main.22a33051.css.map": "/static/css/main.22a33051.css.map",
+    "main.5df9f590.js.map": "/static/js/main.5df9f590.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29963322.css",
-    "static/js/main.8068a334.js"
+    "static/css/main.22a33051.css",
+    "static/js/main.5df9f590.js"
   ]
 }
