@@ -1,0 +1,8 @@
+{
+    "files":[
+        ["Artificial life, fireflies and music production", "/images/blogHeaders/fireflies.png", "Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.", "2022-9"],
+        ["Making music with RNNs, and visualizing it", "/images/blogHeaders/bachIm.png", "I'm training a Recurrent neural network on the Bach Chorale dataset in order to get some interesting musical results out of it. I'll share some details on how I trained it, and some early results.", "2022-2"],
+        ["Quantifying interestingness in images using information theory", "/images/blogHeaders/information.png", "What is Garden Walk Records really about?", "2021-1"],
+        ["A primer on Reinforcement Learning, and its application to art", "/images/blogHeaders/rl_header.gif", "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention", "2021-1"]
+    ]
+}

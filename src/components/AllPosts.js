@@ -1,9 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
-import {Title} from "./textConstants"
+import { Item, Title } from "./textConstants"
 import styled from 'styled-components'
 import { Box, Flex } from "rebass";
+import posts from '../markdowns/index.json';
+import SidebarBack from "./sidebarBack";
+
+
+const postStyle = {
+  alignContent: "left",
+  marginTop: "3%",
+  marginLeft:"5%",
+  background: "white",
+  height: "100%",
+};
+
+
+const linkStyle = {
+  fontSize: "2em",
+  background: "white",
+  alignText: "left",
+  textDecoration: "none"
+}
+
+const boxStyle = {
+  alignContent: "right"
+}
 
 const SlugText = styled.h3`
     font-style: italic;
@@ -20,69 +43,77 @@ const SlugText = styled.h3`
     // }
 `;
 
-const releaseStylesheet = {
-    marginTop: "0%",
-    paddingLeft: "3%",
-    paddingRight: "3%",
-    height: "100%",
-    borderRadius: "10px",
-  };
-
+console.log(posts.files)
 
 export default function AllPosts() {
-  const [allPostsData, setAllPosts] = useState(null);
+  
+  // const [allPostsData, setAllPosts] = useState(null);
+  // console.log(allPostsData)
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "post"] | order(publishedAt desc) {
-        title,
-        publishedAt,
-        slug,
-        mainImage{
-          asset->{
-          _id,
-          url
-        }
-      }
-    }`
-      )
-      .then((data) => setAllPosts(data))
-      .catch(console.error);
-  }, []);
-
-
+  // useEffect(() => {
+  //   sanityClient
+  //     .fetch(
+  //       `*[_type == "post"] | order(publishedAt desc) {
+  //       title,
+  //       publishedAt,
+  //       slug,
+  //       mainImage{
+  //         asset->{
+  //         _id,
+  //         url
+  //       }
+  //     }
+  //   }`
+  //     )
+  //     .then((data) => setAllPosts(data))
+  //     .catch(console.error);
+  // }, []);
 
   return (
-    <div id="blog" style = {{marginTop:"4%", background:"white"}}>
+    <div id="blog" style={{ marginTop: "4%", background: "white" }}>
       <Title>
-            Blog posts
+        Blog posts
       </Title>
-      <div>
-        {allPostsData &&
-          allPostsData.map((post, index) => (
-            <Link to={"/" + post.slug.current} key={post.slug.current}>
-                <Flex
-                flexWrap="wrap"
-                width="100%"
-                style={{ marginBottom: "0%", paddingBottom:"0px"}}
-            >
-                <Box  p={[1]} m={[0]} width={[1, 1 / 2]} style={releaseStylesheet}>
-                    <span key={index}>
-                        <img src={post.mainImage.asset.url} alt="" width="50%"/>
-                    </span>
-                </Box>
-                <Box  p={[2]} m={[0]} width={[1, 1 / 2]} style={releaseStylesheet}>
-                    <h2 style={{color: 'black'}}>{post.title}</h2>
-                    <h4 style={{color: 'black'}}>{post.publishedAt.substring(0,10)}</h4>
 
-                    {/* <SlugText style={{color: 'black'}}>{post.publishedAt.substring(0, 10)}</SlugText> */}
-                    <SlugText style={{color: 'black'}}>{post.slug.current}</SlugText>
-                </Box>
-            </Flex> 
-            </Link>
-          ))}
-      </div>
+      {posts.files.map((post, index) => (
+            <div style={postStyle}>
+
+                <Link to={"/blog/" + post[0]} key={post} style={linkStyle}>
+
+                    <Flex
+                        id="team"
+                        flexWrap="wrap"
+                        width="100%"
+                        style={{ marginBottom: "0%", paddingBottom: "0px" }}
+                    >
+                        <Box p={[1]} m={[0]} width={[1, 1 / 2]} style={boxStyle}>
+                            <img src={post[1]} width="50%" />
+                        </Box>
+                        
+                        <Box p={[1]} m={[0]} width={[1, 1 / 2]} style={boxStyle}>
+
+                            <Item style={{ color: "black", fontSize: "0.8em", alignText: "right" , textDecoration: "underline", textDecorationColor: "#FF8484"}} >{post[0]}</Item>
+                            <Item style={{ color: "black", fontSize: "0.4em", fontStyle: 'italic', alignText: "right"}} >
+                                {post[3]}
+                            </Item>
+                            <Item style={{ color: "black", fontSize: "0.3em", fontStyle: 'italic', alignText: "right" }} >
+                                {post[2]}
+                            </Item>
+
+                        </Box>
+
+                    </Flex>
+                </Link>
+
+                <div>
+
+                </div>
+
+
+            </div>
+        ))}
+        <SidebarBack />
+
     </div>
   );
 }

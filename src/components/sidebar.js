@@ -3,7 +3,8 @@ import {Nav} from "react-bootstrap";
 import '../stylesheets/sidebar.css'
 import styled from 'styled-components'
 import animateScrollTo from "animated-scroll-to";
-
+import { Link } from "react-router-dom";
+import { isBrowser } from 'react-device-detect';
 
 const Item = styled.h3`
 
@@ -27,6 +28,10 @@ const Sidebar = props => {
         <>
             <Nav className="col-md-12 sidebar"
             >
+                {isBrowser ? 
+
+
+
                 <div className="sidebar-content" >
                     <Nav.Item>
                         <Nav.Link onClick={() => {
@@ -39,18 +44,21 @@ const Sidebar = props => {
                             ><Item>Generative Projects</Item></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link 
-                        onClick={() => {animateScrollTo(document.querySelector("#blog"));}} 
-                        ><Item>Blog Posts</Item></Nav.Link>
+                        <Link to='/blog'><Item>Blog</Item></Link>
                     </Nav.Item>  
                     <Nav.Item>
                         <Nav.Link 
                         onClick={() => {animateScrollTo(document.querySelector("#music"));}} 
                         ><Item>Music</Item></Nav.Link>
                     </Nav.Item>
-                                      
-                    
                 </div>
+                    : 
+                    <div>
+                    <Nav.Item>
+                            <Link to='/blog'><Item>Blog</Item></Link>
+                        </Nav.Item>  </div>
+                        
+                    }
             </Nav>
 
         </>
