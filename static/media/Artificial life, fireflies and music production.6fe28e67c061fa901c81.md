@@ -23,7 +23,7 @@ The paper I used for reference was called [Firefly-inspired Heartbeat Synchroniz
 <img width= "70%" src="https://lh3.googleusercontent.com/8i4CnsWvgLz9x-aLcYABs3i3eeEEV1pBVH1Gfbd8UnsnRXw-h59Yqw-T5zMS92BjCrgBzrf8ZG-8D7ejLWJGZQL6skHcEdKXjGmqDUS3Vc-fayfKkuVX9KEF4SascMZ-e7poEj_7U6A" alt="ld image">
 </p>
 
-Then I plotted the synchronization over time. The below figure shows the results, with on the x-axis time, and the y-axis is each firefly (800 in total). Every time a spike happens, a blue dot is plotted in the graph. As you can see, over time the random firing converges into synchronized firing. The [code is on github](https://github.com/MarkTension/FireflySimulationErmentraut). As a bonus, there's a midi module in the code that allows using the firing behavior as a midi device to use e.g. in Ableton.
+Then I plotted the synchronization over time. The below figure shows the results, with on the x-axis time, and the y-axis is each firefly (800 in total). Every time a spike happens, a blue dot is plotted in the graph. As you can see, over time the random firing converges into synchronized firing. The [code is on github](https://github.com/MarkTension/FireflySimulationErmentraut). As a bonus, there's a midi module in the code that allows using the firing behavior as a midi device to use e.g. in Ableton. However, a real Max for Live device is in the making and almost done, so better wait for that if interested in using with ableton.
 
 <p align="center">
 <img width= "70%" src="/images/fireflies0.png" alt="ld image">
@@ -36,9 +36,10 @@ Implementing it in Unity with computeshaders allowed using the GPU which enabled
 
 Actually sending out audio signals from fireflies that were firing really leveld up the effect. This was done using ORC messaging protocol, which can be accesed by other programs. I used Ableton Live, and wrote a live device to detect such messages, and translate it into sounds. Ableton has a lot of interesting instrument options and effects, so I was pretty happy to be able to use that this way. Here's the result: https://www.youtube.com/shorts/xAIEW4pQowA
 
-Then I made the simulation part more efficient on the GPU so it could simulate many more fireflies. The changes were done with a Bitnoic sort algorithm and tiling, based on [this physics engine tutorial](https://wickedengine.net/2018/05/21/scalabe-gpu-fluid-simulation/). This allowed me to simulate over 400k fireflies. In addition to this, I wanted to make multiple species of fireflies that would have different frequencies and not be synchronizing with eachother. Also in the flocking algorithm I could make different species e.g. stay away from other species, or prefer to stick more together in one group than other species. Here's how this looks:
+Then I made the simulation part more efficient on the GPU so it could simulate many more fireflies. The changes were done with a Bitnoic sort algorithm and tiling, based on [this physics engine tutorial](https://wickedengine.net/2018/05/21/scalabe-gpu-fluid-simulation/). This allowed me to simulate over 400k fireflies in realtime. In addition to this, I wanted to make multiple species of fireflies that would have different frequencies and not be synchronizing with eachother. Also in the flocking algorithm I could make different species e.g. stay away from other species, or prefer to stick more together in one group than other species. Here's how this looks:
 https://www.youtube.com/shorts/ir6t19wP5BU
 
+#### So what's this weird black n white figure ?
 For experimentation purposes I like plotting what happens in the simulation over time. It helps when you see in one glance how patterns change over time when developing it. Additionally, it helps with compare different parameter settings of the system, and see how strong the synchronization effect was. The figures below are made this way:
 
 Each firefly is one pixel on the y-axis, and a little white dot is plotted when it fires. I expected that there would first be noise, and later on lines instead of noise would appear because the firesflies would fire in synchrony.
