@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.22a33051.css",
-    "main.js": "/static/js/main.96478d68.js",
+    "main.js": "/static/js/main.467f85b9.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
-    "static/js/336.6ff23e6d.chunk.js": "/static/js/336.6ff23e6d.chunk.js",
+    "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
@@ -31,15 +31,15 @@
     "static/media/A primer on Reinforcement Learning, and its application to art.md": "/static/media/A primer on Reinforcement Learning, and its application to art.e199d061996c814413d6.md",
     "static/media/Quantifying interestingness in images using information theory.md": "/static/media/Quantifying interestingness in images using information theory.a513c959406aae916646.md",
     "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.b5664676334a0260b1e7.md",
+    "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.3762b6bf681c80a40836.md",
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
-    "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.f0023b1defc1fd54be8d.md",
     "index.html": "/index.html",
     "main.22a33051.css.map": "/static/css/main.22a33051.css.map",
-    "main.96478d68.js.map": "/static/js/main.96478d68.js.map",
+    "main.467f85b9.js.map": "/static/js/main.467f85b9.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22a33051.css",
-    "static/js/main.96478d68.js"
+    "static/js/main.467f85b9.js"
   ]
 }
