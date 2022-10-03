@@ -43,9 +43,9 @@ const Sidebar = props => {
                             animateScrollTo(document.querySelector("#generative"));}} 
                             ><Item>Generative Projects</Item></Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                         <Link to='/blog'><Item>Blog</Item></Link>
-                    </Nav.Item>  
+                    </Nav.Item>   */}
                     <Nav.Item>
                         <Nav.Link 
                         onClick={() => {animateScrollTo(document.querySelector("#music"));}} 
@@ -54,9 +54,10 @@ const Sidebar = props => {
                 </div>
                     : 
                     <div>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                             <Link to='/blog'><Item>Blog</Item></Link>
-                        </Nav.Item>  </div>
+                        </Nav.Item>  */}
+                         </div>
                         
                     }
             </Nav>

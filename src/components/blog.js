@@ -14,7 +14,7 @@ const Blog = props => {
     
     return (
     <div id="blogHome" style={{ alignContent: "left", marginTop: isBrowser ? "2%" : "19%" }}>    
-        <Route component={AllPosts} path="/blog" exact />
+        <Route component={AllPosts} path="/" exact />
         <Route component={OnePost} path={"/blog/:slug"} />
     </div>
     );

@@ -54,9 +54,6 @@ const Landing = props => {
       <Hoverr>
         Mark Tension
       </Hoverr>
-      <Hoverr2>
-         
-      </Hoverr2>   
 
       < ImageMobile />
       <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em", whiteSpace: "pre-line" }}>

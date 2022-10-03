@@ -41,30 +41,8 @@ const Button = styled.button`
   }
 `;
 
-// const SlugText = styled.h3`
-//     font-style: italic;
-//     font-weight: 100;
-//     font-size: 1.2em;
-//     color: #FF8484;
-//     background: white;
-//     text-decoration: none;
-//     // transition: transform 100ms ease-in-out;
-//     // &:hover {
-//     //   transform: scale(1.2);
-//     //   /* font-weight: 200; */
-//     //   /* text-decoration: underline; */
-//     // }
-// `;
-
-// const builder = imageUrlBuilder(sanityClient);
-// function urlFor(source) {
-//   return builder.image(source);
-// }
 
 export default function OnePost() {
-
-
-
   const { slug } = useParams();
   console.log(slug)
   const [postContent, setPostContent] = useState("");
