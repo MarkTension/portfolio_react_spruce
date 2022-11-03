@@ -1,25 +1,10 @@
 import React from 'react';
 import './App.css';
-import Sidebar from "./components/sidebar.js";
-import Landing from "./components/landing.js";
 import Home from "./components/home.js";
 import './stylesheets/sidebar.css'
 import { isBrowser } from 'react-device-detect';
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
-// import AllPosts from "./components/AllPosts.js";
-// import OnePost from "./components/OnePost.js";
+import { Route, Switch } from "react-router-dom";
 import Blog from "./components/blog.js";
-
-
-function SidebarIfBrowser() {
-
-  if (isBrowser) {
-    return <Sidebar />
-  }
-  else {
-    return null
-  }
-}
 
 
 
@@ -37,9 +22,6 @@ function App() {
 
           </div>
         </div>
-
-        {/* <SidebarIfBrowser /> */}
-
       </header>
     </div>
   );

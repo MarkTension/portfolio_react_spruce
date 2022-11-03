@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
 import { Title } from "./textConstants"
 import styled from 'styled-components'
 import { Box, Flex } from "rebass";
@@ -8,25 +7,13 @@ import posts from '../markdowns/index.json';
 import SidebarBack from "./sidebarBack";
 
 
-const postStyle = {
-  alignContent: "left",
-  marginTop: "3%",
-  marginLeft:"5%",
-  background: "white",
-  height: "100%",
-};
-
-
 const linkStyle = {
-  fontSize: "2em",
+  fontSize: "1.5em",
   background: "white",
   alignText: "left",
   textDecoration: "none"
 }
 
-const boxStyle = {
-  alignContent: "right"
-}
 
 const Item = styled.h3`
 
@@ -36,83 +23,100 @@ const Item = styled.h3`
     font-weight:100;
 `;
 
-const SlugText = styled.h3`
-    font-style: italic;
-    font-weight: 100;
-    font-size: 0.8em;
-    color: #FF8484;
-    background: white;
-    text-decoration: none;
-    // transition: transform 100ms ease-in-out;
-    // &:hover {
-    //   transform: scale(1.2);
-    //   /* font-weight: 200; */
-    //   /* text-decoration: underline; */
-    // }
-`;
+const TaggButton = styled.button`
 
-console.log(posts.files)
 
-export default function AllPosts() {
-  
+`
 
-  return (
-    <div id="blog" style={{ marginTop: "4%", background: "white" }}>
-      
-      <Title>
-        Blog posts
-      </Title>
 
-      <Item style={{ marginTop: "5%"}}>
+class AllPosts extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleTagChangeClick = this.handleTagChangeClick.bind(this);
+    this.state = { isTagged: false, tagFilter: null };
+  }
 
-      I like putting thought into words. Sometimes it's the final waving goodbye to a project, and often it helps pondering-up new ideas.
-      </Item><Item >
+  handleTagChangeClick(taggValue) {
+    this.setState({ isTagged: true, tagFilter: taggValue });
+  }
 
-      Also, it helps to second-check my thinking. This quote by David Bohm resonates quite well with this:
-      </Item><Item >
+  render() {
 
-      <i>It’s important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i>
-      </Item><Item >
+    console.log(posts.files)
 
-      </Item><Item >
-      Here I share my engineering blog mixed with creative projects, and personal reflections.
-      </Item>
+    function onlyUnique(value, index, self) {
+      return self.indexOf(value) === index;
+    }
+    var allTags = []
+    posts.files.map((post, index) => (
+      allTags.push(post['tags'])
+    ))
+    allTags = allTags.flat(1)
+    allTags = allTags.filter(onlyUnique);
 
-      {posts.files.map((post, index) => (
-            <div style={postStyle}>
+    return (
 
-                <Link to={"/blog/" + post[0]} key={post} style={linkStyle}>
+      <div id="blog" style={{ marginTop: "4%", background: "white" }}>
 
-                    <Flex
-                        id="team"
-                        flexWrap="wrap"
-                        width="100%"
-                        style={{ marginBottom: "0%", paddingBottom: "0px" }}
-                    >
-                        <Box p={[1]} m={[0]} width={[1, 1 / 2]} style={boxStyle}>
-                            <img src={post[1]} width="50%" />
-                        </Box>
-                        
-                        <Box p={[1]} m={[0]} width={[1, 1 / 2]} style={boxStyle}>
-                            <Item style={{ color: "black", fontSize: "0.8em", alignText: "right" , textDecoration: "underline", textDecorationColor: "#FF8484"}} >{post[0]}</Item>
-                            <Item style={{ color: "black", fontSize: "0.4em", fontStyle: 'italic', alignText: "right"}} >
-                                {post[3]}
-                            </Item>
-                            <Item style={{ color: "black", fontSize: "0.3em", fontStyle: 'italic', alignText: "right" }} >
-                                {post[2]}
-                            </Item>
-                        </Box>
-                    </Flex>
-                </Link>
+        <Title>
+          Blog posts
+        </Title>
 
-                <div>
+        <Item style={{ marginTop: "5%" }}>
+          I like putting thought into words. Sometimes its the final waving goodbye to a project, and often it helps pondering-up new ideas.
+        </Item><Item >
 
-                </div>
+          Also, it helps to second-check my thinking. This quote by David Bohm resonates quite well with this:
+        </Item><Item >
 
-            </div>
+          <i>It’s important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i>
+        </Item><Item >
+
+        </Item><Item >
+          Here I share my engineering blog mixed with creative projects, and personal reflections.
+        </Item>
+
+        <Item><b>filter topics</b></Item>
+
+        {allTags.map((tagg, index) => (
+          <TaggButton style={{color:this.state.tagFilter == tagg ? "red" : "black"}} onClick={() => this.handleTagChangeClick(tagg)}>{tagg}</TaggButton>
         ))}
+        <div></div>
+        <TaggButton style={{color:this.state.tagFilter == null ? "red" : "black"}} onClick={() => this.handleTagChangeClick(null)} >All Posts</TaggButton>
+
+        {posts.files.map((post, index) => (<Item></Item>))}
+
+        <Flex
+          id="itemsBlog"
+          flexWrap="wrap"
+          width="100%"
+          style={{ marginBottom: "0%", paddingBottom: "0px" }}
+        >
+
+          {posts.files.map((post, index) => (
+            (post['tags'].includes(this.state.tagFilter) || this.state.tagFilter == null) &&
+
+            <Box id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1 / 2]}>
+                  <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={linkStyle}>
+                    <img src={post['image']} width="50%" />
+                    <Item style={{ color: "black", fontSize: "0.8em", alignText: "right", textDecoration: "underline", textDecorationColor: "#FF8484" }} >{post['title']}</Item>
+                    <Item style={{ color: "black", fontSize: "0.4em", fontStyle: 'italic', alignText: "right" }} >
+                      {post['date']}
+                    </Item>
+                    <Item style={{ color: "black", fontSize: "0.3em", fontStyle: 'italic', alignText: "right" }} >
+                      {post['slug']}
+                    </Item>
+                    <Item style={{ color: "black", fontSize: "0.4em", fontWeight: 'bold', alignText: "right" }} >
+                      {post['tags'].map((post, index) => (post + ", "))}
+                    </Item>
+                  </Link>
+            </Box>
+          ))}
+        </Flex>
         <SidebarBack />
 
-    </div>
-  );
+      </div>
+    );
+  }
 }
+export default AllPosts
