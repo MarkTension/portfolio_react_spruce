@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.22a33051.css",
-    "main.js": "/static/js/main.357e92b7.js",
+    "main.js": "/static/js/main.f4c7d0dc.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
+    "static/js/520.3e956273.chunk.js": "/static/js/520.3e956273.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
     "static/media/sculptgif.gif": "/static/media/sculptgif.4ae45c6608b48f41e7c1.gif",
     "static/media/SculptingInProgressGif2.gif": "/static/media/SculptingInProgressGif2.ab3cf2f75e7e501f43ce.gif",
@@ -24,6 +25,7 @@
     "static/media/cmplx4.webp": "/static/media/cmplx4.4866b7cf24cd24cf5ba1.webp",
     "static/media/cmplx3.webp": "/static/media/cmplx3.186f3b9c6e3ae14c8d37.webp",
     "static/media/fireflies1.webp": "/static/media/fireflies1.795f8aa72e5007e852c5.webp",
+    "static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.md": "/static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.282191c5a8b4c770699d.md",
     "static/media/fireflies4.webp": "/static/media/fireflies4.297d921b28d6a6da6c93.webp",
     "static/media/sculpting1.webp": "/static/media/sculpting1.4671e3bd9fe7caf96c80.webp",
     "static/media/sculptingInProgressIm.webp": "/static/media/sculptingInProgressIm.83ba9c0af8069d5baf99.webp",
@@ -35,11 +37,11 @@
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "index.html": "/index.html",
     "main.22a33051.css.map": "/static/css/main.22a33051.css.map",
-    "main.357e92b7.js.map": "/static/js/main.357e92b7.js.map",
+    "main.f4c7d0dc.js.map": "/static/js/main.f4c7d0dc.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22a33051.css",
-    "static/js/main.357e92b7.js"
+    "static/js/main.f4c7d0dc.js"
   ]
 }
