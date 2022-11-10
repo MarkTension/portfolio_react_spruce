@@ -3,7 +3,7 @@ import '../App.css';
 import Sidebar from "./sidebar.js";
 import Blog from "./blog";
 import Landing from "./landing.js";
-import Landing2 from "./landing2.js";
+// import Landing2 from "./landing2.js";
 import GenerativePortfolio from "./generativePortfolio.js";
 import Music from "./music.js";
 import '../stylesheets/sidebar.css'

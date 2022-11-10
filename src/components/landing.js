@@ -1,13 +1,11 @@
 import React from "react";
 import styled from 'styled-components'
 import phaseGraph from "../images/landing_phasegraph.webp";
-
+import genVideo from "../images/fireflies.webm";
 import { Item } from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
 import { isBrowser } from 'react-device-detect';
 import media from "../media";
-
-
 
 function ImageMobile() {
 
@@ -54,8 +52,16 @@ const Landing = props => {
       <Hoverr>
         Mark Tension
       </Hoverr>
+      hahiahiahihahi
 
-      < ImageMobile />
+
+    <video autoPlay width="50%" style={{ margiTop: "15%", objectFit: "contain" }} > 
+    {/* loop muted poster={phaseGraph}   */}
+            <source src={genVideo} type='video/webm' />
+            {/* <source src={clip} type="video/ogg" />  */}
+    </video>
+
+      {/* < ImageMobile /> */}
       <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em", whiteSpace: "pre-line" }}>
       On finding synergies between AI, artificial life, and generative design 
       </Item>
