@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.22a33051.css",
-    "main.js": "/static/js/main.f4c7d0dc.js",
+    "main.css": "/static/css/main.3c60ffe2.css",
+    "main.js": "/static/js/main.17aced1f.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
@@ -9,11 +9,14 @@
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
     "static/js/520.3e956273.chunk.js": "/static/js/520.3e956273.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
+    "static/media/fireflies_dynamic_spike_lowaudio.mp4": "/static/media/fireflies_dynamic_spike_lowaudio.d25b24db0fbb84d80ef7.mp4",
+    "static/media/fireflies.webm": "/static/media/fireflies.bc30ab9fe711bca92de0.webm",
     "static/media/sculptgif.gif": "/static/media/sculptgif.4ae45c6608b48f41e7c1.gif",
     "static/media/SculptingInProgressGif2.gif": "/static/media/SculptingInProgressGif2.ab3cf2f75e7e501f43ce.gif",
     "static/media/sculptingInProgressGif.gif": "/static/media/sculptingInProgressGif.2ec524229ce512d8b8d9.gif",
     "static/media/dawn_chorus_1.webp": "/static/media/dawn_chorus_1.f8fee6b9b9241b0db034.webp",
     "static/media/gardenArtist2.webp": "/static/media/gardenArtist2.54234df5c527e919f446.webp",
+    "static/media/firefliesPoster.webp": "/static/media/firefliesPoster.743445755942cc3ca61e.webp",
     "static/media/landing_phasegraph.webp": "/static/media/landing_phasegraph.5f9c2034656c726ead4a.webp",
     "static/media/physarum2.webp": "/static/media/physarum2.61299c37de9afdd67189.webp",
     "static/media/springwalk.webp": "/static/media/springwalk.6af3694f63f2f4831f78.webp",
@@ -36,12 +39,12 @@
     "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.3762b6bf681c80a40836.md",
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "index.html": "/index.html",
-    "main.22a33051.css.map": "/static/css/main.22a33051.css.map",
-    "main.f4c7d0dc.js.map": "/static/js/main.f4c7d0dc.js.map",
+    "main.3c60ffe2.css.map": "/static/css/main.3c60ffe2.css.map",
+    "main.17aced1f.js.map": "/static/js/main.17aced1f.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22a33051.css",
-    "static/js/main.f4c7d0dc.js"
+    "static/css/main.3c60ffe2.css",
+    "static/js/main.17aced1f.js"
   ]
 }
