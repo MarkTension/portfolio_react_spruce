@@ -26,8 +26,8 @@ function Home() {
     <div className="App" >
         <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
           
-          <Landing width="100%" style={{height:"100vh", background: "black", marginTop: "0%"}} />
-          {/* <Landing2 width="100%" style={{height:"100vh", background: "black", marginTop: "0%"}} /> */}
+          <Landing width="100%" style={{background: "black", marginTop: "0%"}} /> 
+          {/* height:"100vh",  */}
           <Blog  />
           <div  width="100%">
             <GenerativePortfolio width="100%" />
