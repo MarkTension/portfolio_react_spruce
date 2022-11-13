@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3c60ffe2.css",
-    "main.js": "/static/js/main.17aced1f.js",
+    "main.js": "/static/js/main.22a927e0.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
     "static/js/520.3e956273.chunk.js": "/static/js/520.3e956273.chunk.js",
+    "static/js/653.d383dc81.chunk.js": "/static/js/653.d383dc81.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
     "static/media/fireflies_dynamic_spike_lowaudio.mp4": "/static/media/fireflies_dynamic_spike_lowaudio.d25b24db0fbb84d80ef7.mp4",
     "static/media/fireflies.webm": "/static/media/fireflies.bc30ab9fe711bca92de0.webm",
@@ -38,13 +39,14 @@
     "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.b5664676334a0260b1e7.md",
     "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.3762b6bf681c80a40836.md",
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
+    "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.3d9caa9221d1157ef67b.md",
     "index.html": "/index.html",
     "main.3c60ffe2.css.map": "/static/css/main.3c60ffe2.css.map",
-    "main.17aced1f.js.map": "/static/js/main.17aced1f.js.map",
+    "main.22a927e0.js.map": "/static/js/main.22a927e0.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c60ffe2.css",
-    "static/js/main.17aced1f.js"
+    "static/js/main.22a927e0.js"
   ]
 }
