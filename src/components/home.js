@@ -18,8 +18,6 @@ function SidebarIfBrowser() {
 }
 
 
-
-
 function Home() {
 
   return (

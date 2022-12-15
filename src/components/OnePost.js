@@ -1,30 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import { Title } from "./textConstants"
+import { Title, Text } from "./textConstants"
 import Markdown from "markdown-to-jsx";
 import SidebarBack from "./sidebarBack";
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import { isBrowser } from 'react-device-detect';
 
-const Button = styled.button`
-  font-style: italic;
-  font-weight: 100;
-  font-size: 1.2em;
-  border-radius: 10px;
-  border-color: white;
-  text-decoration-color: red;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid black;
-  color: #ff8484;
-  background: white;
-  transition: transform 100ms ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
 
+const MyParagraph = ({ children, ...props }) => (
+  <div {...props}>{children}</div>
+);
 
 export default function OnePost() {
   const { slug } = useParams();
@@ -48,7 +34,19 @@ export default function OnePost() {
     </Title>
 
     <Markdown
-      style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em" }}
+      style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em"}}
+      options={{
+            overrides: {
+              p: {
+                    // fontSize: "10"
+                    // component: MyParagraph,
+                    props: {
+                      className: 'markdown-p',
+                  },
+                },
+              
+            },
+        }}
     >
       {postContent}
     </Markdown>

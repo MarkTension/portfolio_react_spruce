@@ -1,6 +1,13 @@
 {
     "files": [
         {
+            "title": "Tensen Park - Reflections on my music",
+            "image": "/images/blogHeaders/firefliesPoster.webp",
+            "slug": "Making conscious what I've been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.",
+            "tags": ["music", "reflections", "spirituality"],
+            "date": "2022-11"
+        },
+        {
             "title": "Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship",
             "image": "/images/blogHeaders/rl_header.gif",
             "slug": "How we tought an AI to do 3D sculpting with reinforcement learning",

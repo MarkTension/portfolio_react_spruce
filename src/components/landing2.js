@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
-
 import { Item } from "./textConstants";
+
 
 //width: "100%", textAlign: "right", fontSize: "0.9em", ,  whiteSpace: "pre-line" 
 const Landing2 = props => {

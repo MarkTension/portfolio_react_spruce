@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import Home from "./components/home.js";
 import './stylesheets/sidebar.css'
@@ -6,9 +6,17 @@ import { isBrowser } from 'react-device-detect';
 import { Route, Switch } from "react-router-dom";
 import Blog from "./components/blog.js";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-33GQEY07L1";
+ReactGA.initialize(TRACKING_ID);
 
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div className="App" style={{ background: "yellow" }}>
       <header className="App-header" width="100%" >
