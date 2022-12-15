@@ -73,9 +73,7 @@ const Button = styled.button`
   transition: transform 100ms ease-in-out;
   &:hover {
     transform: scale(1.2);
-    /* font-weight: 200; */
-    /* text-decoration: underline; */
   }
 `;
 
-export {Item, Hoverr, Title, HoverText, Button, Text, ItemSmall}
+export { Item, Hoverr, Title, HoverText, Button, Text, ItemSmall }

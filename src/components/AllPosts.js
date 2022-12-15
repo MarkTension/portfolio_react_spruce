@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Title } from "./textConstants"
 import styled from 'styled-components'
@@ -24,10 +24,7 @@ const Item = styled.h3`
 `;
 
 const TaggButton = styled.button`
-
-
 `
-
 
 class AllPosts extends React.Component {
   constructor(props) {
@@ -79,10 +76,10 @@ class AllPosts extends React.Component {
         <Item><b>filter topics</b></Item>
 
         {allTags.map((tagg, index) => (
-          <TaggButton style={{color:this.state.tagFilter == tagg ? "red" : "black"}} onClick={() => this.handleTagChangeClick(tagg)}>{tagg}</TaggButton>
+          <TaggButton style={{ color: this.state.tagFilter == tagg ? "red" : "black" }} onClick={() => this.handleTagChangeClick(tagg)}>{tagg}</TaggButton>
         ))}
         <div></div>
-        <TaggButton style={{color:this.state.tagFilter == null ? "red" : "black"}} onClick={() => this.handleTagChangeClick(null)} >All Posts</TaggButton>
+        <TaggButton style={{ color: this.state.tagFilter == null ? "red" : "black" }} onClick={() => this.handleTagChangeClick(null)} >All Posts</TaggButton>
 
         {posts.files.map((post, index) => (<Item></Item>))}
 
@@ -97,24 +94,23 @@ class AllPosts extends React.Component {
             (post['tags'].includes(this.state.tagFilter) || this.state.tagFilter == null) &&
 
             <Box id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1 / 2]}>
-                  <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={linkStyle}>
-                    <img src={post['image']} width="50%" />
-                    <Item style={{ color: "black", fontSize: "0.8em", alignText: "right", textDecoration: "underline", textDecorationColor: "#FF8484" }} >{post['title']}</Item>
-                    <Item style={{ color: "black", fontSize: "0.4em", fontStyle: 'italic', alignText: "right" }} >
-                      {post['date']}
-                    </Item>
-                    <Item style={{ color: "black", fontSize: "0.3em", fontStyle: 'italic', alignText: "right" }} >
-                      {post['slug']}
-                    </Item>
-                    <Item style={{ color: "black", fontSize: "0.4em", fontWeight: 'bold', alignText: "right" }} >
-                      {post['tags'].map((post, index) => (post + ", "))}
-                    </Item>
-                  </Link>
+              <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={linkStyle}>
+                <img src={post['image']} width="50%" />
+                <Item style={{ color: "black", fontSize: "0.8em", alignText: "right", textDecoration: "underline", textDecorationColor: "#FF8484" }} >{post['title']}</Item>
+                <Item style={{ color: "black", fontSize: "0.4em", fontStyle: 'italic', alignText: "right" }} >
+                  {post['date']}
+                </Item>
+                <Item style={{ color: "black", fontSize: "0.3em", fontStyle: 'italic', alignText: "right" }} >
+                  {post['slug']}
+                </Item>
+                <Item style={{ color: "black", fontSize: "0.4em", fontWeight: 'bold', alignText: "right" }} >
+                  {post['tags'].map((post, index) => (post + ", "))}
+                </Item>
+              </Link>
             </Box>
           ))}
         </Flex>
         <SidebarBack />
-
       </div>
     );
   }

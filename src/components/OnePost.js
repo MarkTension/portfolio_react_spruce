@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-
-import { Title, Text } from "./textConstants"
+import { Title } from "./textConstants"
 import Markdown from "markdown-to-jsx";
 import SidebarBack from "./sidebarBack";
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import { isBrowser } from 'react-device-detect';
-
-
-const MyParagraph = ({ children, ...props }) => (
-  <div {...props}>{children}</div>
-);
 
 export default function OnePost() {
   const { slug } = useParams();
@@ -29,28 +22,24 @@ export default function OnePost() {
 
   return (<div id="onepost" style={{ background: "white", width: isBrowser ? "80vw" : "100vw", paddingBottom: '5em', paddingTop: '2em' }}>
 
-    <Title style={{fontSize:"1.5em", background:"white"}}>
+    <Title style={{ fontSize: "1.5em", background: "white" }}>
       {slug}
     </Title>
 
     <Markdown
-      style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em"}}
+      style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em" }}
       options={{
-            overrides: {
-              p: {
-                    // fontSize: "10"
-                    // component: MyParagraph,
-                    props: {
-                      className: 'markdown-p',
-                  },
-                },
-              
+        overrides: {
+          p: {
+            props: {
+              className: 'markdown-p',
             },
-        }}
+          },
+        },
+      }}
     >
       {postContent}
     </Markdown>
-
     <SidebarBack />
   </div>
   );

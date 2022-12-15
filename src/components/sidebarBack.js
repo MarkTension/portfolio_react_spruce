@@ -15,12 +15,8 @@ const Item = styled.h3`
   transition: transform 100ms ease-in-out;
   &:hover {
     transform: scale(1.2);
-    /* font-weight: 200; */
-    /* text-decoration: underline; */
   }
 `;
-
-
 
 
 const SidebarBack = props => {
@@ -29,7 +25,6 @@ const SidebarBack = props => {
 
     return (
         <>
-
             <Nav className="col-md-12 sidebar"
             >
                 <div className="sidebar-content" >
@@ -40,13 +35,9 @@ const SidebarBack = props => {
                         <Nav.Link
                             onClick={history.goBack}
                         ><Item>Go Back</Item></Nav.Link>
-
                     </Nav.Item>
-
-
                 </div>
             </Nav>
-
         </>
     );
 };

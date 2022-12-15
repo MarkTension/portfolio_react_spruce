@@ -19,22 +19,17 @@ const imageStylesheet = {
 };
 
 const GenerativeItem = props => {
-
     return (
         <div id="generative" style={{ marginTop: "2%", paddingright: "2%", paddingLeft: "5%", alignContent: "right" }} >
-
             <Title style={{ fontSize: "2em" }}>
                 {props.content.title}
             </Title>
-
             <Flex
                 id="team"
                 flexWrap="wrap"
                 width="100%"
                 style={{ marginBottom: "0%", paddingBottom: "0px" }}
             >
-                {/* <Image src={require("../images/" + props.content.image1)} p={[0]} m={[0]} width={[1, 1 / 2]} style={imageStylesheet} />
-                <Image src={require("../images/" + props.content.image2)} p={[0]} m={[0]} width={[1, 1 / 2]} style={imageStylesheet} /> */}
                 {typeof props.content.image3 == "undefined" ?
                     <Box p={[1]} m={[0]} width={[1, 1]} style={releaseStylesheet}>
                         <Image src={require("../images/" + props.content.image1)} p={[0]} m={[0]} width={[1, 1 / 2]} style={imageStylesheet} />
@@ -43,8 +38,8 @@ const GenerativeItem = props => {
                     : <Box p={[1]} m={[0]} width={[1, 1]} style={releaseStylesheet}>
                         <Image src={require("../images/" + props.content.image1)} p={[0]} m={[0]} width={[1 / 4, 1 / 4]} style={imageStylesheet} />
                         <Image src={require("../images/" + props.content.image2)} p={[0]} m={[0]} width={[1 / 4, 1 / 4]} style={imageStylesheet} />
-                        <Image src={require("../images/" + props.content.image3)} p={[0]} m={[0]} width={[1/4, 1 / 4]} style={imageStylesheet} />
-                         <Image src={require("../images/" + props.content.image4)} p={[0]} m={[0]} width={[1/4, 1 / 4]} style={imageStylesheet} />
+                        <Image src={require("../images/" + props.content.image3)} p={[0]} m={[0]} width={[1 / 4, 1 / 4]} style={imageStylesheet} />
+                        <Image src={require("../images/" + props.content.image4)} p={[0]} m={[0]} width={[1 / 4, 1 / 4]} style={imageStylesheet} />
 
                     </Box>
                 }

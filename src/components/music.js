@@ -1,12 +1,5 @@
 import React from "react";
-// import tensen from "../images/gardenArtist2.webp";
-import tensenIm from "../images/dawn_chorus_1.webp";
-import springwalk from "../images/springwalk.webp";
-
 import { Item, Title } from "./textConstants";
-import SpotifyPlayer from 'react-spotify-player';
-
-
 
 class Music extends React.Component {
   constructor(props) {
