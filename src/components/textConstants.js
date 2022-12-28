@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import media from "../media";
 
-// #FF8484
-
 const Item = styled.h3`
 
     font-size: 1.0em;
