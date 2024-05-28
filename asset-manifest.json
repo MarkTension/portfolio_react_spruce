@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b33a5ad.css",
-    "main.js": "/static/js/main.5239eef4.js",
+    "main.css": "/static/css/main.ebb7ca1a.css",
+    "main.js": "/static/js/main.0c609f74.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
@@ -17,10 +17,13 @@
     "static/media/sculptingInProgressGif.gif": "/static/media/sculptingInProgressGif.2ec524229ce512d8b8d9.gif",
     "static/media/dawn_chorus_1.webp": "/static/media/dawn_chorus_1.f8fee6b9b9241b0db034.webp",
     "static/media/gardenArtist2.webp": "/static/media/gardenArtist2.54234df5c527e919f446.webp",
+    "static/media/header_physarum.webp": "/static/media/header_physarum.c56661e006a9be386076.webp",
     "static/media/firefliesPoster.webp": "/static/media/firefliesPoster.743445755942cc3ca61e.webp",
+    "static/media/header_ai_sculpting.jpg": "/static/media/header_ai_sculpting.3ead6f729f18ed9e4198.jpg",
     "static/media/landing_phasegraph.webp": "/static/media/landing_phasegraph.5f9c2034656c726ead4a.webp",
     "static/media/physarum2.webp": "/static/media/physarum2.61299c37de9afdd67189.webp",
     "static/media/springwalk.webp": "/static/media/springwalk.6af3694f63f2f4831f78.webp",
+    "static/media/header_firefly_device.png": "/static/media/header_firefly_device.42f4fc6f9c61031cb65f.png",
     "static/media/cmplx1.webp": "/static/media/cmplx1.b601abcbe1b24990939f.webp",
     "static/media/cmplx2.webp": "/static/media/cmplx2.d7b5b9cdd32ca3439aac.webp",
     "static/media/fireflies2.webp": "/static/media/fireflies2.c8ff1cc962d7e9419c01.webp",
@@ -41,12 +44,12 @@
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.3371159d1e18941fceab.md",
     "index.html": "/index.html",
-    "main.8b33a5ad.css.map": "/static/css/main.8b33a5ad.css.map",
-    "main.5239eef4.js.map": "/static/js/main.5239eef4.js.map",
+    "main.ebb7ca1a.css.map": "/static/css/main.ebb7ca1a.css.map",
+    "main.0c609f74.js.map": "/static/js/main.0c609f74.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b33a5ad.css",
-    "static/js/main.5239eef4.js"
+    "static/css/main.ebb7ca1a.css",
+    "static/js/main.0c609f74.js"
   ]
 }
