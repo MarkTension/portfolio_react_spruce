@@ -31,14 +31,10 @@ const Sidebar = props => {
                             ><Item>O'howdy</Item></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link onClick={() => {
-                                animateScrollTo(document.querySelector("#generative"));
-                            }}
-                            ><Item>Generative Projects</Item></Nav.Link>
+                            <Nav.Link
+                                onClick={() => { animateScrollTo(document.querySelector("#blogHome")); }}
+                            ><Item>Blog</Item></Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item>
-                        <Link to='/blog'><Item>Blog</Item></Link>
-                    </Nav.Item>   */}
                         <Nav.Item>
                             <Nav.Link
                                 onClick={() => { animateScrollTo(document.querySelector("#music")); }}

@@ -9,12 +9,12 @@ class Music extends React.Component {
   render() {
     return (
       <div id="music" style = {{height:"100vh"}}>
-        <section  style={{backgroundColor:"white",height:"100vh",marginLeft:"0%", marginTop:"0%",backgroundSize: "100%"}}>
+        <section  style={{backgroundColor:"black",height:"100vh",marginLeft:"0%", marginTop:"0%",backgroundSize: "100%"}}>
           <Title>
             Music - Tensen Park
           </Title>  
 
-          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"black"}}>
+          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"white"}}>
           Nothing can move me to interesting mental spaces like music can. I love this quote by Aldous Huxley:
           </Item>
           
@@ -22,7 +22,7 @@ class Music extends React.Component {
           <i>After silence, that which comes nearest to expressing the inexpressible is music.</i>
           </Item>
 
-          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"black"}}>
+          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"white"}}>
           Listen to it <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=maU5dB7ZRSy00-uf5L6i2A">on spotify</a>
           </Item>
           

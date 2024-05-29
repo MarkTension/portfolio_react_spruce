@@ -3,41 +3,42 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); */
 
 .cursive {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
 }
 
 .markdown-p {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
+    background: black;
 }
 
 .App-logo {
-  height: 80vmin;
-  pointer-events: none;
+    height: 80vmin;
+    pointer-events: none;
 }
 
 .label-logo {
-  height: 80vh;
-  pointer-events: none;
+    height: 80vh;
+    pointer-events: none;
 }
 
 a {
@@ -51,41 +52,45 @@ a {
 /* #FFD99B; */
 
 .App-header {
-  background-color: rgb(76, 76, 76);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: Black;
+    background-color: black;
+    /*  // rgb(76, 76, 76); */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: Black;
 }
 
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .fill-window {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 
 .my-node-enter {
-  opacity: 0;
+    opacity: 0;
 }
+
 .my-node-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
+    opacity: 1;
+    transition: opacity 200ms;
 }
+
 .my-node-exit {
-  opacity: 1;
+    opacity: 1;
 }
+
 .my-node-exit-active {
-  opacity: 0;
-  transition: opacity 200ms;
+    opacity: 0;
+    transition: opacity 200ms;
 }

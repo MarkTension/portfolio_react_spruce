@@ -7,6 +7,8 @@ import { isBrowser } from 'react-device-detect';
 const Blog = props => {
 
     return (
+        // say hello in console
+
         <div id="blogHome" style={{ alignContent: "left", marginTop: isBrowser ? "2%" : "19%" }}>
             <Route component={AllPosts} path="/" exact />
             <Route component={OnePost} path={"/blog/:slug"} />

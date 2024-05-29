@@ -1,10 +1,8 @@
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/rl_header.gif" alt="ld image">
 </p>
-<center>
-onformative.com - Mark Tensen, Alexander Hahn, Cedric Kiefer</center>
 
-This is a technical overview of our reinforcement learning sculpting project. We will go into the reinforcement learning part, but also some additional technical details.
+This is a technical overview of our reinforcement learning sculpting project. We will go into the reinforcement learning part, but also some additional technical details. Comprises work by: onformative.com - Mark Tensen, Alexander Hahn, Cedric Kiefer.
 
 ## Glossary
 

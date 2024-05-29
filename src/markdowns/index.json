@@ -4,50 +4,80 @@
             "title": "Tensen Park - Reflections on my music",
             "image": "/images/blogHeaders/firefliesPoster.webp",
             "slug": "Making conscious what I've been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.",
-            "tags": ["music", "reflections", "spirituality"],
+            "tags": [
+                "music",
+                "reflections"
+            ],
             "date": "2022-11"
         },
         {
             "title": "Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship",
             "image": "/images/blogHeaders/rl_header.gif",
             "slug": "How we tought an AI to do 3D sculpting with reinforcement learning",
-            "tags": ["AI", "Reinforcement-Learning", "generative-art"],
+            "tags": [
+                "AI",
+                "Reinforcement-Learning",
+                "generative-art"
+            ],
             "date": "2022-11"
         },
         {
             "title": "Firefly Synchronizer, a chaotic system Max4Live device",
             "image": "/images/blogHeaders/firefly_synchronizer.png",
             "slug": "I decided to build a native music device for Ableton, based on chaotic firefly synchronization simulations",
-            "tags": ["MaxMSP", "music", "complex-systems", "generative-art"],
+            "tags": [
+                "MaxMSP",
+                "music",
+                "complex-systems",
+                "generative-art"
+            ],
             "date": "2022-10"
         },
         {
             "title": "Artificial life, fireflies and music production",
             "image": "/images/blogHeaders/fireflies.png",
             "slug": "Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.",
-            "tags": ["Unity3D", "computer-graphics", "complex-systems", "generative-art"],
+            "tags": [
+                "Unity3D",
+                "computer-graphics",
+                "complex-systems",
+                "generative-art"
+            ],
             "date": "2022-9"
         },
         {
-            "title":"Making music with RNNs, and visualizing it",
-            "image":"/images/blogHeaders/bachIm.png",
-            "slug":"I'm training a Recurrent neural network on the Bach Chorale dataset in order to get some interesting musical results out of it. I'll share some details on how I trained it, and some early results.",
-            "tags": ["AI", "music", "computer-graphics", "generative-art"],
-            "date":"2022-2"
+            "title": "Making music with RNNs, and visualizing it",
+            "image": "/images/blogHeaders/bachIm.png",
+            "slug": "I'm training a Recurrent neural network on the Bach Chorale dataset in order to get some interesting musical results out of it. I'll share some details on how I trained it, and some early results.",
+            "tags": [
+                "AI",
+                "music",
+                "computer-graphics",
+                "generative-art"
+            ],
+            "date": "2022-2"
         },
         {
-            "title":"Quantifying interestingness in images using information theory",
-            "image":"/images/blogHeaders/information.png",
-            "slug":"On finding ways to automate discovery of interesting generative design.",
-            "tags": ["information-theory", "generative-art", "complex-systems"],
-            "date":"2021-1"
+            "title": "Quantifying interestingness in images using information theory",
+            "image": "/images/blogHeaders/information.png",
+            "slug": "On finding ways to automate discovery of interesting generative design.",
+            "tags": [
+                "information-theory",
+                "generative-art",
+                "complex-systems"
+            ],
+            "date": "2021-1"
         },
         {
-            "title":"A primer on Reinforcement Learning, and its application to art",
-            "image":"/images/blogHeaders/rl_header.gif",
-            "slug":"In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention",
-            "tags": ["AI", "Reinforcement-Learning", "generative-art"],
-            "date":"2021-1"
+            "title": "A primer on Reinforcement Learning, and its application to art",
+            "image": "/images/blogHeaders/rl_header.gif",
+            "slug": "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention",
+            "tags": [
+                "AI",
+                "Reinforcement-Learning",
+                "generative-art"
+            ],
+            "date": "2021-1"
         }
     ]
 }

@@ -6,19 +6,12 @@ import { isBrowser } from 'react-device-detect';
 import { Route, Switch } from "react-router-dom";
 import Blog from "./components/blog.js";
 
-// import ReactGA from 'react-ga';
-// const TRACKING_ID = "G-33GQEY07L1";
-// ReactGA.initialize(TRACKING_ID);
-
 import ReactGA from 'react-ga';
-// ReactGA.initialize("G-33GQEY07L1");
 ReactGA.initialize("G-1NMXEJHGQG");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
-
-
     ReactGA.pageview(window.location.pathname);
 
     useEffect(() => {
@@ -27,8 +20,8 @@ function App() {
 
     return (
         <div className="App" style={{ background: "yellow" }}>
-            <header className="App-header" width="100%" >
-                <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%", background: "darkgray" }}>
+            <header className="App-header">
+                <div id="home" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%", background: "black" }}>
                     <div style={{ height: "100vh", background: "black", paddingTop: "0%", marginTop: "0%" }}>
 
                         <Switch>

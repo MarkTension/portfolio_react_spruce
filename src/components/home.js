@@ -11,20 +11,18 @@ import { isBrowser } from 'react-device-detect';
 
 function Home() {
 
-  return (
-    <div className="App" >
-      <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
+    return (
+        <div className="App" >
+            <Landing style={{ background: "black", marginTop: "0%" }} />
 
-        <Landing width="100%" style={{ background: "black", marginTop: "0%" }} />
-        <Blog />
-        <div width="100%">
-          <GenerativePortfolio width="100%" />
+            <div id="home" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
+
+                <Blog />
+                <Music />
+            </div>
+            <Sidebar />
         </div>
-        <Music width="100%" />
-      </div>
-      <Sidebar />
-    </div>
-  );
+    );
 }
 
 export default Home;
