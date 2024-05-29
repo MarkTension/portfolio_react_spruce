@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebb7ca1a.css",
-    "main.js": "/static/js/main.0c609f74.js",
+    "main.css": "/static/css/main.269133ac.css",
+    "main.js": "/static/js/main.e56b6c41.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
-    "static/js/520.3e956273.chunk.js": "/static/js/520.3e956273.chunk.js",
+    "static/js/520.63e99826.chunk.js": "/static/js/520.63e99826.chunk.js",
     "static/js/653.ae6ed807.chunk.js": "/static/js/653.ae6ed807.chunk.js",
     "static/js/787.58bd78e8.chunk.js": "/static/js/787.58bd78e8.chunk.js",
     "static/media/fireflies_dynamic_spike_lowaudio.mp4": "/static/media/fireflies_dynamic_spike_lowaudio.d25b24db0fbb84d80ef7.mp4",
@@ -32,7 +32,7 @@
     "static/media/cmplx4.webp": "/static/media/cmplx4.4866b7cf24cd24cf5ba1.webp",
     "static/media/cmplx3.webp": "/static/media/cmplx3.186f3b9c6e3ae14c8d37.webp",
     "static/media/fireflies1.webp": "/static/media/fireflies1.795f8aa72e5007e852c5.webp",
-    "static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.md": "/static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.282191c5a8b4c770699d.md",
+    "static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.md": "/static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.e09043d99092b8c0b4c4.md",
     "static/media/fireflies4.webp": "/static/media/fireflies4.297d921b28d6a6da6c93.webp",
     "static/media/sculpting1.webp": "/static/media/sculpting1.4671e3bd9fe7caf96c80.webp",
     "static/media/sculptingInProgressIm.webp": "/static/media/sculptingInProgressIm.83ba9c0af8069d5baf99.webp",
@@ -44,12 +44,12 @@
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.3371159d1e18941fceab.md",
     "index.html": "/index.html",
-    "main.ebb7ca1a.css.map": "/static/css/main.ebb7ca1a.css.map",
-    "main.0c609f74.js.map": "/static/js/main.0c609f74.js.map",
+    "main.269133ac.css.map": "/static/css/main.269133ac.css.map",
+    "main.e56b6c41.js.map": "/static/js/main.e56b6c41.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebb7ca1a.css",
-    "static/js/main.0c609f74.js"
+    "static/css/main.269133ac.css",
+    "static/js/main.e56b6c41.js"
   ]
 }
