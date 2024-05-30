@@ -1,6 +1,17 @@
 {
     "files": [
         {
+            "title": "MIDI Evolution - a generive music device",
+            "image": "/images/blogHeaders/midi_evolution.jpg",
+            "slug": "Making music using evolutionary algorithms, and a bit of chaos",
+            "tags": [
+                "music",
+                "generative-art",
+                "reflections"
+            ],
+            "date": "2024-01"
+        },
+        {
             "title": "Tensen Park - Reflections on my music",
             "image": "/images/blogHeaders/firefliesPoster.webp",
             "slug": "Making conscious what I've been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.",
