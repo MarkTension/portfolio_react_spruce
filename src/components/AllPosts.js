@@ -4,7 +4,6 @@ import { Title } from "./textConstants"
 import styled from 'styled-components'
 import { Box, Flex } from "rebass";
 import posts from '../markdowns/index.json';
-import SidebarBack from "./sidebarBack";
 import '../App.css';
 
 const linkStyle = {
@@ -88,7 +87,6 @@ class AllPosts extends React.Component {
         return (
 
             <div id="blog" style={{ marginTop: "4%", background: "black" }}>
-
                 <Title>
                     Blog posts
                 </Title>
@@ -153,7 +151,6 @@ class AllPosts extends React.Component {
                         ))}
                     </Flex>
                 </div>
-                <SidebarBack />
             </div >
         );
     }

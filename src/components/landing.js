@@ -7,6 +7,9 @@ import { Item } from "./textConstants";
 import media from "../media";
 import posts from '../markdowns/index.json';
 
+// import isBrowser from 'react-device-detect';
+import { isBrowser } from 'react-device-detect';
+
 const Hoverr = styled.h3`
     position: absolute;
     padding-left: 20%;
@@ -45,7 +48,7 @@ class Landing extends React.Component {
             <div id="landing" style={{ marginTop: "0%", alignContent: "right", width: "100%", height: "100vh" }} >
                 <Hoverr> Mark Tensen</Hoverr>
 
-                <div style={{ height: "80vh" }}>
+                <div style={{ height: isBrowser ? "80vh" : "50vh" }}>
                     <img src={ff0} alt="Logo" width={"23%"} />;
                     <img src={ff1} alt="Logo" width={"23%"} />;
                     <img src={ff4} alt="Logo" width={"23%"} />;
@@ -59,13 +62,10 @@ class Landing extends React.Component {
 
                 </Item > */}
 
-
-
-                <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em", whiteSpace: "pre-line" }}>
+                <Item style={{ width: "90%", textAlign: "right", fontSize: isBrowser ? "0.9em" : "1.3em", whiteSpace: "pre-line" }}>
                     on finding synergies between programming, music, AI, artificial life, and design
-                </Item>
-                <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em", marginBottom: "10%" }}>
-                    <a href="https://twitter.com/Mark_Tension">I share work in progress on twitter</a>, and music on <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=Z8aIfkyyT4qpf1HxKi2TdA&dl_branch=1">Spotify</a>.
+                    <p> </p>
+                    <a href="https://twitter.com/Mark_Tension">Sharing work in progress on twitter</a>, and music on <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>.
                 </Item>
             </div >
         );

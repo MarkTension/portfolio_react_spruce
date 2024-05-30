@@ -20,9 +20,8 @@ const Item = styled.h3`
 const Sidebar = props => {
     return (
         <>
-            <Nav className="col-md-12 sidebar"
-            >
-                {isBrowser ?
+            {isBrowser ?
+                <Nav className="col-md-12 sidebar">
                     <div className="sidebar-content" >
                         <Nav.Item>
                             <Nav.Link onClick={() => {
@@ -41,12 +40,11 @@ const Sidebar = props => {
                             ><Item>Music</Item></Nav.Link>
                         </Nav.Item>
                     </div>
-                    :
-                    <div>
-                    </div>
-                }
-            </Nav>
-
+                </Nav>
+                :
+                <>
+                </>
+            }
         </>
     );
 };

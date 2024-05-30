@@ -1,11 +1,11 @@
 ## portfolio page
 
 TODO:
-- GA and react GA. Why is it not uploading?
 - add stuff to music bandcamp
+- GA and react GA. Why is it not uploading?
 - add more posts
-  - device 1
-  - device 2
+  - Markdown blog in react
+  - NCA music?
 - display recent article titles on the landing
 - maybe the spheres project i worked with at hypothetic
 - neural cellular automata for sound 
