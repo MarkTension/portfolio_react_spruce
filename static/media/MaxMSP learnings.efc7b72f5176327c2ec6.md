@@ -2,7 +2,7 @@
 <img width= "40%" src="/images/blogHeaders/max4lifeClean.png" alt="ld image">
 </p>
 
-# Lessons I learned, writing MaxMSP/Max for Live as a coder
+# Reflections on preventing a mess in MaxMSP/Max for Live
 ### TLDR.
 It's hella hard to avoid Spaghetti. But I alleviated some of my suffering with the points in the 'Some general learnings' paragraph in the bottom.
 
