@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.269133ac.css",
-    "main.js": "/static/js/main.5d9022a3.js",
+    "main.js": "/static/js/main.1fc5259d.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/297.59a6d3bc.chunk.js": "/static/js/297.59a6d3bc.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
+    "static/js/551.b404113e.chunk.js": "/static/js/551.b404113e.chunk.js",
     "static/js/66.53933309.chunk.js": "/static/js/66.53933309.chunk.js",
     "static/js/520.63e99826.chunk.js": "/static/js/520.63e99826.chunk.js",
     "static/js/653.58014977.chunk.js": "/static/js/653.58014977.chunk.js",
@@ -41,17 +42,18 @@
     "static/media/A primer on Reinforcement Learning, and its application to art.md": "/static/media/A primer on Reinforcement Learning, and its application to art.e199d061996c814413d6.md",
     "static/media/Quantifying interestingness in images using information theory.md": "/static/media/Quantifying interestingness in images using information theory.a513c959406aae916646.md",
     "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.b5664676334a0260b1e7.md",
+    "static/media/MaxMSP learnings.md": "/static/media/MaxMSP learnings.b8679259040d47fd264b.md",
     "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.3762b6bf681c80a40836.md",
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "static/media/MIDI Evolution - a generive music device.md": "/static/media/MIDI Evolution - a generive music device.88994f94b1cf707ca27a.md",
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.2d5faebc7a36eb39f920.md",
     "index.html": "/index.html",
     "main.269133ac.css.map": "/static/css/main.269133ac.css.map",
-    "main.5d9022a3.js.map": "/static/js/main.5d9022a3.js.map",
+    "main.1fc5259d.js.map": "/static/js/main.1fc5259d.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.269133ac.css",
-    "static/js/main.5d9022a3.js"
+    "static/js/main.1fc5259d.js"
   ]
 }
