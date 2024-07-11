@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.269133ac.css",
-    "main.js": "/static/js/main.dae16abd.js",
+    "main.js": "/static/js/main.e12a7b05.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
+    "static/js/720.19f6cfe0.chunk.js": "/static/js/720.19f6cfe0.chunk.js",
     "static/js/336.cc3476d1.chunk.js": "/static/js/336.cc3476d1.chunk.js",
     "static/js/297.59a6d3bc.chunk.js": "/static/js/297.59a6d3bc.chunk.js",
     "static/js/949.eab1bf12.chunk.js": "/static/js/949.eab1bf12.chunk.js",
@@ -41,6 +42,7 @@
     "static/media/sculptingAdvanced.webp": "/static/media/sculptingAdvanced.b88898ee20562d0fe53b.webp",
     "static/media/A primer on Reinforcement Learning, and its application to art.md": "/static/media/A primer on Reinforcement Learning, and its application to art.e199d061996c814413d6.md",
     "static/media/Quantifying interestingness in images using information theory.md": "/static/media/Quantifying interestingness in images using information theory.a513c959406aae916646.md",
+    "static/media/Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX.md": "/static/media/Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX.bcb1106296709167699e.md",
     "static/media/Artificial life, fireflies and music production.md": "/static/media/Artificial life, fireflies and music production.b5664676334a0260b1e7.md",
     "static/media/MaxMSP learnings.md": "/static/media/MaxMSP learnings.efc7b72f5176327c2ec6.md",
     "static/media/Firefly Synchronizer, a chaotic system Max4Live device.md": "/static/media/Firefly Synchronizer, a chaotic system Max4Live device.3762b6bf681c80a40836.md",
@@ -49,11 +51,11 @@
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.2d5faebc7a36eb39f920.md",
     "index.html": "/index.html",
     "main.269133ac.css.map": "/static/css/main.269133ac.css.map",
-    "main.dae16abd.js.map": "/static/js/main.dae16abd.js.map",
+    "main.e12a7b05.js.map": "/static/js/main.e12a7b05.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.269133ac.css",
-    "static/js/main.dae16abd.js"
+    "static/js/main.e12a7b05.js"
   ]
 }
