@@ -49,16 +49,27 @@ class AllPosts extends React.Component {
     }
 
     fetchMarkdownSlugs = async (title) => {
-        const module = await import(`../markdowns/${title}.md`);
-        const response = await fetch(module.default);
-        const text = await response.text();
-        // now parse the text.
-        let blogContent = text.split("</p>")[1].split(" ").slice(1, 50).join(" ")
-        blogContent = blogContent.replace(/<[^>]*>?/gm, '');
-        blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, '$1');
-        // remove hashtags
-        blogContent = blogContent.replace(/#/g, '');
-        return blogContent
+        try {
+            const module = await import(`../markdowns/${title}.md`);
+            const response = await fetch(module.default);
+            const text = await response.text();
+            // now parse the text.
+            let blogContent = text.split("</p>")[1].split(" ").slice(1, 50).join(" ")
+            blogContent = blogContent.replace(/<[^>]*>?/gm, '');
+            blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, '$1');
+            // remove hashtags
+            blogContent = blogContent.replace(/#/g, '');
+            return blogContent
+        }
+        catch (error) {
+            const module = await import(`../markdowns/${title}.md`);
+            const response = await fetch(module.default);
+            const text = (await response.text()).split("</p>")[0];
+            console.error('TEXT is: ', text);
+            console.error('Error fetching markdown: ', error);
+        }
+
+
 
     };
 

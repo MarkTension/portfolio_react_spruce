@@ -6,8 +6,7 @@ TODO:
 - add more posts
   - Markdown blog in react
   - NCA music?
+  - blogpost about boids behaving as physarum!
+- Add my email at more places to let people reach out
 - display recent article titles on the landing
 - maybe the spheres project i worked with at hypothetic
-- neural cellular automata for sound 
-- latest webgpu and midi project
-- some thoughts on my blog - markdown etc

@@ -20,14 +20,14 @@ export default function OnePost() {
             })
     }, [])
 
-    return (<div id="onepost" style={{ background: "white", width: isBrowser ? "80vw" : "100vw", paddingBottom: '5em', paddingTop: '2em' }}>
+    return (<div id="onepost" style={{ background: "white", width: isBrowser ? "80vw" : "100vw", maxWidth: "2700px", paddingBottom: '5em', paddingTop: '2em' }}>
 
         <Title style={{ fontSize: "1.5em", background: "white" }}>
             {slug}
         </Title>
 
         <Markdown
-            style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em" }}
+            style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em", }}
             options={{
                 overrides: {
                     p: {

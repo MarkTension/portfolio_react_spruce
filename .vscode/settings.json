@@ -1,0 +1,10 @@
+{
+    "eslint.options": {
+        "es6": false,
+        "es5": true,
+        "extends": "eslint:recommended",
+        "rules": {
+            "no-undef": "error"
+        }
+    }
+}
