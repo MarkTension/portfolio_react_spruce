@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio_react_spruce=self.webpackChunkportfolio_react_spruce||[]).push([[523],{1523:(e,c,t)=>{e.exports=t.p+"static/media/MIDI Evolution - a generative music device.88994f94b1cf707ca27a.md"}}]);
