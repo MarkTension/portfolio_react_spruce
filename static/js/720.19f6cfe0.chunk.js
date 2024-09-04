@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio_react_spruce=self.webpackChunkportfolio_react_spruce||[]).push([[720],{5720:function(e,i,t){e.exports=t.p+"static/media/Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX.bcb1106296709167699e.md"}}]);
