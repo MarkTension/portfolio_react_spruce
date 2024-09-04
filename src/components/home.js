@@ -18,7 +18,7 @@ function Home() {
             <div id="home" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
 
                 <Blog />
-                <Music />
+                {/* <Music /> */}
             </div>
             <Sidebar />
         </div>

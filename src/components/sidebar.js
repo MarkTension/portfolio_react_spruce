@@ -34,11 +34,11 @@ const Sidebar = props => {
                                 onClick={() => { animateScrollTo(document.querySelector("#blogHome")); }}
                             ><Item>Blog</Item></Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <Nav.Link
                                 onClick={() => { animateScrollTo(document.querySelector("#music")); }}
                             ><Item>Music</Item></Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                     </div>
                 </Nav>
                 :

@@ -7,7 +7,7 @@ import posts from '../markdowns/index.json';
 import '../App.css';
 
 const linkStyle = {
-    fontSize: "1.2em",
+    fontSize: "0.8em",
     background: "black",
     alignText: "left",
     textDecoration: "none",
@@ -17,16 +17,15 @@ const linkStyle = {
 
 
 const Item = styled.h3`
-
-    font-size: 0.9em;
-    text-align: center;
+    font-size: 0.7em;
+    text-align: left;
     color: white ;
     font-weight:100;
 `;
 
 const TaggButton = styled.button`
     cursor: pointer;
-    font-size: 0.65em;
+    font-size: 0.4em;
     background: black;
     color: white;
     padding: 0.25em 1em;
@@ -54,7 +53,7 @@ class AllPosts extends React.Component {
             const response = await fetch(module.default);
             const text = await response.text();
             // now parse the text.
-            let blogContent = text.split("</p>")[1].split(" ").slice(1, 50).join(" ")
+            let blogContent = text.split("</p>")[1].split(" ").slice(0, 30).join(" ")
             blogContent = blogContent.replace(/<[^>]*>?/gm, '');
             blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, '$1');
             // remove hashtags
@@ -97,67 +96,71 @@ class AllPosts extends React.Component {
 
         return (
 
-            <div id="blog" style={{ marginTop: "4%", background: "black" }}>
-                <Title>
-                    Blog posts
-                </Title>
-                <div style={{ width: "80%", margin: "auto" }}>
+            <div id="blog" style={{ marginTop: "10%", background: "black" }}>
 
+                <div style={{ width: "80%", marginLeft: "5%" }}>
                     <Item style={{ marginTop: "5%" }}>
-                        <p>
-                            I like putting my engineering thoughts and general reflections into words.
-                            Sometimes its the final waving goodbye to a project, and often it helps coming-up with new ideas.
-                        </p>
-                        <p>
-                            Also, it helps to second-check my thinking. This quote by David Bohm resonates quite well with this:
-                        </p>
-                        <u><i>It’s important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i></u>
-
+                        <i>It's important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i> - David Bohm
                     </Item>
-                    <Item style={{ fontSize: "1.2em" }}><b>filter topics</b></Item>
-
-                    <center>
-                        <div style={{ width: "60%" }} >
+                    <div style={{ display: "flex", alignItems: "center", marginTop: "10%" }}>
+                        <Item style={{ fontSize: "1.0em", whiteSpace: "nowrap", marginRight: "20px" }}><b>Filter topics</b></Item>
+                        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", flex: 1 }}>
                             {allTags.map((tagg, index) => (
-                                <TaggButton style={{ color: this.state.tagFilter == tagg ? "red" : "white" }} onClick={() => this.handleTagChangeClick(tagg)}>{tagg}</TaggButton>
+                                <TaggButton 
+                                    key={index}
+                                    style={{ 
+                                        color: this.state.tagFilter === tagg ? "darkred" : "white",
+                                        marginRight: "1px",
+                                        marginBottom: "1px"
+                                    }} 
+                                    onClick={() => this.handleTagChangeClick(tagg)}
+                                >
+                                    {tagg}
+                                </TaggButton>
                             ))}
-                            <div></div>
-                            <TaggButton style={{ color: this.state.tagFilter == null ? "red" : "white" }} onClick={() => this.handleTagChangeClick(null)} >All Posts</TaggButton>
+                            <TaggButton 
+                                style={{ 
+                                    color: this.state.tagFilter === null ? "orange" : "white",
+                                    marginRight: "1px",
+                                    marginBottom: "1px"
+                                }} 
+                                onClick={() => this.handleTagChangeClick(null)} 
+                            >
+                                All Posts
+                            </TaggButton>
                         </div>
-                    </center>
+                    </div>
                     {posts.files.map((post, index) => (<Item></Item>))}
 
                     <Flex
                         id="itemsBlog"
                         flexWrap="wrap"
                         width="100%"
-                        style={{ marginBottom: "0%", paddingBottom: "0px" }}
+                        style={{ marginBottom: "0%", paddingBottom: "0px", justifyContent: "flex-start" }}
                     >
-
                         {posts.files.map((post, index) => (
                             (post['tags'].includes(this.state.tagFilter) || this.state.tagFilter == null) &&
 
-                            <Box id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1]}>
-                                <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={linkStyle}>
-                                    <img src={post['image']} width="25%" />
-                                    <Item />
-                                    {/* <Item style={{ color: "red", background: "white", fontSize: "0.8em", alignText: "right", textDecoration: "underline", textDecorationColor: "#FF8484" }} >{post['title']}</Item> */}
-                                    {post['title']}
-                                    <Item style={{ color: "white", fontSize: "0.8em", alignText: "right" }} >
+                            <Box id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1]} style={{ textAlign: "left", display: "flex", flexDirection: "row" }}>
+                                <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={{...linkStyle, display: "flex", width: "100%"}}>
+                                    <Item style={{ color: "white", fontSize: "0.8em", width: "15%", marginRight: "2%" }}>
                                         {post['date']}
                                     </Item>
-                                    <Item style={{ color: "white", fontSize: "0.4em", fontWeight: 'bold', alignText: "right" }} >
-                                        {post['tags'].map((post, index) => (post + ", "))}
-                                    </Item>
-                                    <Item style={{ fontSize: "0.6em" }}>
-                                        {post.markdown}
-
-                                    </Item>
-                                    <Item style={{ color: "red", fontSize: "0.6em" }}>
-                                        ... continue reading
-                                    </Item>
+                                    <div style={{ width: "30%", marginRight: "2%", marginTop: "0.6em" }}>
+                                        <div style={{ fontWeight: "bold", fontSize: "0.8em", color: "white" }}>{post['title']}</div>
+                                        <Item style={{ color: "orange", fontSize: "0.6em", fontWeight: 'bold' }}>
+                                            {post['tags'].map((tag, index) => (tag + (index < post['tags'].length - 1 ? ", " : "")))}
+                                        </Item>
+                                    </div>
+                                    <div style={{ width: "46%" }}>
+                                        <Item style={{ fontSize: "0.6em", color: "white" }}>
+                                            {post.markdown}
+                                        </Item>
+                                        <Item style={{ color: "orange", fontSize: "0.6em" }}>
+                                            ... continue reading
+                                        </Item>
+                                    </div>
                                 </Link>
-                                <hr style={{ color: "darkgrey", width: "70%", }} />
                             </Box>
                         ))}
                     </Flex>
