@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.269133ac.css",
-    "main.js": "/static/js/main.e12a7b05.js",
+    "main.css": "/static/css/main.b8f6da51.css",
+    "main.js": "/static/js/main.68c85a91.js",
     "static/js/955.aa6111a4.chunk.js": "/static/js/955.aa6111a4.chunk.js",
     "static/js/766.1932d263.chunk.js": "/static/js/766.1932d263.chunk.js",
     "static/js/720.19f6cfe0.chunk.js": "/static/js/720.19f6cfe0.chunk.js",
@@ -50,12 +50,12 @@
     "static/media/MIDI Evolution - a generive music device.md": "/static/media/MIDI Evolution - a generive music device.88994f94b1cf707ca27a.md",
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.2d5faebc7a36eb39f920.md",
     "index.html": "/index.html",
-    "main.269133ac.css.map": "/static/css/main.269133ac.css.map",
-    "main.e12a7b05.js.map": "/static/js/main.e12a7b05.js.map",
+    "main.b8f6da51.css.map": "/static/css/main.b8f6da51.css.map",
+    "main.68c85a91.js.map": "/static/js/main.68c85a91.js.map",
     "787.58bd78e8.chunk.js.map": "/static/js/787.58bd78e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.269133ac.css",
-    "static/js/main.e12a7b05.js"
+    "static/css/main.b8f6da51.css",
+    "static/js/main.68c85a91.js"
   ]
 }
