@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f23c70db.css",
-    "main.js": "/static/js/main.65d2b470.js",
+    "main.js": "/static/js/main.fc3dc68c.js",
     "static/js/201.b93393eb.chunk.js": "/static/js/201.b93393eb.chunk.js",
     "static/js/32.18e7ec10.chunk.js": "/static/js/32.18e7ec10.chunk.js",
     "static/js/787.bc9baea2.chunk.js": "/static/js/787.bc9baea2.chunk.js",
@@ -9,6 +9,7 @@
     "static/js/523.a9b16f2e.chunk.js": "/static/js/523.a9b16f2e.chunk.js",
     "static/js/674.daff74ad.chunk.js": "/static/js/674.daff74ad.chunk.js",
     "static/js/843.3ded8f12.chunk.js": "/static/js/843.3ded8f12.chunk.js",
+    "static/js/613.722c49d7.chunk.js": "/static/js/613.722c49d7.chunk.js",
     "static/js/692.5f0da4c8.chunk.js": "/static/js/692.5f0da4c8.chunk.js",
     "static/js/844.d981dfcb.chunk.js": "/static/js/844.d981dfcb.chunk.js",
     "static/js/606.9333a15b.chunk.js": "/static/js/606.9333a15b.chunk.js",
@@ -49,13 +50,14 @@
     "static/media/Making music with RNNs, and visualizing it.md": "/static/media/Making music with RNNs, and visualizing it.063604195e6790c223c9.md",
     "static/media/MIDI Evolution - a generative music device.md": "/static/media/MIDI Evolution - a generative music device.88994f94b1cf707ca27a.md",
     "static/media/Tensen Park - Reflections on my music.md": "/static/media/Tensen Park - Reflections on my music.2d5faebc7a36eb39f920.md",
+    "static/media/More raw websites please.md": "/static/media/More raw websites please.47fb1693fe2133dd0723.md",
     "index.html": "/index.html",
     "main.f23c70db.css.map": "/static/css/main.f23c70db.css.map",
-    "main.65d2b470.js.map": "/static/js/main.65d2b470.js.map",
+    "main.fc3dc68c.js.map": "/static/js/main.fc3dc68c.js.map",
     "453.dbef9cba.chunk.js.map": "/static/js/453.dbef9cba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f23c70db.css",
-    "static/js/main.65d2b470.js"
+    "static/js/main.fc3dc68c.js"
   ]
 }
