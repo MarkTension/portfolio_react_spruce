@@ -4,6 +4,8 @@
 
 This is a technical overview of our reinforcement learning sculpting project. We will go into the reinforcement learning part, but also some additional technical details. Comprises work by: onformative.com - Mark Tensen, Alexander Hahn, Cedric Kiefer.
 
+See the project website [here](https://onformative.com/work/ai-sculpting/)
+
 ## Glossary
 
 Reinforcement learning (RL) - an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximise cumulative reward. The agent is presented in each time-step with information about the environment, and needs to make the best possible action from that information.
