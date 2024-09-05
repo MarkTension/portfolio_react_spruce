@@ -97,8 +97,7 @@ class AllPosts extends React.Component {
         return (
 
             <div id="blog" style={{ marginTop: "10%", background: "black" }}>
-
-                <div style={{ width: "80%", marginLeft: "5%" }}>
+                <div style={{ width: "80%", maxWidth: "900px", marginLeft: "5%" }}>
                     <Item style={{ marginTop: "5%" }}>
                         <i>It's important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i> - David Bohm
                     </Item>
@@ -130,7 +129,6 @@ class AllPosts extends React.Component {
                             </TaggButton>
                         </div>
                     </div>
-                    {posts.files.map((post, index) => (<Item></Item>))}
 
                     <Flex
                         id="itemsBlog"
@@ -141,23 +139,22 @@ class AllPosts extends React.Component {
                         {posts.files.map((post, index) => (
                             (post['tags'].includes(this.state.tagFilter) || this.state.tagFilter == null) &&
 
-                            <Box id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1]} style={{ textAlign: "left", display: "flex", flexDirection: "row" }}>
+                            <Box key={post.title} id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1]} style={{ textAlign: "left", display: "flex", flexDirection: "row" }}>
                                 <Link id={"link" + index} to={"/blog/" + post['title']} key={post} style={{...linkStyle, display: "flex", width: "100%"}}>
-                                    <Item style={{ color: "white", fontSize: "0.8em", width: "15%", marginRight: "2%" }}>
+                                    <Item style={{ color: "grey", fontSize: "0.8em", width: "15%", marginRight: "2%" }}>
                                         {post['date']}
                                     </Item>
                                     <div style={{ width: "30%", marginRight: "2%", marginTop: "0.6em" }}>
-                                        <div style={{ fontWeight: "bold", fontSize: "0.8em", color: "white" }}>{post['title']}</div>
+                                        <div style={{ fontWeight: "bold", fontSize: "0.6em", color: "white", textAlign: "left" }}>{post['title']}</div>
                                         <Item style={{ color: "orange", fontSize: "0.6em", fontWeight: 'bold' }}>
                                             {post['tags'].map((tag, index) => (tag + (index < post['tags'].length - 1 ? ", " : "")))}
                                         </Item>
                                     </div>
                                     <div style={{ width: "46%" }}>
-                                        <Item style={{ fontSize: "0.6em", color: "white" }}>
-                                            {post.markdown}
-                                        </Item>
-                                        <Item style={{ color: "orange", fontSize: "0.6em" }}>
-                                            ... continue reading
+                                        <Item style={{ fontSize: "0.6em", color: "lightgrey" }}>
+                                            {post.markdown} 
+                                            <span style={{ color: "grey" }}> ... continue reading</span>
+
                                         </Item>
                                     </div>
                                 </Link>

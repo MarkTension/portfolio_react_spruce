@@ -1,6 +1,15 @@
 {
     "files": [
         {
+            "title": "More raw websites please",
+            "image": "",
+            "slug": "In defense of ugly yet personal websites.",
+            "tags": [
+                "reflections"
+            ],
+            "date": "2024-09"
+        },
+        {
             "title": "Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX",
             "image": "/images/blogHeaders/prims2_sq.webp",
             "slug": "At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.",
@@ -23,7 +32,7 @@
             "date": "2024-06"
         },
         {
-            "title": "MIDI Evolution - a generive music device",
+            "title": "MIDI Evolution - a generative music device",
             "image": "/images/blogHeaders/midi_evolution.jpg",
             "slug": "Making music using evolutionary algorithms, and a bit of chaos",
             "tags": [

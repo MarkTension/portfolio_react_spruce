@@ -51,7 +51,7 @@ class Landing extends React.Component {
                         zIndex: 1,
                         backgroundColor: "rgba(0, 0, 0, 0.4)",
                         padding: "10px",
-                        borderRadius: "15px"
+                        borderRadius: "5px",
                     }}>
                         Mark Tensen
                     </Name>

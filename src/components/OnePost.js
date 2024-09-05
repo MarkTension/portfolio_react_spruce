@@ -7,7 +7,6 @@ import { isBrowser } from 'react-device-detect';
 
 export default function OnePost() {
     const { slug } = useParams();
-    console.log(slug)
     const [postContent, setPostContent] = useState("");
 
     useEffect(() => {
@@ -20,19 +19,37 @@ export default function OnePost() {
             })
     }, [])
 
-    return (<div id="onepost" style={{ background: "white", width: isBrowser ? "80vw" : "100vw", maxWidth: "2700px", paddingBottom: '5em', paddingTop: '2em' }}>
+    return (<div id="onepost" style={{ background: "black", width: isBrowser ? "80vw" : "100vw", maxWidth: "1200px", paddingBottom: '5em', paddingTop: '2em' }}>
 
-        <Title style={{ fontSize: "1.5em", background: "white" }}>
+        <Title style={{ fontSize: "1.5em", color: "white", background: "black" }}>
             {slug}
         </Title>
 
         <Markdown
-            style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em", }}
+            style={{ textAlign: "left", margin: isBrowser ? "5em" : "2em", color: "white" }}
             options={{
                 overrides: {
                     p: {
                         props: {
                             className: 'markdown-p',
+                        },
+                    },
+                    pre: {
+                        props: {
+                            style: {
+                                backgroundColor: "grey",
+                                padding: '0.5em',
+                                borderRadius: '4px',
+                                fontSize: '0.5em',
+                            },
+                        },
+                    },
+                    code: {
+                        props: {
+                            style: {
+                                fontFamily: 'monospace',
+                                fontSize: '0.9em',
+                            },
                         },
                     },
                 },
