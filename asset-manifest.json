@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f23c70db.css",
-    "main.js": "/static/js/main.d1ca0429.js",
+    "main.js": "/static/js/main.d58346b2.js",
+    "static/js/506.74f52f1b.chunk.js": "/static/js/506.74f52f1b.chunk.js",
     "static/js/201.b351e98c.chunk.js": "/static/js/201.b351e98c.chunk.js",
     "static/js/32.18e7ec10.chunk.js": "/static/js/32.18e7ec10.chunk.js",
     "static/js/787.bc9baea2.chunk.js": "/static/js/787.bc9baea2.chunk.js",
@@ -38,6 +39,7 @@
     "static/media/fireflies1.webp": "/static/media/fireflies1.795f8aa72e5007e852c5.webp",
     "static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.md": "/static/media/Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship.e2a08e91a841728f3f8a.md",
     "static/media/fireflies4.webp": "/static/media/fireflies4.297d921b28d6a6da6c93.webp",
+    "static/media/15 Questions music interview on my EP Jurassimo.md": "/static/media/15 Questions music interview on my EP Jurassimo.570649b9f4fdcbde2094.md",
     "static/media/sculpting1.webp": "/static/media/sculpting1.4671e3bd9fe7caf96c80.webp",
     "static/media/sculptingInProgressIm.webp": "/static/media/sculptingInProgressIm.83ba9c0af8069d5baf99.webp",
     "static/media/sculptingAdvanced.webp": "/static/media/sculptingAdvanced.b88898ee20562d0fe53b.webp",
@@ -53,11 +55,11 @@
     "static/media/More raw websites please.md": "/static/media/More raw websites please.47fb1693fe2133dd0723.md",
     "index.html": "/index.html",
     "main.f23c70db.css.map": "/static/css/main.f23c70db.css.map",
-    "main.d1ca0429.js.map": "/static/js/main.d1ca0429.js.map",
+    "main.d58346b2.js.map": "/static/js/main.d58346b2.js.map",
     "453.dbef9cba.chunk.js.map": "/static/js/453.dbef9cba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f23c70db.css",
-    "static/js/main.d1ca0429.js"
+    "static/js/main.d58346b2.js"
   ]
 }
