@@ -58,7 +58,7 @@ class Landing extends React.Component {
                 </div>
 
                 <Item style={{ width: "90%", textAlign: "left", fontSize: isBrowser ? "0.7em" : "1.3em", whiteSpace: "pre-line" }}>
-                    on finding synergies between programming, music, AI, artificial life, and design
+                    On finding synergies in programming, music, AI, artificial life, and design
                     <p> </p>
                     Sharing WIP on <a href="https://twitter.com/Mark_Tension">X</a>, visuals on <a href="https://www.instagram.com/tensen.park/">instagram</a>, and music on <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>.
                 </Item>

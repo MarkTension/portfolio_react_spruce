@@ -1,6 +1,23 @@
 {
     "files": [
         {
+            "title": "Order of magnitude more boids while keeping global dynamics",
+            "image": "",
+            "slug": "Order of magnitude more boids while keeping global dynamics",
+            "tags": [
+                "graphics", "complex-systems", "generative-art"
+            ],
+            "date": "2024-09"
+        },{
+            "title": "15 Questions music interview on my EP Jurassimo",
+            "image": "",
+            "slug": "15 Questions music interview on production technology and creativity",
+            "tags": [
+                "reflections", "music", "generative-art"
+            ],
+            "date": "2024-09"
+        },
+        {
             "title": "More raw websites please",
             "image": "",
             "slug": "In defense of ugly yet personal websites.",
@@ -87,18 +104,7 @@
             ],
             "date": "2022-9"
         },
-        {
-            "title": "Making music with RNNs, and visualizing it",
-            "image": "/images/blogHeaders/bachIm.png",
-            "slug": "I'm training a Recurrent neural network on the Bach Chorale dataset in order to get some interesting musical results out of it. I'll share some details on how I trained it, and some early results.",
-            "tags": [
-                "AI",
-                "music",
-                "computer-graphics",
-                "generative-art"
-            ],
-            "date": "2022-2"
-        },
+
         {
             "title": "Quantifying interestingness in images using information theory",
             "image": "/images/blogHeaders/information.png",

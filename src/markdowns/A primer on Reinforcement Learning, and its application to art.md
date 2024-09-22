@@ -5,6 +5,8 @@ In recent years, Reinforcement Learning (RL), once a small branch within the fie
 
 Why now? Same as all machine learning since 2016: Increased computational power! This allowed RL to benefit from the latest deep-learning developments, and thereby starting its sub-branch called deep-RL. But are there any other applications in industry beyond gaming? Absolutely! As some of these will be covered in this post, I’ll also share one of my own use-cases within the digital arts.
 
+See the project website [here](https://onformative.com/work/ai-sculpting/)
+
 ## **A quick primer on RL**
 
 In machine learning, the most common strategy to train a model is supervised learning. It is incredibly effective: the model learns from a dataset of examples that each consist of an input object and a desired output value. The model thereby learns a mapping from input to desired output, by being shown which outputs correspond to which input. For instance, a cat-classifying model should learn this mapping with images as input, and a corresponding label telling it whether there _is_, or _isn’t_ a cat in the image.

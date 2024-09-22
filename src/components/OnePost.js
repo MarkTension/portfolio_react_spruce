@@ -52,6 +52,22 @@ export default function OnePost() {
                             },
                         },
                     },
+                    // make bullet points smaller
+                    ul: {
+                        props: {
+                            style: {
+                                fontSize: '0.5em',
+                            },
+                        },
+                    },
+                    // make header 3 a bit smaller
+                    h3: {
+                        props: {
+                            style: {
+                                fontSize: '0.8em',
+                            },
+                        },
+                    },
                 },
             }}
         >
