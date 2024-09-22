@@ -78,7 +78,6 @@ This makes the optimization focus on the boundaries of the objects, which we're 
 <p align="center">
 <img width= "90%" src="/images/primitives_comp.webp" alt="ld image">
 Figure 1. results after optimization with different numbers of spheres. [8, 16, 32, 64, 128, 256]. It's cool to see the details decrease with fewer spheres, making it more and more into some abstract interpretation of the original.
-<!-- <img width= "40%" src="/images/blogHeaders/prims2_sq.webp" alt="ld image"> -->
 </p>
 <p  align="center">
 <img width= "20%" src="/images/primitives_fer_gif.gif" alt="ld image">
