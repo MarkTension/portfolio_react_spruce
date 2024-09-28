@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio_react_spruce=self.webpackChunkportfolio_react_spruce||[]).push([[302],{1302:(e,a,o)=>{e.exports=o.p+"static/media/Order of magnitude more boids while keeping global dynamics.d3eb5abbfdca31a69f3f.md"}}]);

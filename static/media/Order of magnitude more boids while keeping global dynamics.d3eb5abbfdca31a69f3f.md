@@ -2,7 +2,11 @@
 <img width= "40%" src="/images/blogHeaders/webgpu_result.webp" alt="ld image">
 </p>
 
-### Introduction
+Here's some new results simulating an order of magnitude more boids, while keeping global interactivity accross the canvas. I'll share more what that means, but here's a preview.
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hHjXNewxjiw?si=3iYLUz9nkSP1XK38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
 The boids algorithm is a classic agent-based system in artificial life and computer graphics / game development. 
 It was first developed by Craig Reynolds in 1986, and it models each agent with basic behavioral rules, which together make a bird-flocking behavior emerge.
 The rules are 
