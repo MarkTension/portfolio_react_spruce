@@ -2,7 +2,7 @@
 <img width= "40%" src="/images/blogHeaders/webgpu_result.webp" alt="ld image">
 </p>
 
-Here's some new results simulating an order of magnitude more boids, while keeping global interactivity accross the canvas. I'll share more what that means, but here's a preview.
+Here's some new results simulating an order of magnitude more boids, while keeping global interactivity accross the canvas. I'll share more what that means in this article, and how it's done, but here's a preview.
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hHjXNewxjiw?si=3iYLUz9nkSP1XK38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </p>
@@ -37,9 +37,9 @@ I ended up finding this [excellent blogpost by Wicked Engine](https://wickedengi
 </p>
 
 ### Limitation of tiling - you lose global dynamics
-Still are limitations when usig tiling. The more boids you want to simulate, the more tiles you need to use in one texture. The more tiles you use, the less boids on one side of the texture will be influenced by boids on the other side of the texture. In other words, the tiling destroys the global dynamics of the system, and limiting the visualization to local interactions.
+However, there are limitations when usig tiling. The more boids you want to simulate, the more tiles you need to use in one texture. The more tiles you use, the less boids on one side of the texture will be influenced by boids on the other side of the texture. In other words, the tiling destroys the global dynamics of the system, and limiting the visualization to local interactions. Fr boids this results in thousands of swarms, instead of a couple of huge swarms.
 
-Some hackers on the web take it so far that they use tiling to model [4 million boids](https://www.reddit.com/r/Unity3D/comments/y9lla6/4_million_flocking_boids_using_compute_shaders/) or [16 million boids](https://www.reddit.com/r/Unity2D/comments/y9lphe/16_million_flocking_boids_using_compute_shaders/). Granted, especially the 3D 4 million boids looks really cool because it is immersive. But when in 2D, especially the 16 million one, you see only flocking on a very small scale; you have to zoom in to see flocks. If you zoom out, it is like you watch the stars, and the iconic boids flocking look is gone. Though technically impressive, for artistic works, this way of amplifying boid numbers defeats the purpose. 
+Some hackers take it so far that they use tiling to model [4 million boids](https://www.reddit.com/r/Unity3D/comments/y9lla6/4_million_flocking_boids_using_compute_shaders/) or even [16 million boids](https://www.reddit.com/r/Unity2D/comments/y9lphe/16_million_flocking_boids_using_compute_shaders/). Granted, especially the 3D 4 million boids looks really cool because it is immersive. But when in 2D, especially the 16 million one, you see only flocking on a very small scale; you have to zoom in to see flocks. If you zoom out, it is like you watch the stars, and the iconic boids flocking look is gone. Though technically impressive, for artistic works, this way of amplifying boid numbers defeats the purpose. 
 
 ### On what makes interesting pictures
 There are many reasons why some images are interesting and some are not. 
