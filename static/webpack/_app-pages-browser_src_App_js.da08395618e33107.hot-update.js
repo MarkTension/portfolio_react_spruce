@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("_app-pages-browser_src_App_js",{
+
+/***/ "(app-pages-browser)/./src/markdowns/index.json":
+/*!**********************************!*\
+  !*** ./src/markdowns/index.json ***!
+  \**********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"files":[{"title":"Order of magnitude more boids while keeping global dynamics","image":"","key":"order-of-magnitude-boids","slug":"Order of magnitude more boids while keeping global dynamics","tags":["graphics","complex-systems","generative-art"],"date":"2024-09"},{"title":"15 Questions music interview on my EP Jurassimo","image":"","key":"15-questions-music-interview-on-my-ep-jurassimo","slug":"15 Questions music interview on production technology and creativity","tags":["reflections","music","generative-art"],"date":"2024-09"},{"title":"More raw websites please","image":"","key":"more-raw-websites-please","slug":"In defense of ugly yet personal websites.","tags":["reflections"],"date":"2024-09"},{"title":"Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX","image":"/images/blogHeaders/prims2_sq.webp","key":"estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax","slug":"At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.","tags":["graphics","AI","generative-art"],"date":"2024-07"},{"title":"MaxMSP learnings","image":"/images/blogHeaders/max4lifeClean.png","key":"maxmsp-learnings","slug":"It is hella hard, but here\'s some lessons to be a little more effective.","tags":["music","generative-art","reflections"],"date":"2024-06"},{"title":"MIDI Evolution - a generative music device","image":"/images/blogHeaders/midi_evolution.jpg","key":"midi-evolution-generative-music-device","slug":"Making music using evolutionary algorithms, and a bit of chaos","tags":["music","generative-art","reflections"],"date":"2024-01"},{"title":"Tensen Park - Reflections on my music","image":"/images/blogHeaders/firefliesPoster.webp","key":"tensen-park-reflections-on-my-music","slug":"Making conscious what I\'ve been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.","tags":["music","reflections"],"date":"2022-11"},{"title":"Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship","image":"/images/blogHeaders/rl_header.gif","key":"reinforcement-learning-applied-to-sculpting","slug":"How we tought an AI to do 3D sculpting with reinforcement learning","tags":["AI","Reinforcement-Learning","generative-art"],"date":"2022-11"},{"title":"Firefly Synchronizer, a chaotic system Max4Live device","image":"/images/blogHeaders/firefly_synchronizer.png","slug":"I decided to build a native music device for Ableton, based on chaotic firefly synchronization simulations","tags":["MaxMSP","music","complex-systems","generative-art"],"date":"2022-10"},{"title":"Artificial life, fireflies and music production","image":"/images/blogHeaders/fireflies.png","slug":"Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.","tags":["Unity3D","computer-graphics","complex-systems","generative-art"],"date":"2022-9"},{"title":"Quantifying interestingness in images using information theory","image":"/images/blogHeaders/information.png","slug":"On finding ways to automate discovery of interesting generative design.","tags":["information-theory","generative-art","complex-systems"],"date":"2021-1"},{"title":"A primer on Reinforcement Learning, and its application to art","image":"/images/blogHeaders/rl_header.gif","slug":"In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention","tags":["AI","Reinforcement-Learning","generative-art"],"date":"2021-1"}]}');
+
+/***/ })
+
+});
