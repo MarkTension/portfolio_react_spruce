@@ -1,3 +1,5 @@
+# Firefly Synchronizer: A Chaotic System Max4Live Device
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/firefly_synchronizer.png" alt="ld image">
 </p>

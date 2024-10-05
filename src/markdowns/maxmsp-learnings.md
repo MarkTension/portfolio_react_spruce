@@ -1,3 +1,5 @@
+# MaxMSP Learnings: Preventing a Mess in Max for Live
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/max4lifeClean.png" alt="ld image">
 </p>

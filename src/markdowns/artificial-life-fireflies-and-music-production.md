@@ -1,3 +1,5 @@
+# Artificial Life, Fireflies, and Music Production
+
 <p align="center">
 <img width= "90%" src="/images/fireflies1.png" alt="ld image">
 </p>

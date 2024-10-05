@@ -1,3 +1,5 @@
+# MIDI Evolution: A Generative Music Device
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/midi_evolution.jpg" alt="ld image">
 </p>
@@ -35,4 +37,4 @@ Actually quite happy how well it turned out. The time of writing is actually a y
 
 Also a considerable amount of downloads on gumroad, which is cool. I like to release these devices for free. It's cool to see other people enjoy it, and I can get my money from other sources,a dn give back to the music community. 
 
-Next version I'll release will instead of making a new midi clip in the MIDI clip viewer, generate notes in runtime, so it will be a nice source of improvisation, or something that you can play along with, and change parameters in realtime. Thinking that could be super powerful, and fun for live gigs. 
+Next version I'll release will instead of making a new midi clip in the MIDI clip viewer, generate notes in runtime, so it will be a nice source of improvisation, or something that you can play along with, and change parameters in realtime. Thinking that could be super powerful, and fun for live gigs.

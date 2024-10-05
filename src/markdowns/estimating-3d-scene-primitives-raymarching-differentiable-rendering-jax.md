@@ -1,3 +1,5 @@
+# Estimating 3D Scene Primitives with Raymarching and Differentiable Rendering in JAX
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/prims2_sq.webp" alt="ld image">
 </p>

@@ -1,3 +1,5 @@
+# Reinforcement Learning Applied to Sculpting
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/rl_header.gif" alt="ld image">
 </p>
@@ -104,7 +106,7 @@ Figure 3. Example of one visual slice in RGB, including three toolsizes of a sph
 
 #### b) Long distance voxel distribution
 
-<img width= "40%" src="https://lh6.googleusercontent.com/iKdhAr3nrsfUmhpVHFu0XIUqOj5qSqNEkuLDvbs6WylfaK1wkwHj8bEkxzWyI-_ojLAvr6S_aJ7klA8kSIucJDaiIlqU077Yy_fxNSamP0NMFfxdgRxQRL_zOsYRrD0QTWBb9hMRjppCXvuzlWuIh7C6Kpn1F71Mp7CeT6y3QjPw63ldrRggy3l57jLxyw" alt="ld image">
+<img width= "40%" src="https://lh6.googleusercontent.com/iKdhAr3nrsfUmhpVHFu0XIUqOj5qSqNEkuLDvbs6WylfaK1wkwHj8bEkxzWyI-_ojLAvr6S_aJ7klA8kSIucJDaiIlqU077Yy_fxNSamP0NMFfxdgRxQRL_zOsYRrD0QTWBb9hMRjppCXvuzlWuIh7C6Kpn1F71Mp7CeT6y3QjPw63ldRggy3l57jLxyw" alt="ld image">
 <img width= "40%" src="https://lh3.googleusercontent.com/WWnmOeeb5Komes8cuF2SYRTIkhBdfzyVeg0NQ5pK6ur3eKTl5B1g0-EIjO5oOlGcOM79_zJoy6bWW7nRHUpTTE1WWCJFIQXM1P8xsn96qFJvu4R1qu8Bc07g-3k6H0PAuEDUcQUwWlyLqkhjVg5PXtIOfCRF5iwPZFyjhnpuH4MoLkT6oTXBXWuxNgn04w" alt="ld image">
 
 Figure 4. Left: The agent’s long-distance sensors: Six pyramid-shapes centred around the agent that each aggregate the ratio of one voxel type compared to the grand total of those voxels. Right: The long distance sensors combined with visual sensors 
@@ -199,7 +201,7 @@ Figure 8. Unity interface example of purely voxels (left), and SDF (right). Each
 
 When an agent is trained, we visually assessed its performance by letting the agent sculpt a target shape of our picking in Unity in inference mode. The interface for that is Unity’s gameview, with 2 cameras (figure 9).
   
-<img width= "90%" src="https://lh6.googleusercontent.com/yPmXayQK-SwvmS9nqM-1ZjIIOokoa_hjWEhgl9-T94HXKeSkV57iZtShHsCri-quVeIMBMTgeK6mv8zNZ_jJe80OWPP2znoaVaa5hie4JOaNSoHNLhvqyoKJ9NHptbv6DNEiKO6nxfarEZiQdHmCuQsKEbKsw-rnk2IkGAJId8MMgspS7D3evJxGZMF65A" alt="ld image">  
+<img width= "90%" src="https://lh6.googleusercontent.com/yPmXayQK-SwvmS9nqM-1ZjIIOokoa_hjWEhgl9-T94HXKeSkV57iZtShHsCri-quVeIMBMTgeK6mv8zNZ_jJe80OWPP2znoaVaa5hie4JOaNSoHNLhvqyoKJ9NHptbv6DNEiKO6njxfarEZiQdHmCuQsKEbKsw-rnk2IkGAJId8MMgspS7D3evJxGZMF65A" alt="ld image">  
 <img width= "90%" src="https://lh6.googleusercontent.com/oDDriuKKhN8U7q3pQiZ6qYPKunAeZ5uXvLdloDomoVRqJmAVyW-JFLDCUne418C6hRb6s2O5RXDYVocaMnfO-gjQOSUMYQIWHIB7HmScEDwj_f_S65rJb85-_IEYj4bk59Q6EbNUC6xhwRSncIi431XNy1zST2NX0APTq2ovUAcgAXmES7DEm-nf3P7IYw" alt="ld image">  
 <img width= "90%" src="https://lh4.googleusercontent.com/tR7PF_8PWmbYG7WyomYpbQ0j8CJyyKQav_veb-tj2eU_MOSpNi1i3eCxeGOKpOrC16Fnwlje6d_PeONmdRUV2TjuD7WfSFmH9hBB0n3FAZyHCscyxcktZODSIPoXG9zretEeNuOwflG-hFUibPV1YpD_gJibbbjNx8ESrZY9GhVCUfa1rBiDf3otWz3Yow" alt="ld image">  
 

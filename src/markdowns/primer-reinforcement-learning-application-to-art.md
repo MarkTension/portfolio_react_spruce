@@ -1,3 +1,5 @@
+# A Primer on Reinforcement Learning and Its Application to Art
+
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/rl_header.gif" alt="ld image">
 </p>

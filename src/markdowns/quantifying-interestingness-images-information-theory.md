@@ -1,4 +1,4 @@
-
+# Quantifying Interestingness in Images Using Information Theory
 
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/information.png" alt="information image">
