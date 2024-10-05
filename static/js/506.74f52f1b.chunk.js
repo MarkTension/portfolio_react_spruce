@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio_react_spruce=self.webpackChunkportfolio_react_spruce||[]).push([[506],{9506:(e,s,t)=>{e.exports=t.p+"static/media/15 Questions music interview on my EP Jurassimo.570649b9f4fdcbde2094.md"}}]);
