@@ -39,5 +39,5 @@ One thing that's particularly cool with this one is that it can receive MIDI inp
 You can [download it from gumroad](https://tensenpark.gumroad.com/l/firefly_synchronizer)
 
 **References**:
-- Firefly-inspired Heartbeat Synchronization in Overlay Networks, Babaoglu et al., 2007. [Link](http://disi.unitn.it/~montreso/pubs/papers/saso07.pdf)
 
+- Firefly-inspired Heartbeat Synchronization in Overlay Networks, Babaoglu et al., 2007. [Link](http://disi.unitn.it/~montreso/pubs/papers/saso07.pdf)

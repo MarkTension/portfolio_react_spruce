@@ -1,6 +1,6 @@
 {
   "name": "portfolio_react_spruce",
-  "homepage": "http://marktension.nl",
+  "homepage": "https://marktension.nl/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest ./build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -t true"
   },
   "eslintConfig": {
     "extends": [

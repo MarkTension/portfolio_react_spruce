@@ -33,21 +33,20 @@ Since an agent needs a lot of training, often the way to go is training it in a 
 
 Nevertheless, RL is certainly used in industry. Some interesting examples are its deployment in:
 
--   Trading. JP Morgan [implemented an RL solution](https://ranko-mosic.medium.com/reinforcement-learning-based-trading-application-at-jp-morgan-chase-f829b8ec54f2) on Wall Street.
--   Industrial robotics. For example the startup [covariant](https://covariant.ai/), and the recent Microsoft-acquired startup [Bonsai](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai?activetab=pivot%3aprimaryr7) for industrial control and calibration systems. Their motto is by the way: build AI without data scientists.
--   [A/B testing](https://medium.com/engineers-optimizely/stats-accelerator-the-when-why-and-how-231ed6213d6d)
--   Facebook’s personalization engine for delivering relevant notifications/suggestions (which released an open source platform for large scale industry application of RL called [Horizon](https://engineering.fb.com/2018/11/01/ml-applications/horizon/)).
+- Trading. JP Morgan [implemented an RL solution](https://ranko-mosic.medium.com/reinforcement-learning-based-trading-application-at-jp-morgan-chase-f829b8ec54f2) on Wall Street.
+- Industrial robotics. For example the startup [covariant](https://covariant.ai/), and the recent Microsoft-acquired startup [Bonsai](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai?activetab=pivot%3aprimaryr7) for industrial control and calibration systems. Their motto is by the way: build AI without data scientists.
+- [A/B testing](https://medium.com/engineers-optimizely/stats-accelerator-the-when-why-and-how-231ed6213d6d)
+- Facebook’s personalization engine for delivering relevant notifications/suggestions (which released an open source platform for large scale industry application of RL called [Horizon](https://engineering.fb.com/2018/11/01/ml-applications/horizon/)).
 
 One of the shortcomings with reinforcement learning is that it isn’t as mature of a field as others. Results are often [not as reproducible](https://ojs.aaai.org/index.php/AAAI/article/view/11694) as would be optimal. Therefore, amongst real life solutions, sometimes other engineering methods are more suitable at this point. One _could_ for instance train a robot with RL, but robot manufacturer Boston Dynamics uses a combination of control theory with a lot of hardcoded balancing systems for their robots, with [great success](https://youtu.be/fn3KWM1kuAw). Same goes for landing a SpaceX’s Falcon 9, or controlling Tesla’s self-driving cars (although Tesla is using something like imitation learning, which is a form of reinforcement learning).
 
 In short, RL is already having some success in industry, but it is comparatively small-scale, and not expected to reach the impact of e.g. supervised learning anytime soon. ML-guru Andrew Ng stated that “the hype around ML is a bit disproportionate to the value that’s delivered today”. See the graph below, and compare with google n-gram graph for the RL hype in literature. In the latter, also notice how deep-RL has made its entrance into literature since ~2014.
 
-
 <p align="center">
 <img width= "40%" src="/images/rlIm1.png" alt="ld image">
 <img width= "40%" src="/images/rlIm2.png" alt="ld image">
 </p>
-  
+
 
 _google n-gram plot of usage of ml-terms in literature over time. Notice how RL gets used more than supervised learning. (Maybe not strange since it’s quite a bit more exciting in my opinion)_
 
@@ -67,7 +66,6 @@ _physarum by Sage Jensen_
 
 In such processes, the designer shifts certain variables, rules, or starting states to calibrate the process, but RL can automate this process. It only needs an environment to design something in, and a reward metric based on certain criteria to evaluate the quality of its results.
 
-  
 **A case study with RL-sculpting at Onformative**
 
 To give an example of applying RL to art/generative design, I’ll cover a personal project I‘ve been doing with colleagues from a Berlin-based digital generative design studio [Onformative](http://onformative.com/).

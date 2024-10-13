@@ -75,7 +75,7 @@ class Landing extends React.Component {
           style={{
             width: "90%",
             textAlign: "left",
-            fontSize: "0.7em",
+            fontSize: "0.8em",
             whiteSpace: "pre-line",
           }}
         >

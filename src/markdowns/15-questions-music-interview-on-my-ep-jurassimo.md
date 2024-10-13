@@ -6,7 +6,6 @@
 
 This interview was originally posted on 15 questions https://15questions.net/interview/tensen-park-production-technology-and-creativity/ with music and images
 
-
 Name: Mark Tensen aka Tensen Park
 
 Nationality: Dutch
@@ -21,7 +20,6 @@ Writings on Music by Steve Reich, which is an interesting collection of essays w
 
 Drumming at the Edge of Magic by the Grateful Dead’s drummer Mickey Heart. The title is already so cool. It’s about drumming and the trance that drum grooves can bring, which reconnects to something ancient, magical and human. It touches on the drum in shamanism, posession cults, and his own life as a drummer. Anyone interested in percussion, drums, or dancing to club music will love reading it I think. Not sure why it is out of print nowadays, but it’s easy to find on eBay.
 
-
 #### What was the first time you were consciously impressed by technology – in and outside of music?
 
 A more conscious moment of really appreciating the complexity and potential of technology was when my friend and I (we must’ve been 9?) found a way to navigate through the Sims installation folder.
@@ -29,7 +27,6 @@ A more conscious moment of really appreciating the complexity and potential of t
 We were browsing its infinite folder structure for a long time and at some point stumbled upon the image/texture files for each sims face. Then we opened it in MS Paint, and replaced it all by a solid-colour background with weird random colourful scribbles. In game we managed to play with these strange Sims, and it was really funny and magical at the same time. The experience made me wonder about how things were made in software, and I didn’t really understand it at all, and it felt so cool that it was so complex and mysterious yet somehow made by humans.
 
 Now I think about it, if music can make me feel that specific way, then I will most definitely like it. Specifically some IDM kind of sounds like Apex Twin or Boards of Canada do that for me.
-
 
 #### Tell me about one or two of your early pieces that you're still proud of (or satisfied with) in terms of production – and why you're content with them.
 
@@ -41,13 +38,11 @@ It was fully made by drawing MIDI patterns, which took quite long, and had many 
 
 It’s kind of a chaotic sequencer, and I later turned it into a Max for Live device called CHAOS // ORDER, which is available for free.
 
-
 #### When it comes to arranging, sound design, performing, composing, etc – what are currently concrete topics and aspects that interest you and where you want to improve or simply challenge yourself?
 
 I’ve been thinking about possible ways to do live performances, and I’m not sure what makes sense yet. I do know that there should be a visual component to it. I’ve been doing a lot of visual work by simulating particle systems on the GPU that react to sounds including for Jurassimo. Beyond sharing them to instagram I’d like to make them expressive enough for a central role in a live performance.
 
-Ideally I’ll be using  use these systems to actually synthesize sounds instead of reacting to sound. I’ve tried to do that before, but that’s always done by sending signals to Ableton to make the sounds there, but it would be so cool to do everything on the GPU. Then you’d see particles move, and hear a really clear mapping to sound.
-
+Ideally I’ll be using use these systems to actually synthesize sounds instead of reacting to sound. I’ve tried to do that before, but that’s always done by sending signals to Ableton to make the sounds there, but it would be so cool to do everything on the GPU. Then you’d see particles move, and hear a really clear mapping to sound.
 
 #### Do you keep up with recent developments in terms of gear and software? If not, why not? If so, what are you looking for?
 
@@ -56,7 +51,6 @@ A little bit, but mostly in terms of software. The hardware I buy tends to get o
 Also I’ll probably end up selling my Analog Rytm to fully focus on it’s older Machine-drum brother. I just love it when these things already have an association to a specific time, and get combined in new ways. My Alesis quadraverb is also a good example I guess, with sounds really characteristic to the Warp era.
 
 For now I’ll probably settle with my current gear for a while to really learn how to use it well. I like what Autechre once said in an interview, something along the lines of that they want to really learn and master their gear to go beyond the initial sounds.
-
 
 #### Jean-Michel Jarre maintained that, despite the advances in virtual technology, we are still "analogue animals made out of blood and bones who need buttons and knobs to touch.” In how far is this statement true or false for your own music?
 
@@ -68,20 +62,17 @@ And quite the opposite of using buttons and knobs would be my generative approac
 
 I’m not saying most of my work is generative though. It’s still mainly direct interactions with the arrangement, but it’s slowly going towards more improvisation, and ideally there’s a generative components in there to add my own signature.
 
-
 #### Late producer SOPHIE said: “You have the possibility with electronic music to generate any texture, and any sound. So why would any musician want to limit themselves?” What's your take on that?
 
 Definitely agree. With the only side-note that I do need to set limitations within a project to be able to make choices, otherwise I’ll get overwhelmed with all of the options.
 
 But that could already be imagining a strange place where a certain set of sounds is possible maybe, or be inspired by a song, and use sounds that kind of match that vibe.
 
-
 #### What does your own way of working with sound look like? Do you find using presets lazy?
 
 I don’t think using presets is lazy. To me presets are carefully engineered settings that showcase the idiosyncratic sounds available from the instrument. I like that. It’s like how the engineers have intended their gear to sound. And it’s also what people recognise, which is nice and grounding. The pads samples I use are often not too altered, because they’re so reminiscent of my childhood and the 90s/00s or computer games, and I like to take myself to that time because it’s so associative.
 
 But mostly my music is not so grounding, and I rarely use drum or percussion sounds as they are. And also when using a presets or pads sounds I don’t find myself using it unedited throughout the entire song length. I like the idea of morphing the sound into some direction over time. To only, briefly, give that full preset sound, and then obscure it again.
-
 
 #### What were some of your most positive collaboration experiences? How did this "human element" enhance your solo approach? Did you record via filesharing or in the same room and if so, what did the recording process look like?
 
@@ -97,19 +88,17 @@ For instance, with “Dub Doob,” to the constant low rumbling tom sound we add
 
 For that song I also asked him to make a rework of it (“Dub Doob - (lmnop rework)”), which turned out insanely cool. It has his magic added to it that you can also hear in his ‘lmnop’ work. I hope to do more of those works together in the future.
 
-
 #### From the earliest sketches to the finished piece, tell me about the production process for your current release, please.
 
-During the creation of my current release I listened a lot to artists from labels like West Mineral Ltd and Peak Oil. Specifically Pontiac Streator, Ulla Straus, Topdown Dialectic, and Purelink, and on top of that during my work I listened to a bunch of Dub techno just to focus. 
+During the creation of my current release I listened a lot to artists from labels like West Mineral Ltd and Peak Oil. Specifically Pontiac Streator, Ulla Straus, Topdown Dialectic, and Purelink, and on top of that during my work I listened to a bunch of Dub techno just to focus.
 
 My work tends to be really influenced by the songs I listen to. Often just one song can carry a lot of meaning or imagination for me and I feel inspired enough to want to add to that world in some way by writing my own songs.
 
-What I normally do when making a new track that is kind of new or inspired on a new sound, is naming a  it a specific way. When new tracks are made that are quite similar I give it the same name but just add _2 or _3 etc. After a couple of songs like that, the concept starts to gain some critical mass, and then naturally all my new songs gravitate towards that project and I try to finish it.
+What I normally do when making a new track that is kind of new or inspired on a new sound, is naming a it a specific way. When new tracks are made that are quite similar I give it the same name but just add \_2 or \_3 etc. After a couple of songs like that, the concept starts to gain some critical mass, and then naturally all my new songs gravitate towards that project and I try to finish it.
 
 Lately I’ve been going really fancy and kept a table with all the works per project: Writing down how finished they are, a small description, a rating and some notes on what they still need. I tend to discard 80% of them, and when I think they’re as good as done I contact Casper and we finish it and mix it together.
 
 I usually have a bunch of these concepts running in parallel.
-
 
 #### What are examples of production tools/instruments that you bought for a specific purpose?
 
@@ -121,7 +110,6 @@ Another piece of gear I bought for a specific purpose is the Elektron analog Ryt
 
 All tracks on Jurassimo have some Analog Rytm material in it. I particularly liked its filter envelopes and and applying LFOs on the filters, which you hear a lot on the EP.
 
-
 #### To some, the advent of AI and 'intelligent' composing tools offers potential for machines to contribute to the creative process. What are your hopes, fears, expectations and possible concrete plans in this regard?
 
 Few creatives, including me, like AI text prompting. Text just doesn’t give this artistic fun control over an iterative process. On this point I will 100% agree with the earlier quote by Jean-Michel Jarre. Text does not have knobs and does not give quick and precise feedback.
@@ -131,7 +119,6 @@ I do think AI will become an integral part of our DAWs, but in a fun way, and I�
 When programming since the advent of AI-pair programming for instance, my daily flow is now collaborative with AI; I tend to type a line of code, which the AI already tries to finish by guessing different variations on how it should proceed or be followed up. Sometimes that’s surprising in good ways that I wouldn’t come up with myself, and I learn something. Sometimes it’s exactly a couple of lines that I thought of already and I select it and it just removes the tediousness for me.
 
 In DAWs I think this will certainly be the future: You do a few steps/clicks, and it might come up already with some variations of what to do next in you style (since it can record your previous interactions with the software). I think that could be a lot of fun, since you can get surprised easily, get fun results, and automate some tedious parts of the production process.
-
 
 #### Have you used AI or generative music tools for your own productions? If so, in which way and what did they add?
 

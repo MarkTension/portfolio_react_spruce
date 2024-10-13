@@ -5,7 +5,7 @@ import OnePost from "./onepost.js";
 const Blog = ({ slug }) => {
   return (
     <div id="blogHome" style={{ alignContent: "left", marginTop: "10%" }}>
-      {slug ? <OnePost slug={slug} /> : <AllPosts />}
+      {slug === "blog" || !slug ? <AllPosts /> : <OnePost slug={slug} />}
     </div>
   );
 };

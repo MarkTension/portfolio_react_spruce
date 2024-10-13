@@ -22,19 +22,18 @@ class Music extends React.Component {
 
           <Item
             style={{
-              fontSize: "1.2em",
+              fontSize: "0.9em",
               textAlign: "left",
               margin: "5%",
               color: "white",
             }}
           >
-            Nothing can move me to interesting mental spaces like music can. I
-            love this quote by Aldous Huxley:
+            I love this quote by Aldous Huxley:
           </Item>
 
           <Item
             style={{
-              fontSize: "1.2em",
+              fontSize: "0.9em",
               textAlign: "left",
               paddingLeft: "15%",
               paddingRight: "15%",
@@ -49,7 +48,7 @@ class Music extends React.Component {
 
           <Item
             style={{
-              fontSize: "1.2em",
+              fontSize: "0.9em",
               textAlign: "left",
               margin: "5%",
               color: "white",
@@ -57,8 +56,11 @@ class Music extends React.Component {
           >
             Listen to it{" "}
             <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=maU5dB7ZRSy00-uf5L6i2A">
-              on spotify
-            </a>
+              Spotify
+            </a>{" "}
+            or Soundcloud
+            <a href="https://soundcloud.com/tensen-park"> Soundcloud</a> or on{" "}
+            <a href="https://tensenpark.bandcamp.com/"> Bandcamp</a>
           </Item>
         </section>
       </div>

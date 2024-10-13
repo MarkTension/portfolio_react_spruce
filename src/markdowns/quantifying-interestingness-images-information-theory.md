@@ -14,10 +14,9 @@ In terms of complexity, systems can find themselves in complete chaos (high comp
 
 For our topic of interest, generative design, quantifying criticality in images could therefore serve as a predictor for interestingness. This metric can be used to e.g.:
 
-*
-Generating thousands of images with your generator-program, scoring each image‘s criticality. Then select images with the highest scores.
-Or take it further, by sweeping the entire state-space of settings of your program, generating thousands of unique outputs per state. Then, later you’ll know which states generate the most interesting patterns, and which states could be ignored.
-*
+- Generating thousands of images with your generator-program, scoring each image‘s criticality. Then select images with the highest scores.
+  Or take it further, by sweeping the entire state-space of settings of your program, generating thousands of unique outputs per state. Then, later you’ll know which states generate the most interesting patterns, and which states could be ignored.
+-
 
 #### The Algorithm
 

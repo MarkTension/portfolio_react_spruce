@@ -5,18 +5,22 @@
 </p>
 
 #### Complexity of nature, and simulations
+
 I'm interested in the emergence of intelligence, and replicating the beautiful complexity of nature. Often, these systems have a level of organization that the whole might be considered a lifeform, rather than the agents/units that make it up. I try to explore this blurry line of classification, and this time with a firefly synchronization model.
 
 #### Firefly synchronization
-Firefly-synchronization is a biological phenomenon in which multiple oscillators/fireflies follow a periodic cycle of flashing and rest. They oscillate. What's interesting is when there are multiple oscillators/agents that are coupled with another, i.e. they react on others' firing by synchronizing it. 
+
+Firefly-synchronization is a biological phenomenon in which multiple oscillators/fireflies follow a periodic cycle of flashing and rest. They oscillate. What's interesting is when there are multiple oscillators/agents that are coupled with another, i.e. they react on others' firing by synchronizing it.
 In a simulation this comes down to starting with many oscillators in different phases, but over time, their phases synchronize with another because of the adaptation algorithm. The scientific term for this mechanism is [pulse-coupled oscillators](https://link.springer.com/referenceworkentry/10.1007/978-1-4614-7320-6_269-1). Pulse coupling comes down to the pulses sent by oscillators (when they fire) which makes them adapt to eachother. Not only fireflies, but more biological systems tend to show pulse-coupling. [Neural oscillations](https://pubmed.ncbi.nlm.nih.gov/12527010/) are much studied in particular, and are hypothesized to be important for the brain's computation.
 
 #### My experiments with fireflies and swarming
-I came to firefly synchronization because I'm a big fan of using complex biological systems for sound synthesis. I like to 'hear' the dynamics of these system to make them even more alive in a way. Growing unique sounds out of a swarm that emerges makes it a more compelling "creature". It gives it more of an identity.  In the short term I'm applying these systems for music generation: The not-so-random emergent or nature-like characteristics of the simulation make interesting textures.
+
+I came to firefly synchronization because I'm a big fan of using complex biological systems for sound synthesis. I like to 'hear' the dynamics of these system to make them even more alive in a way. Growing unique sounds out of a swarm that emerges makes it a more compelling "creature". It gives it more of an identity. In the short term I'm applying these systems for music generation: The not-so-random emergent or nature-like characteristics of the simulation make interesting textures.
 
 Additionally, with this work I'd like to explore data-sonification as a means for discovery, and discover if there's an argument to be made for using sound for 'perceiving' patterns instead of just visuals.
 
 #### Setting the stage with a Python coding experiment
+
 The paper I used for reference was called [Firefly-inspired Heartbeat Synchronization in Overlay Networks](http://www.cs.unibo.it/babaoglu/courses/cas06-07/papers/pdf/fireflies.pdf). The main algorithm described is the Ermentraut algorithm, which adjusts the firing frequency of each agent depending on firing of its neighbours. implementing this in Python. I successfully did this in python, making a graph with the networkX library to arbitrarily connect agents with another. It looked like so:
 
 <p align="center">
@@ -36,6 +40,7 @@ Also you can plot how the phases converge of all the oscillators. In the graph b
 </p>
 
 #### Replicating this in Unity
+
 The plan was to not use an arbitrary connection graph between fireflies, but instead use a 2D map in which the fireflies move around like birds do.
 To do add this visual bird-flocking component to it, I replicated it in Unity. Unity is excellent, since it gives easy access to the computer's graphics card, which allows visualizing huge simulations in real-time. For the movement part of the fireflies, I already made a boids flocking simulation, which I attached the synchronization algorithm to. This was made during a course I followed on using the GPU with computeshaders to do large scale biological simulations; Credits to @arsiliath.
 
@@ -49,11 +54,13 @@ Then I made the simulation part more efficient on the GPU so it could simulate m
 https://www.youtube.com/shorts/ir6t19wP5BU
 
 #### So what's this weird black n white figure ?
+
 For experimentation purposes I like plotting what happens in the simulation over time. It helps when you see in one glance how patterns change over time when developing it. Additionally, it helps with compare different parameter settings of the system, and see how strong the synchronization effect was. The figures below are made this way:
 
 Each firefly is one pixel on the y-axis, and a little white dot is plotted when it fires. I expected that there would first be noise, and later on lines instead of noise would appear because the firesflies would fire in synchrony.
 
 I forgot that the sorting algorithm was continually shuffling the agent buffer based on their positions, ,which made the graph accidentally take the location of the agent into account. The result shows the fireflies flocking together as well, and moving through the space. Here's some results that show the effect:
+
 <p align="center">
 <img width= "90%" src="/images/fireflies1.png" alt="ld image">
 <img width= "90%" src="/images/fireflies3.png" alt="ld image">

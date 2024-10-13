@@ -53,39 +53,46 @@ const AllPosts = () => {
 
   useEffect(() => {
     const fetchAllMarkdowns = async () => {
-      const markdowns = await Promise.all(posts.map(post => fetchMarkdownSlugs(post.key)));
+      const markdowns = await Promise.all(
+        posts.map((post) => fetchMarkdownSlugs(post.key)),
+      );
       setAllMarkdowns(markdowns);
     };
     fetchAllMarkdowns();
   }, []);
 
   useEffect(() => {
-    setFilteredPosts(posts.filter(post => post['tags'].includes(tagFilter) || tagFilter == null));
+    setFilteredPosts(
+      posts.filter(
+        (post) => post["tags"].includes(tagFilter) || tagFilter == null,
+      ),
+    );
   }, [tagFilter]);
 
   const handleTagChangeClick = (taggValue) => {
     setTagFilter(taggValue);
-  }
+  };
 
   const fetchMarkdownSlugs = async (slug) => {
     try {
-      const text = await import(`../markdowns/${slug}.md`).then(res => res.default);
-      let blogContent = text.split("</p>")[1].split(" ").slice(0, 30).join(" ")
-      blogContent = blogContent.replace(/<[^>]*>?/gm, '');
-      blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, '$1');
-      blogContent = blogContent.replace(/#/g, '');
-      return blogContent
-    }
-    catch (error) {
-      console.error('Error fetching markdown: ', error);
+      const text = await import(`../markdowns/${slug}.md`).then(
+        (res) => res.default,
+      );
+      let blogContent = text.split("</p>")[1].split(" ").slice(0, 30).join(" ");
+      blogContent = blogContent.replace(/<[^>]*>?/gm, "");
+      blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, "$1");
+      blogContent = blogContent.replace(/#/g, "");
+      return blogContent;
+    } catch (error) {
+      console.error("Error fetching markdown: ", error);
     }
   };
 
   const onlyUnique = (value, index, self) => {
     return self.indexOf(value) === index;
-  }
+  };
 
-  const allTags = posts.flatMap(post => post['tags']).filter(onlyUnique);
+  const allTags = posts.flatMap((post) => post["tags"]).filter(onlyUnique);
 
   return (
     <div>
@@ -95,35 +102,58 @@ const AllPosts = () => {
         flexWrap="wrap"
         width="100%"
         style={{
-        marginBottom: "0%",
-        paddingBottom: "0px",
-        justifyContent: "flex-start",
-        }}>
+          marginBottom: "0%",
+          paddingBottom: "0px",
+          justifyContent: "flex-start",
+        }}
+      >
         <Item style={{ marginTop: "5%", color: "lightgrey" }}>
-          <i>It's important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption</i> - David Bohm
+          <i>
+            It's important to get it into words, because otherwise you miss it -
+            the brain is set up to hide the assumption
+          </i>{" "}
+          - David Bohm
         </Item>
-        <div style={{ display: "flex", alignItems: "center", marginTop: "10%" }}>
-          <Item style={{ fontSize: "1.0em", whiteSpace: "nowrap", marginRight: "20px" }}><b>Filter topics</b></Item>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", flex: 1 }}>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "10%" }}
+        >
+          <Item
+            style={{
+              fontSize: "1.0em",
+              whiteSpace: "nowrap",
+              marginRight: "20px",
+            }}
+          >
+            <b>Filter topics</b>
+          </Item>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              flex: 1,
+            }}
+          >
             {allTags.map((tagg, index) => (
-              <TaggButton 
+              <TaggButton
                 key={index}
-                style={{ 
+                style={{
                   color: tagFilter === tagg ? "darkred" : "white",
                   marginRight: "1px",
-                  marginBottom: "1px"
-                }} 
-                onClick={() => handleTagChangeClick(tagg)}>
+                  marginBottom: "1px",
+                }}
+                onClick={() => handleTagChangeClick(tagg)}
+              >
                 {tagg}
               </TaggButton>
             ))}
-            <TaggButton 
-              style={{ 
+            <TaggButton
+              style={{
                 color: tagFilter === null ? "orange" : "white",
                 marginRight: "1px",
-                marginBottom: "1px"
-              }} 
-              onClick={() => handleTagChangeClick(null)} 
+                marginBottom: "1px",
+              }}
+              onClick={() => handleTagChangeClick(null)}
             >
               All Posts
             </TaggButton>
@@ -131,22 +161,64 @@ const AllPosts = () => {
         </div>
 
         {filteredPosts.map((post, index) => (
-          <Box key={post.title} id={"itemsBlog" + index} p={[2]} m={[0]} width={[1, 1]} style={{ textAlign: "left", display: "flex", flexDirection: "row" }}>
-            <Link href={`/blog/${post.key}`} style={{...linkStyle, display: "flex", width: "100%"}}>
-              <Item style={{ color: "grey", fontSize: "0.6em", width: "15%", marginRight: "2%" }}>
-                {post['date']}
+          <Box
+            key={post.title}
+            id={"itemsBlog" + index}
+            p={[2]}
+            m={[0]}
+            width={[1, 1]}
+            style={{ textAlign: "left", display: "flex", flexDirection: "row" }}
+          >
+            <Link
+              href={`/blog/${post.key}`}
+              style={{ ...linkStyle, display: "flex", width: "100%" }}
+            >
+              <Item
+                style={{
+                  color: "grey",
+                  fontSize: "0.6em",
+                  width: "15%",
+                  marginRight: "2%",
+                }}
+              >
+                {post["date"]}
               </Item>
-              <div style={{ width: "30%", marginRight: "2%", marginTop: "0.6em" }}>
-                <div style={{ fontWeight: "", fontSize: "0.8em", color: "white", textAlign: "left", fontFamily: "Arial" }}>
-                  {post['title']}
+              <div
+                style={{ width: "30%", marginRight: "2%", marginTop: "0.6em" }}
+              >
+                <div
+                  style={{
+                    fontWeight: "",
+                    fontSize: "0.8em",
+                    color: "white",
+                    textAlign: "left",
+                    fontFamily: "Arial",
+                  }}
+                >
+                  {post["title"]}
                 </div>
-                <Item style={{ color: "orange", fontSize: "0.6em", fontWeight: 'bold' }}>
-                  {post['tags'].map((tag, index) => (tag + (index < post['tags'].length - 1 ? ", " : "")))}
+                <Item
+                  style={{
+                    color: "orange",
+                    fontSize: "0.6em",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {post["tags"].map(
+                    (tag, index) =>
+                      tag + (index < post["tags"].length - 1 ? ", " : ""),
+                  )}
                 </Item>
               </div>
               <div style={{ width: "46%" }}>
-                <Item style={{ fontSize: "0.6em", color: "lightgrey", fontFamily: "Arial" }}>
-                  {allMarkdowns[posts.findIndex(p => p.key === post.key)]} 
+                <Item
+                  style={{
+                    fontSize: "0.6em",
+                    color: "lightgrey",
+                    fontFamily: "Arial",
+                  }}
+                >
+                  {allMarkdowns[posts.findIndex((p) => p.key === post.key)]}
                   <span style={{ color: "grey" }}> ... continue reading</span>
                 </Item>
               </div>

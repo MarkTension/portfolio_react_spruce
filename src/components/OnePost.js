@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
+import ReactGA from "react-ga4";
 
 export default function OnePost({ slug }) {
   const [postContent, setPostContent] = useState("");
   useEffect(() => {
     if (slug) {
-      console.log(slug);
       import(`../markdowns/${decodeURIComponent(slug)}.md`)
         .then((res) => {
           setPostContent(res.default);
@@ -15,17 +15,39 @@ export default function OnePost({ slug }) {
   }, [slug]);
 
   const handleHomeClick = () => {
-    console.log("home");
-    // make nextJS redirect ot home
     window.location.href = "/";
-};
+  };
+
+  useEffect(() => {
+    if (slug) {
+      const startTime = new Date();
+
+      import(`../markdowns/${decodeURIComponent(slug)}.md`)
+        .then((res) => {
+          setPostContent(res.default);
+          ReactGA.send({ hitType: "pageview", page: `/blog/${slug}` });
+        })
+        .catch((err) => console.log(err));
+
+      return () => {
+        const endTime = new Date();
+        const timeSpent = (endTime - startTime) / 1000; // in seconds
+        ReactGA.event({
+          category: "Blog",
+          action: "Time on Page",
+          label: slug,
+          value: Math.round(timeSpent),
+        });
+      };
+    }
+  }, [slug]);
 
   return (
     <div
       id="onepost"
       style={{
         background: "black",
-        width: "80vw",
+        width: "100%",
         maxWidth: "1200px",
         paddingBottom: "5em",
         paddingTop: "2em",
