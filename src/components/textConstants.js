@@ -51,8 +51,8 @@ const HoverText = styled.h3`
 const Title = styled.h3`
   font-size: 1.7em;
   text-align: center;
-  color: black;
-  background-color: grey;
+  color: lightgray;
+  background-color: #262626;
 `;
 
 const Button = styled.button`

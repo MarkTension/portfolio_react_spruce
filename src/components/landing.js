@@ -4,28 +4,23 @@ import Image from "next/image";
 import ff0 from "../images/firefliesPoster.webp";
 import ff1 from "../images/fireflies1.webp";
 import ff4 from "../images/fireflies2.webp";
+import nca from "../images/nca_swarming.webp";
 import { Item } from "./textConstants";
-import media from "../media";
 import posts from "../markdowns/index.json";
 
 const Name = styled.h3`
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: darkred;
-  text-align: left;
-
-  ${media.small`
-        font-size: 1.8em;
-        top: 10%;;
-    `};
+  text-align: right;
+  align-self: center; /* Aligns the Name vertically centered */
 `;
+
 class Landing extends React.Component {
   constructor(props) {
     super(props);
-    // add a state var that is called this.state.titles
     this.state = { titles: [] };
   }
 
-  // put all titles in the state
   componentDidMount() {
     this.state.titles = posts.files.map((post) => {
       return post.title;
@@ -38,55 +33,51 @@ class Landing extends React.Component {
       <div
         id="landing"
         style={{
-          marginLeft: "8%",
+          marginLeft: "auto",
+          marginRight: "auto",
           marginTop: "0%",
-          alignContent: "left",
-          width: "100%",
+          alignContent: "center",
+          maxWidth: "800px",
         }}
       >
         <div
           style={{
-            position: "relative",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
+            justifyContent: "center",
+            gap: "10px",
           }}
         >
           <Image src={ff0.src} alt="Logo" width={230} height={230} />
           <Image src={ff1.src} alt="Logo" width={230} height={230} />
+          <Image src={nca.src} alt="Logo" width={230} height={230} />
           <Image src={ff4.src} alt="Logo" width={230} height={230} />
-          <Name
+        </div>
+        <div style={{ display: "flex"}}>
+          <div style={{ width: "35%" }}>
+            <Name style={{ cursor: "pointer"}} onClick={() => window.location.href = "/"}>
+              Mark Tensen
+            </Name>
+          </div>
+          <Item
             style={{
-              position: "absolute",
-              top: "40%",
-              left: "15%",
-              transform: "translate(-50%, -50%)",
-              zIndex: 1,
-              backgroundColor: "rgba(0, 0, 0, 0.4)",
-              padding: "10px",
-              borderRadius: "5px",
+              width: "100%",
+              textAlign: "left",
+              marginLeft: "2em",
+              fontSize: "0.8em",
+              whiteSpace: "pre-line",
             }}
           >
-            Mark Tensen
-          </Name>
+            On finding synergies in programming, music, AI, artificial life, and
+            design
+            <p> </p>
+            Sharing WIP on <a href="https://twitter.com/Mark_Tension">X</a>,
+            visuals on{" "}
+            <a href="https://www.instagram.com/tensen.park/">instagram</a>, and
+            music on <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>. Or check my <a href="/cv.pdf">CV</a>
+          </Item>
         </div>
-
-        <Item
-          style={{
-            width: "90%",
-            textAlign: "left",
-            fontSize: "0.8em",
-            whiteSpace: "pre-line",
-          }}
-        >
-          On finding synergies in programming, music, AI, artificial life, and
-          design
-          <p> </p>
-          Sharing WIP on <a href="https://twitter.com/Mark_Tension">X</a>,
-          visuals on{" "}
-          <a href="https://www.instagram.com/tensen.park/">instagram</a>, and
-          music on <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>.
-        </Item>
       </div>
     );
   }

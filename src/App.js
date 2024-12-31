@@ -20,20 +20,21 @@ function App({ slug }) {
         />
       </Helmet>
 
-      <div className="App" style={{ background: "yellow" }}>
+      <div className="App">
         <header className="App-header">
           <div
             id="home"
             style={{
-              marginLeft: "15%",
-              marginRight: "15%",
-              padding: "0%",
+              margin: '0 auto',
+              padding: '0 1rem',
+              maxWidth: '1200px',
+              width: '100%',
               background: "black",
             }}
           >
             <div
               style={{
-                height: "100vh",
+                minHeight: "100vh",
                 background: "black",
                 paddingTop: "0%",
                 marginTop: "0%",
@@ -41,7 +42,6 @@ function App({ slug }) {
             >
               <Home slug={slug} />
             </div>
-            {/* // add the music component header */}
           </div>
         </header>
       </div>

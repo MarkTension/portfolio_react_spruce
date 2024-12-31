@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Box, Flex } from "rebass";
-import { ItemSmall, Title } from "./textConstants";
 import Link from "next/link";
 import indexData from "../markdowns/index.json";
 import styled from "styled-components";
+import Gallery from "./gallery.js";
 
 const linkStyle = {
   fontSize: "0.8em",
@@ -34,22 +34,14 @@ const TaggButton = styled.button`
     size: 2em;
 `;
 
-// Get all the paths for the blog posts based on the key in index.json
-export async function getStaticPaths() {
-  const paths = indexData.files.map((post) => ({
-    params: { slug: post.key },
-  }));
 
-  return {
-    paths,
-    fallback: false, // Return 404 if not found
-  };
-}
 const AllPosts = () => {
   let posts = indexData.files;
   const [tagFilter, setTagFilter] = useState(null);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [allMarkdowns, setAllMarkdowns] = useState([]);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [hoveredImage, setHoveredImage] = useState(false);
 
   useEffect(() => {
     const fetchAllMarkdowns = async () => {
@@ -75,15 +67,23 @@ const AllPosts = () => {
 
   const fetchMarkdownSlugs = async (slug) => {
     try {
-      const text = await import(`../markdowns/${slug}.md`).then(
+      let blogContent = await import(`../markdowns/${slug}.md`).then(
         (res) => res.default,
       );
-      let blogContent = text.split("</p>")[1].split(" ").slice(0, 30).join(" ");
+      if (blogContent.includes("<p>")) {
+        blogContent = blogContent.split("</p>")[1]
+      } 
+      blogContent=blogContent.split(" ").slice(0, 30).join(" ");
       blogContent = blogContent.replace(/<[^>]*>?/gm, "");
       blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, "$1");
       blogContent = blogContent.replace(/#/g, "");
       return blogContent;
+
     } catch (error) {
+      const text = await import(`../markdowns/${slug}.md`).then(
+        (res) => res.default,
+      );
+      console.error(text);
       console.error("Error fetching markdown: ", error);
     }
   };
@@ -96,7 +96,28 @@ const AllPosts = () => {
 
   return (
     <div>
-      <Title>Blog Posts</Title>
+      {hoveredImage && (
+        <div style={{
+          position: 'fixed',
+          right: '20px',
+          top: '20%',
+          zIndex: 1000,
+          pointerEvents: 'none',
+        }}>
+          <img 
+            src={`/images/${hoveredImage}`}
+            alt=""
+            style={{
+              maxWidth: '300px',
+              maxHeight: '300px',
+              border: '1px solid white',
+              borderRadius: '4px',
+              objectFit: 'contain'
+            }}
+          />
+        </div>
+      )}
+
       <Flex
         id="itemsBlog"
         flexWrap="wrap"
@@ -114,6 +135,9 @@ const AllPosts = () => {
           </i>{" "}
           - David Bohm
         </Item>
+        
+        {/* <Gallery /> */}
+
         <div
           style={{ display: "flex", alignItems: "center", marginTop: "10%" }}
         >
@@ -170,6 +194,12 @@ const AllPosts = () => {
             style={{ textAlign: "left", display: "flex", flexDirection: "row" }}
           >
             <Link
+              onMouseEnter={() => {
+                setHoveredImage(post.img);
+              }}
+              onMouseLeave={() => {
+                setHoveredImage(null);
+              }}
               href={`/blog/${post.key}`}
               style={{ ...linkStyle, display: "flex", width: "100%" }}
             >

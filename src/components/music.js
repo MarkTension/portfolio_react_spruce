@@ -1,5 +1,9 @@
 import React from "react";
 import { Item, Title } from "./textConstants";
+import fbs from "../images/album_fbs.jpg";
+import jurassimo from "../images/album_jurassimo.jpg";
+import mostly_angels from "../images/album_mostly_angels.jpg";
+import swc from "../images/album_swc.jpg";
 
 class Music extends React.Component {
   constructor(props) {
@@ -22,35 +26,38 @@ class Music extends React.Component {
 
           <Item
             style={{
-              fontSize: "0.9em",
-              textAlign: "left",
-              margin: "5%",
-              color: "white",
-            }}
-          >
-            I love this quote by Aldous Huxley:
-          </Item>
-
-          <Item
-            style={{
-              fontSize: "0.9em",
-              textAlign: "left",
+              fontSize: "0.8em",
+              textAlign: "center",
               paddingLeft: "15%",
               paddingRight: "15%",
-              color: "red",
+              color: "white",
             }}
           >
             <i>
               After silence, that which comes nearest to expressing the
-              inexpressible is music.
+              inexpressible is music. - Aldous Huxley
             </i>
           </Item>
 
+          <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px" }}>
+            <a href="https://tensenpark.bandcamp.com/album/jurassimo">
+              <img src={jurassimo.src} alt="Album - Jurassimo" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/futurebeats">
+              <img src={fbs.src} alt="Album - FBS" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/mostly-angels">
+              <img src={mostly_angels.src} alt="Album - Mostly Angels" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/spring-walk-collection">
+              <img src={swc.src} alt="Album - SWC" style={{ width: "150px", height: "150px" }} />
+            </a>
+          </div>
+
           <Item
             style={{
-              fontSize: "0.9em",
-              textAlign: "left",
-              margin: "5%",
+              fontSize: "0.7em",
+              textAlign: "center",
               color: "white",
             }}
           >

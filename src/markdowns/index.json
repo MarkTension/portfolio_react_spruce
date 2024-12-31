@@ -1,20 +1,58 @@
 {
   "files": [
     {
+      "title": "Neural Cellular Automata Swarming",
+      "image": "",
+      "key": "neural-cellular-automata-swarming",
+      "slug": "",
+      "tags": ["generative-art", "artificial-life", "complex-systems"],
+      "date": "2024-12",
+      "img": "nca_swarming.webp"
+    },
+    {
+      "title": "Reality-questioning Ideas before bed",
+      "image": "",
+      "key": "reality-questioning-ideas-before-bed",
+      "slug": "reality-questioning-ideas-before-bed",
+      "tags": ["reflections"],
+      "date": "2024-11",
+      "img": "nca_swarming_2.webp"
+    },
+    {
+      "title": "Two collective-intelligence models for the internet: the Rhizome and the Borg",
+      "image": "",
+      "key": "rhizome-vs-borg",
+      "slug": "two models for the internet: the rhizome and the borg",
+      "tags": ["reflections"],
+      "date": "2024-11",
+      "img": "boidsJelly.webp"
+    },
+    {
+      "title": "Hierarchical BOIDS, Game of Life, recursion and a model for consciousness",
+      "image": "",
+      "key": "hierarchical-boids-game-of-life-and-consciousness",
+      "slug": "boids game of life recursion",
+      "tags": ["complex-systems", "reflections", "generative-art", "artificial-life"],
+      "date": "2024-11",
+      "img": "boidsCircle.webp"
+    },
+    {
       "title": "Interview on music and technology with Griff Fulton on Delayed.com",
       "image": "",
       "key": "tensen-park-delayed-interview",
       "slug": "intverview with delayed on jurassimo",
       "tags": ["music", "reflections", "generative-art"],
-      "date": "2024-10"
+      "date": "2024-10",
+      "img": "blogHeaders/jurassimo.jpg"
     },
     {
       "title": "Order of magnitude more boids while keeping global dynamics",
       "image": "",
       "key": "order-of-magnitude-boids",
       "slug": "Order of magnitude more boids while keeping global dynamics",
-      "tags": ["graphics", "complex-systems", "generative-art"],
-      "date": "2024-09"
+      "tags": ["graphics", "complex-systems", "generative-art", "artificial-life"],
+      "date": "2024-09",
+      "img": "blogHeaders/more_boids.webp"
     },
     {
       "title": "15 Questions music interview on my EP Jurassimo",
@@ -22,7 +60,8 @@
       "key": "15-questions-music-interview-on-my-ep-jurassimo",
       "slug": "15 Questions music interview on production technology and creativity",
       "tags": ["reflections", "music", "generative-art"],
-      "date": "2024-09"
+      "date": "2024-09",
+      "img": "blogHeaders/jurassimo.jpg"
     },
     {
       "title": "More raw websites please",
@@ -38,7 +77,8 @@
       "key": "estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax",
       "slug": "At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.",
       "tags": ["graphics", "AI", "generative-art"],
-      "date": "2024-07"
+      "date": "2024-07",
+      "img": "primitives_fer_gif.gif"
     },
     {
       "title": "MaxMSP learnings",
@@ -46,7 +86,8 @@
       "key": "maxmsp-learnings",
       "slug": "It is hella hard, but here's some lessons to be a little more effective.",
       "tags": ["music", "generative-art", "reflections"],
-      "date": "2024-06"
+      "date": "2024-06",
+      "img": "blogHeaders/max4lifeClean.png"
     },
     {
       "title": "MIDI Evolution - a generative music device",
@@ -70,7 +111,8 @@
       "key": "reinforcement-learning-applied-to-sculpting",
       "slug": "How we tought an AI to do 3D sculpting with reinforcement learning",
       "tags": ["AI", "Reinforcement-Learning", "generative-art"],
-      "date": "2022-11"
+      "date": "2022-11",
+      "img": "blogHeaders/sculptgif.gif"
     },
     {
       "title": "Firefly Synchronizer, a chaotic system Max4Live device",
@@ -78,7 +120,8 @@
       "key": "firefly-synchronizer-chaotic-system-max4live-device",
       "slug": "I decided to build a native music device for Ableton, based on chaotic firefly synchronization simulations",
       "tags": ["MaxMSP", "music", "complex-systems", "generative-art"],
-      "date": "2022-10"
+      "date": "2022-10",
+      "img": "blogHeaders/header_firefly_device.webp"
     },
     {
       "title": "Artificial life, fireflies and music production",
@@ -89,9 +132,11 @@
         "Unity3D",
         "computer-graphics",
         "complex-systems",
-        "generative-art"
+        "generative-art",
+        "artificial-life"
       ],
-      "date": "2022-9"
+      "date": "2022-9",
+      "img": "fireflies1aa.webp"
     },
 
     {
@@ -108,7 +153,9 @@
       "key": "primer-reinforcement-learning-application-to-art",
       "slug": "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention",
       "tags": ["AI", "Reinforcement-Learning", "generative-art"],
-      "date": "2021-1"
+      "date": "2021-1",
+      "img": "blogHeaders/sculptgif.gif"
+
     }
   ]
 }

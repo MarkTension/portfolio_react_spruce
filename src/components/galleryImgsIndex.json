@@ -1,0 +1,18 @@
+
+{
+  "images": [
+   
+    {
+      "link": "reinforcement-learning-applied-to-sculpting",
+      "file": "header_physarum.webp"
+    },
+    {
+      "link": "reinforcement-learning-applied-to-sculpting",
+      "file": "header_ai_sculpting.jpg"
+    },
+    {
+      "link": "estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax",
+      "file": "blogHeaders/prims2_sq.webp"
+    }
+  ]
+}
