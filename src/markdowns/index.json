@@ -1,6 +1,24 @@
 {
   "files": [
     {
+      "title": "My iOS app Walk Walk Walk, and a more authentic internet",
+      "image": "",
+      "key": "a-more-authentic-internet-and-my-walk-walk-app",
+      "slug": "",
+      "tags": ["generative-art", "reflections"],
+      "date": "2025-01",
+      "img": "congi.webp"
+    },
+    {
+      "title": "Can I use generative AI for animation and amplification of hand-drawn sprites",
+      "image": "",
+      "key": "automating-2d-artwork-creation-and-animation",
+      "slug": "",
+      "tags": ["generative-art", "reflections"],
+      "date": "2025-01",
+      "img": "congi.webp"
+    },
+    {
       "title": "Neural Cellular Automata Swarming",
       "image": "",
       "key": "neural-cellular-automata-swarming",
