@@ -28,8 +28,10 @@ As a sidenote: the narrative of AI taking the artistic stuff away from creatives
 <img width= "50%" src="/images/walkwalk1.PNG" alt="congi im">
 </p>
 
-### Walk Walk Walk as an example
-The iOS app I've developed called Walk Walk Walk is more a creative outlet and artistic endeavor than it is its logic.
+### WalkWalkWalk as an example
+The app: https://apps.apple.com/nl/app/walkwalkwalk/id6742700740?l=en-GB
+
+The iOS app I've developed called WalkWalkWalk is more a creative outlet and artistic endeavor than it is its logic.
 It's a Tamagotchi-like app that allows you to set goals for walking outside daily, and counting your steps.
 
 It started when my partner and me had Congi, the family dog, over for a month. 

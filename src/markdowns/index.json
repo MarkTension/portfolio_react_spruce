@@ -1,6 +1,24 @@
 {
   "files": [
     {
+      "title": "Detecting NaNs in WebGPU",
+      "image": "",
+      "key": "detecting-nans-on-webgpu",
+      "slug": "",
+      "tags": ["webgpu", "programming"],
+      "date": "2025-04",
+      "img": "nca_swarming.webp"
+    },
+    {
+      "title": "-ignore- privacy policy -ignore-",
+      "image": "",
+      "key": "privacy-policy",
+      "slug": "",
+      "tags": [""],
+      "date": "2025-01",
+      "img": "congi.webp"
+    },
+    {
       "title": "My iOS app Walk Walk Walk, and a more authentic internet",
       "image": "",
       "key": "a-more-authentic-internet-and-my-walk-walk-app",
@@ -14,7 +32,7 @@
       "image": "",
       "key": "automating-2d-artwork-creation-and-animation",
       "slug": "",
-      "tags": ["generative-art", "reflections"],
+      "tags": ["reflections"],
       "date": "2025-01",
       "img": "congi.webp"
     },
