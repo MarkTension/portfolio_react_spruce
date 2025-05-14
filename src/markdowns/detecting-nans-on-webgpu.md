@@ -20,7 +20,7 @@ That gives a nice hacky way to at least detect a nan at critical places.
 You could e.g. write e.g. a red pixel in the corner of your texture, something that you'll see.
 
 ```
-fn if_nan_write_red_alert(x: f32) -> f32 {
+fn if_nan_write_red_alert(x: f32) -> void {
   let highVal = 1000000.0;
   let x2 = min(x, highVal);
   if (x2 == highVal){
@@ -29,4 +29,4 @@ fn if_nan_write_red_alert(x: f32) -> f32 {
 }
 ```
 
-It's al pretty hacky, but it's also pretty useful when debugging.
+It's al pretty hacky, but it's useful when debugging.
