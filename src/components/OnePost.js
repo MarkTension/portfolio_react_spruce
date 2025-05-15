@@ -39,7 +39,7 @@ export default function OnePost({ slug }) {
 
             const currentPost = posts.files.find(post => post.key === slug);
             if (currentPost) {
-                const currentPostTags = currentPost.tags.slice(0, 2);
+                const currentPostTags = currentPost.tags.slice(0, 3);
                 const related = posts.files
                     .filter(post =>
                         post.key !== slug && // Don't include current post
@@ -138,6 +138,7 @@ export default function OnePost({ slug }) {
                     {relatedPosts.length > 0 && (
                         <div style={{
                             width: '150px',
+                            maxWidth: '110px',
                             right: '20px',
                             top: '20px',
                             display: window.innerWidth > 800 ? 'block' : 'none',

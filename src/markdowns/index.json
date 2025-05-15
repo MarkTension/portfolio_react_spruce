@@ -7,7 +7,8 @@
             "slug": "",
             "tags": [
                 "webgpu",
-                "programming"
+                "programming",
+                "gpugpu"
             ],
             "date": "2025-05",
             "img": "nca_swarming_2.webp"
@@ -19,7 +20,8 @@
             "slug": "",
             "tags": [
                 "webgpu",
-                "programming"
+                "programming",
+                "gpugpu"
             ],
             "date": "2025-04",
             "img": "nca_swarming.webp"
@@ -55,7 +57,8 @@
             "tags": [
                 "generative-art",
                 "artificial-life",
-                "complex-systems"
+                "complex-systems",
+                "gpugpu"
             ],
             "date": "2024-12",
             "img": "nca_swarming.webp"
@@ -91,7 +94,8 @@
                 "complex-systems",
                 "reflections",
                 "generative-art",
-                "artificial-life"
+                "artificial-life",
+                "gpugpu"
             ],
             "date": "2024-11",
             "img": "boidsCircle.webp"
@@ -118,7 +122,8 @@
                 "graphics",
                 "complex-systems",
                 "generative-art",
-                "artificial-life"
+                "artificial-life",
+                "gpugpu"
             ],
             "date": "2024-09",
             "img": "blogHeaders/more_boids.webp"
@@ -154,7 +159,8 @@
             "tags": [
                 "graphics",
                 "AI",
-                "generative-art"
+                "generative-art",
+                "gpugpu"
             ],
             "date": "2024-07",
             "img": "primitives_fer_gif.gif"
