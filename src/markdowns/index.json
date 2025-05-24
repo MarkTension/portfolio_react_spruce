@@ -1,6 +1,19 @@
 {
     "files": [
         {
+            "title": "Emergence vs 'unexpected' emergence in artificial life",
+            "image": "",
+            "key": "unexpected-emergence-in-artificial-life",
+            "slug": "",
+            "tags": [
+                "artificial-life",
+                "complex-systems",
+                "reflections"
+            ],
+            "date": "2025-05",
+            "img": "nca_swarming.webp"
+        },
+        {
             "title": "My favorite WebGPU random function",
             "image": "",
             "key": "my_favorite_wgsl_random_func_so_far",
