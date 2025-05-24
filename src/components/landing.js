@@ -65,7 +65,7 @@ class Landing extends React.Component {
                             width: "100%",
                             textAlign: "left",
                             marginLeft: "2em",
-                            fontSize: "0.8em",
+                            fontSize: "0.6em",
                             whiteSpace: "pre-line",
                         }}
                     >

@@ -134,7 +134,7 @@ const AllPosts = () => {
                     justifyContent: "flex-start",
                 }}
             >
-                <Item style={{ marginTop: "5%", color: "lightgrey" }}>
+                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
                     <i>
                         It's important to get it into words, because otherwise you miss it -
                         the brain is set up to hide the assumption
@@ -142,10 +142,8 @@ const AllPosts = () => {
                     - David Bohm
                 </Item>
 
-                {/* <Gallery /> */}
-
                 <div
-                    style={{ display: "flex", alignItems: "center", marginTop: "10%" }}
+                    style={{ display: "flex", alignItems: "center", marginTop: "30%" }}
                 >
                     <Item
                         style={{
@@ -189,6 +187,9 @@ const AllPosts = () => {
                         </TaggButton>
                     </div>
                 </div>
+
+                <br />
+
 
                 {filteredPosts.map((post, index) => (
                     <Box
