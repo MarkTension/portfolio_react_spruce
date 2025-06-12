@@ -1,5 +1,9 @@
 import React from "react";
 import { Item, Title } from "./textConstants";
+import fbs from "../images/album_fbs.jpg";
+import jurassimo from "../images/album_jurassimo.jpg";
+import mostly_angels from "../images/album_mostly_angels.jpg";
+import swc from "../images/album_swc.jpg";
 
 class Music extends React.Component {
   constructor(props) {
@@ -8,102 +12,66 @@ class Music extends React.Component {
 
   render() {
     return (
-      <div id="music" style = {{height:"100vh"}}>
-        <section  style={{backgroundColor:"black",height:"100vh",marginLeft:"0%", marginTop:"0%",backgroundSize: "100%"}}>
-          <Title>
-            Music - Tensen Park
-          </Title>  
+      <div id="music" style={{ height: "100vh" }}>
+        <section
+          style={{
+            backgroundColor: "black",
+            height: "100vh",
+            marginLeft: "0%",
+            marginTop: "0%",
+            backgroundSize: "100%",
+          }}
+        >
+          <Title>Music - Tensen Park</Title>
 
-          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"white"}}>
-          Nothing can move me to interesting mental spaces like music can. I love this quote by Aldous Huxley:
-          </Item>
-          
-          <Item style={{fontSize: "1.2em",textAlign:"left",paddingLeft:"15%",paddingRight:"15%", color:"red"}}>
-          <i>After silence, that which comes nearest to expressing the inexpressible is music.</i>
+          <Item
+            style={{
+              fontSize: "0.8em",
+              textAlign: "center",
+              paddingLeft: "15%",
+              paddingRight: "15%",
+              color: "white",
+            }}
+          >
+            <i>
+              After silence, that which comes nearest to expressing the
+              inexpressible is music. - Aldous Huxley
+            </i>
           </Item>
 
-          <Item style={{fontSize: "1.2em",textAlign:"left",margin:"5%", color:"white"}}>
-          Listen to it <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=maU5dB7ZRSy00-uf5L6i2A">on spotify</a>
+          <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px" }}>
+            <a href="https://tensenpark.bandcamp.com/album/jurassimo">
+              <img src={jurassimo.src} alt="Album - Jurassimo" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/futurebeats">
+              <img src={fbs.src} alt="Album - FBS" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/mostly-angels">
+              <img src={mostly_angels.src} alt="Album - Mostly Angels" style={{ width: "150px", height: "150px" }} />
+            </a>
+            <a href="https://tensenpark.bandcamp.com/album/spring-walk-collection">
+              <img src={swc.src} alt="Album - SWC" style={{ width: "150px", height: "150px" }} />
+            </a>
+          </div>
+
+          <Item
+            style={{
+              fontSize: "0.7em",
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            Listen to it{" "}
+            <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=maU5dB7ZRSy00-uf5L6i2A">
+              Spotify
+            </a>{" "}
+            or Soundcloud
+            <a href="https://soundcloud.com/tensen-park"> Soundcloud</a> or on{" "}
+            <a href="https://tensenpark.bandcamp.com/"> Bandcamp</a>
           </Item>
-          
-         </section>
+        </section>
       </div>
     );
   }
 }
-export default Music
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from "react";
-// import {Item, Title} from "./textConstants"
-// import { SocialIcon } from 'react-social-icons';
-// import SpotifyPlayer from 'react-spotify-player';
-
-
-
-
-// const Music = props => {
-//     return (<div id="about">
-//             <Title>
-//             Music
-//             </Title>
-        
-//             <div id="about" style = {{height:"100vh",width:"50vw",marginLeft:"10%"}}>
-                
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-//                   My music compositions are released as Tensen Park. 
-//                   I'm explore a balance between chaos and order using computational/ai methods and old analog equipment. 
-//                   For more on my music endeavors, please visit my label Garden Walk Records. 
-//                 </Item>
-                
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-//                 We release experiments in sound. This can be from coding endeavors, to glitching old analog equipment.</Item>
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-//                 This label provides artists with a platform to keep a record of research, and further integrate and cultivate these into beautiful music.
-//                 </Item> 
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-//                 Much like plants in a garden, we display our releases, and hopefully polinate and cross-over into new directions. </Item>      
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-//                 Aside from experimenting, this is about making beautiful music. The vision and approach is what unites the artists
-//                 </Item> 
-//                 <SpotifyPlayer
-//                     uri="spotify:playlist:0Jj7QATvomwaJVjAK5N465"
-//                     size={{
-//                         width: '50%',
-//                         height: 100,
-//                       }}
-//                     view={'list'}
-//                     theme={'white'}
-//                     /><SpotifyPlayer
-//                     uri="spotify:album:2kkAIsp8sb5DvzggHGt4pl"
-//                     size={{
-//                         width: '50%',
-//                         height: 100,
-//                       }}
-//                     view={'coverart'}
-//                     theme={'white'}
-//                     />
-//                 <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-
-//                 </Item> 
-//                 <SocialIcon width="100%" url="https://www.instagram.com/gardenwalk.records/" bgColor="white"/>
-                
-//             </div>
-
-
-            
-//         </div>
-//         );
-//   };
-//   export default Music
+export default Music;

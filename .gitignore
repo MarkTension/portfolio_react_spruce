@@ -24,3 +24,7 @@ yarn-error.log*
 
 
 .history
+
+# ...
+.next
+next-env.d.ts

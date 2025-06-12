@@ -3,7 +3,7 @@ import { css } from "styled-components";
 const sizes = {
   small: 639,
   medium: 1047,
-  large: 1048
+  large: 1048,
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
