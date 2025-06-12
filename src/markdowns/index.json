@@ -1,6 +1,19 @@
 {
     "files": [
         {
+            "title": "On Minimizing WGSL / WebGPU texture plumbing",
+            "image": "",
+            "key": "minimizing-wgsl-texture-plumbing",
+            "slug": "",
+            "tags": [
+                "webgpu",
+                "programming",
+                "gpugpu"
+            ],
+            "date": "2025-06",
+            "img": "nca_swarming.webp"
+        },
+        {
             "title": "Emergence vs 'unexpected' emergence in artificial life",
             "image": "",
             "key": "unexpected-emergence-in-artificial-life",
