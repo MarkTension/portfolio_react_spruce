@@ -143,16 +143,17 @@ const AllPosts = () => {
                 </Item>
 
                 <div
-                    style={{ display: "flex", alignItems: "center", marginTop: "30%" }}
+                    style={{ display: "flex", alignItems: "center", marginTop: "60px" }}
                 >
                     <Item
                         style={{
                             fontSize: "1.0em",
                             whiteSpace: "nowrap",
                             marginRight: "20px",
+                            marginBottom: "60px",
                         }}
                     >
-                        <b>Filter topics</b>
+                        <b>Topics</b>
                     </Item>
                     <div
                         style={{

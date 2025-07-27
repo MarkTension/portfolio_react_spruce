@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Mark Tensen's Blog]]></title>
+        <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
+        <link>https://marktension.nl</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 27 Jul 2025 13:30:25 GMT</lastBuildDate>
+        <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 27 Jul 2025 13:30:25 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <ttl>60</ttl>
+        <item>
+            <title><![CDATA[On Minimizing WGSL / WebGPU texture plumbing]]></title>
+            <description><![CDATA[On Minimizing WGSL / WebGPU texture plumbing]]></description>
+            <link>https://marktension.nl/blog/minimizing-wgsl-texture-plumbing</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/minimizing-wgsl-texture-plumbing</guid>
+            <category><![CDATA[webgpu]]></category>
+            <category><![CDATA[programming]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Emergence vs 'unexpected' emergence in artificial life]]></title>
+            <description><![CDATA[Emergence vs 'unexpected' emergence in artificial life]]></description>
+            <link>https://marktension.nl/blog/unexpected-emergence-in-artificial-life</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/unexpected-emergence-in-artificial-life</guid>
+            <category><![CDATA[artificial-life]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[My favorite WebGPU random function]]></title>
+            <description><![CDATA[My favorite WebGPU random function]]></description>
+            <link>https://marktension.nl/blog/my_favorite_wgsl_random_func_so_far</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/my_favorite_wgsl_random_func_so_far</guid>
+            <category><![CDATA[webgpu]]></category>
+            <category><![CDATA[programming]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Detecting NaNs in WebGPU]]></title>
+            <description><![CDATA[Detecting NaNs in WebGPU]]></description>
+            <link>https://marktension.nl/blog/detecting-nans-on-webgpu</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/detecting-nans-on-webgpu</guid>
+            <category><![CDATA[webgpu]]></category>
+            <category><![CDATA[programming]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[My iOS app Walk Walk Walk, and a more authentic internet]]></title>
+            <description><![CDATA[My iOS app Walk Walk Walk, and a more authentic internet]]></description>
+            <link>https://marktension.nl/blog/a-more-authentic-internet-and-my-walk-walk-app</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/a-more-authentic-internet-and-my-walk-walk-app</guid>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Can I use generative AI for animation and amplification of hand-drawn sprites]]></title>
+            <description><![CDATA[Can I use generative AI for animation and amplification of hand-drawn sprites]]></description>
+            <link>https://marktension.nl/blog/automating-2d-artwork-creation-and-animation</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/automating-2d-artwork-creation-and-animation</guid>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Neural Cellular Automata Swarming]]></title>
+            <description><![CDATA[Neural Cellular Automata Swarming]]></description>
+            <link>https://marktension.nl/blog/neural-cellular-automata-swarming</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/neural-cellular-automata-swarming</guid>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[artificial-life]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Reality-questioning Ideas before bed]]></title>
+            <description><![CDATA[reality-questioning-ideas-before-bed]]></description>
+            <link>https://marktension.nl/blog/reality-questioning-ideas-before-bed</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/reality-questioning-ideas-before-bed</guid>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Two collective-intelligence models for the internet: the Rhizome and the Borg]]></title>
+            <description><![CDATA[two models for the internet: the rhizome and the borg]]></description>
+            <link>https://marktension.nl/blog/rhizome-vs-borg</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/rhizome-vs-borg</guid>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hierarchical BOIDS, Game of Life, recursion and a model for consciousness]]></title>
+            <description><![CDATA[boids game of life recursion]]></description>
+            <link>https://marktension.nl/blog/hierarchical-boids-game-of-life-and-consciousness</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/hierarchical-boids-game-of-life-and-consciousness</guid>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[reflections]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[artificial-life]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Interview on music and technology with Griff Fulton on Delayed.com]]></title>
+            <description><![CDATA[intverview with delayed on jurassimo]]></description>
+            <link>https://marktension.nl/blog/tensen-park-delayed-interview</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/tensen-park-delayed-interview</guid>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[reflections]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Order of magnitude more boids while keeping global dynamics]]></title>
+            <description><![CDATA[Order of magnitude more boids while keeping global dynamics]]></description>
+            <link>https://marktension.nl/blog/order-of-magnitude-boids</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/order-of-magnitude-boids</guid>
+            <category><![CDATA[graphics]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[artificial-life]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[15 Questions music interview on my EP Jurassimo]]></title>
+            <description><![CDATA[15 Questions music interview on production technology and creativity]]></description>
+            <link>https://marktension.nl/blog/15-questions-music-interview-on-my-ep-jurassimo</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/15-questions-music-interview-on-my-ep-jurassimo</guid>
+            <category><![CDATA[reflections]]></category>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[More raw websites please]]></title>
+            <description><![CDATA[In defense of ugly yet personal websites.]]></description>
+            <link>https://marktension.nl/blog/more-raw-websites-please</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/more-raw-websites-please</guid>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX]]></title>
+            <description><![CDATA[At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.]]></description>
+            <link>https://marktension.nl/blog/estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax</guid>
+            <category><![CDATA[graphics]]></category>
+            <category><![CDATA[AI]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[gpugpu]]></category>
+            <pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[MaxMSP learnings]]></title>
+            <description><![CDATA[It is hella hard, but here's some lessons to be a little more effective.]]></description>
+            <link>https://marktension.nl/blog/maxmsp-learnings</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/maxmsp-learnings</guid>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[MIDI Evolution - a generative music device]]></title>
+            <description><![CDATA[Making music using evolutionary algorithms, and a bit of chaos]]></description>
+            <link>https://marktension.nl/blog/midi-evolution-generative-music-device</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/midi-evolution-generative-music-device</guid>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Tensen Park - Reflections on my music]]></title>
+            <description><![CDATA[Making conscious what I've been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.]]></description>
+            <link>https://marktension.nl/blog/tensen-park-reflections-on-my-music</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/tensen-park-reflections-on-my-music</guid>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[reflections]]></category>
+            <pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship]]></title>
+            <description><![CDATA[How we tought an AI to do 3D sculpting with reinforcement learning]]></description>
+            <link>https://marktension.nl/blog/reinforcement-learning-applied-to-sculpting</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/reinforcement-learning-applied-to-sculpting</guid>
+            <category><![CDATA[AI]]></category>
+            <category><![CDATA[Reinforcement-Learning]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Firefly Synchronizer, a chaotic system Max4Live device]]></title>
+            <description><![CDATA[I decided to build a native music device for Ableton, based on chaotic firefly synchronization simulations]]></description>
+            <link>https://marktension.nl/blog/firefly-synchronizer-chaotic-system-max4live-device</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/firefly-synchronizer-chaotic-system-max4live-device</guid>
+            <category><![CDATA[MaxMSP]]></category>
+            <category><![CDATA[music]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Artificial life, fireflies and music production]]></title>
+            <description><![CDATA[Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.]]></description>
+            <link>https://marktension.nl/blog/artificial-life-fireflies-and-music-production</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/artificial-life-fireflies-and-music-production</guid>
+            <category><![CDATA[Unity3D]]></category>
+            <category><![CDATA[computer-graphics]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[artificial-life]]></category>
+            <pubDate>Wed, 31 Aug 2022 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Quantifying interestingness in images using information theory]]></title>
+            <description><![CDATA[On finding ways to automate discovery of interesting generative design.]]></description>
+            <link>https://marktension.nl/blog/quantifying-interestingness-images-information-theory</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/quantifying-interestingness-images-information-theory</guid>
+            <category><![CDATA[information-theory]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <category><![CDATA[complex-systems]]></category>
+            <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A primer on Reinforcement Learning, and its application to art]]></title>
+            <description><![CDATA[In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention]]></description>
+            <link>https://marktension.nl/blog/primer-reinforcement-learning-application-to-art</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/primer-reinforcement-learning-application-to-art</guid>
+            <category><![CDATA[AI]]></category>
+            <category><![CDATA[Reinforcement-Learning]]></category>
+            <category><![CDATA[generative-art]]></category>
+            <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

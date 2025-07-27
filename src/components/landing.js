@@ -72,10 +72,8 @@ class Landing extends React.Component {
                         On finding synergies in programming, music, AI, artificial life, and
                         design
                         <p> </p>
-                        Sharing WIP on <a href="https://twitter.com/Mark_Tension">X</a>,
-                        visuals on{" "}
-                        <a href="https://www.instagram.com/tensen.park/">instagram</a>, and
-                        music on <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>. Or check my <a href="/cv.pdf">CV</a>
+                        <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>, <a href="/cv.pdf">CV</a>
+
                     </Item>
                 </div>
             </div>
