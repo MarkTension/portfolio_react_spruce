@@ -4,11 +4,20 @@
         <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
         <link>https://marktension.nl</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 27 Jul 2025 17:00:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Jul 2025 08:55:41 GMT</lastBuildDate>
         <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 27 Jul 2025 17:00:41 GMT</pubDate>
+        <pubDate>Mon, 28 Jul 2025 08:55:41 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <ttl>60</ttl>
+        <item>
+            <title><![CDATA[Diffusion Model Reading List]]></title>
+            <description><![CDATA[Diffusion Model Reading List]]></description>
+            <link>https://marktension.nl/blog/essential-diffusion-model-reading-list</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/essential-diffusion-model-reading-list</guid>
+            <category><![CDATA[ML]]></category>
+            <category><![CDATA[diffusion-models]]></category>
+            <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[On Minimizing WGSL / WebGPU texture plumbing]]></title>
             <description><![CDATA[On Minimizing WGSL / WebGPU texture plumbing]]></description>
@@ -151,7 +160,7 @@
             <link>https://marktension.nl/blog/estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax</link>
             <guid isPermaLink="true">https://marktension.nl/blog/estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax</guid>
             <category><![CDATA[graphics]]></category>
-            <category><![CDATA[AI]]></category>
+            <category><![CDATA[ML]]></category>
             <category><![CDATA[generative-art]]></category>
             <category><![CDATA[gpugpu]]></category>
             <pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
@@ -190,7 +199,7 @@
             <description><![CDATA[How we tought an AI to do 3D sculpting with reinforcement learning]]></description>
             <link>https://marktension.nl/blog/reinforcement-learning-applied-to-sculpting</link>
             <guid isPermaLink="true">https://marktension.nl/blog/reinforcement-learning-applied-to-sculpting</guid>
-            <category><![CDATA[AI]]></category>
+            <category><![CDATA[ML]]></category>
             <category><![CDATA[Reinforcement-Learning]]></category>
             <category><![CDATA[generative-art]]></category>
             <pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate>
@@ -233,7 +242,7 @@
             <description><![CDATA[In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention]]></description>
             <link>https://marktension.nl/blog/primer-reinforcement-learning-application-to-art</link>
             <guid isPermaLink="true">https://marktension.nl/blog/primer-reinforcement-learning-application-to-art</guid>
-            <category><![CDATA[AI]]></category>
+            <category><![CDATA[ML]]></category>
             <category><![CDATA[Reinforcement-Learning]]></category>
             <category><![CDATA[generative-art]]></category>
             <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
