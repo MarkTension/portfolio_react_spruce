@@ -197,17 +197,19 @@ const AllPosts = () => {
                                 {tagg}
                             </TaggButton>
                         ))}
-                        <TaggButton
-                            style={{
-                                color: tagFilter === null ? "orange" : "white",
-                                marginRight: "1px",
-                                marginBottom: "1px",
-                            }}
-                            onClick={() => handleTagChangeClick(null)}
-                        >
-                            All Posts
-                        </TaggButton>
                     </div>
+                </div>
+                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                    <TaggButton
+                        style={{
+                            color: tagFilter === null ? "orange" : "white",
+                            marginRight: "1px",
+                            marginBottom: "1px",
+                        }}
+                        onClick={() => handleTagChangeClick(null)}
+                    >
+                        All Posts
+                    </TaggButton>
                 </div>
                 <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
                     <i>
