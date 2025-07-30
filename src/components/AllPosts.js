@@ -156,6 +156,8 @@ const AllPosts = () => {
                     marginBottom: "0%",
                     paddingBottom: "0px",
                     justifyContent: "flex-start",
+                    maxWidth: "100%",
+                    overflow: "hidden",
                 }}
             >
 
@@ -178,6 +180,8 @@ const AllPosts = () => {
                             flexWrap: "wrap",
                             alignItems: "center",
                             flex: 1,
+                            maxWidth: "100%",
+                            overflow: "hidden",
                         }}
                     >
                         {allTags.map((tagg, index) => (
@@ -225,7 +229,7 @@ const AllPosts = () => {
                                 p={[2]}
                                 m={[0]}
                                 width={[1, 1]}
-                                style={{ textAlign: "left", display: "flex", flexDirection: "row" }}
+                                style={{ textAlign: "left", display: "flex", flexDirection: "row", maxWidth: "100%", overflow: "hidden" }}
                             >
                                 <Link
                                     onMouseEnter={() => {
@@ -235,7 +239,7 @@ const AllPosts = () => {
                                         setHoveredImage(null);
                                     }}
                                     href={`/blog/${post.key}`}
-                                    style={{ ...linkStyle, display: "flex", width: "100%" }}
+                                    style={{ ...linkStyle, display: "flex", width: "100%", maxWidth: "100%", overflow: "hidden" }}
                                 >
                                     {/* <Item
                                         style={{
@@ -248,7 +252,7 @@ const AllPosts = () => {
                                         {post["date"]}
                                     </Item> */}
                                     <div
-                                        style={{ width: "50%", marginRight: "2%", marginTop: "0.6em" }}
+                                        style={{ width: "50%", marginRight: "2%", marginTop: "0.6em", minWidth: "0", flexShrink: 0 }}
                                     >
                                         <div
                                             style={{
@@ -274,7 +278,7 @@ const AllPosts = () => {
                                             )}
                                         </Item>
                                     </div>
-                                    <div style={{ width: "46%" }}>
+                                    <div style={{ width: "46%", minWidth: "0", overflow: "hidden" }}>
                                         <Item
                                             style={{
                                                 fontSize: "0.6em",

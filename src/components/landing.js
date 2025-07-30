@@ -21,10 +21,14 @@ const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   
   @media (max-width: 768px) {
     gap: 5px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -69,6 +73,9 @@ class Landing extends React.Component {
                     marginTop: "0%",
                     alignContent: "center",
                     maxWidth: "800px",
+                    width: "100%",
+                    padding: "0 1rem",
+                    boxSizing: "border-box",
                 }}
             >
                 <ImageContainer>
@@ -77,8 +84,8 @@ class Landing extends React.Component {
                     <Image src={nca.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff4.src} alt="Logo" width={imageSize} height={imageSize} />
                 </ImageContainer>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                    <div style={{ width: "35%" }}>
+                <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%" }}>
+                    <div style={{ width: "35%", minWidth: "0", flexShrink: 0 }}>
                         <Name style={{ cursor: "pointer" }} onClick={() => window.location.href = "/"}>
                             Mark Tensen
                         </Name>
@@ -90,6 +97,8 @@ class Landing extends React.Component {
                             marginLeft: "2em",
                             fontSize: "0.6em",
                             whiteSpace: "pre-line",
+                            minWidth: "0",
+                            wordWrap: "break-word",
                         }}
                     >
                         On finding synergies in programming, music, AI, artificial life, and
