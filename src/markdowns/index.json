@@ -1,6 +1,18 @@
 {
     "files": [
         {
+            "title": "Blogs I like",
+            "image": "",
+            "key": "blogs-i-like",
+            "slug": "",
+            "tags": [
+                "ML",
+                "diffusion-models",
+                "meta"
+            ],
+            "date": "2025-07"
+        },
+        {
             "title": "On Minimizing WGSL / WebGPU texture plumbing",
             "image": "",
             "key": "minimizing-wgsl-texture-plumbing",
@@ -184,7 +196,7 @@
             "slug": "At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.",
             "tags": [
                 "graphics",
-                "AI",
+                "ML",
                 "generative-art",
                 "gpugpu"
             ],
@@ -233,7 +245,7 @@
             "key": "reinforcement-learning-applied-to-sculpting",
             "slug": "How we tought an AI to do 3D sculpting with reinforcement learning",
             "tags": [
-                "AI",
+                "ML",
                 "Reinforcement-Learning",
                 "generative-art"
             ],
@@ -287,7 +299,7 @@
             "key": "primer-reinforcement-learning-application-to-art",
             "slug": "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention",
             "tags": [
-                "AI",
+                "ML",
                 "Reinforcement-Learning",
                 "generative-art"
             ],

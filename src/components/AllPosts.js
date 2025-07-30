@@ -3,7 +3,6 @@ import { Box, Flex } from "rebass";
 import Link from "next/link";
 import indexData from "../markdowns/index.json";
 import styled from "styled-components";
-import Gallery from "./gallery.js";
 
 const linkStyle = {
     fontSize: "0.8em",
@@ -34,13 +33,21 @@ const TaggButton = styled.button`
     size: 2em;
 `;
 
+const YearHeader = styled.h2`
+    font-size: 1.2em;
+    color: #ccc;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    font-weight: 300;
+    width: 100%;
+`;
 
 const AllPosts = () => {
     let posts = indexData.files;
     const [tagFilter, setTagFilter] = useState(null);
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [allMarkdowns, setAllMarkdowns] = useState([]);
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [hoveredImage, setHoveredImage] = useState(false);
 
     useEffect(() => {
@@ -100,6 +107,23 @@ const AllPosts = () => {
 
     const allTags = posts.flatMap((post) => post["tags"]).filter(onlyUnique);
 
+    // Group posts by year and sort by year (high to low)
+    const groupPostsByYear = (posts) => {
+        const grouped = {};
+        posts.forEach(post => {
+            const year = post.date.split('-')[0]; // Extract year from date string
+            if (!grouped[year]) {
+                grouped[year] = [];
+            }
+            grouped[year].push(post);
+        });
+        
+        // Sort years in descending order and return as array of [year, posts] pairs
+        return Object.entries(grouped).sort((a, b) => b[0] - a[0]);
+    };
+
+    const postsByYear = groupPostsByYear(filteredPosts);
+
     return (
         <div>
             {hoveredImage && (
@@ -134,13 +158,6 @@ const AllPosts = () => {
                     justifyContent: "flex-start",
                 }}
             >
-                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
-                    <i>
-                        It's important to get it into words, because otherwise you miss it -
-                        the brain is set up to hide the assumption
-                    </i>{" "}
-                    - David Bohm
-                </Item>
 
                 <div
                     style={{ display: "flex", alignItems: "center", marginTop: "60px" }}
@@ -167,7 +184,7 @@ const AllPosts = () => {
                             <TaggButton
                                 key={index}
                                 style={{
-                                    color: tagFilter === tagg ? "darkred" : "white",
+                                    color: tagFilter === tagg ? "red" : "white",
                                     marginRight: "1px",
                                     marginBottom: "1px",
                                 }}
@@ -188,80 +205,91 @@ const AllPosts = () => {
                         </TaggButton>
                     </div>
                 </div>
+                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
+                    <i>
+                        It's important to get it into words, because otherwise you miss it -
+                        the brain is set up to hide the assumption
+                    </i>{" "}
+                    - David Bohm
+                </Item>
 
                 <br />
 
-
-                {filteredPosts.map((post, index) => (
-                    <Box
-                        key={post.title}
-                        id={"itemsBlog" + index}
-                        p={[2]}
-                        m={[0]}
-                        width={[1, 1]}
-                        style={{ textAlign: "left", display: "flex", flexDirection: "row" }}
-                    >
-                        <Link
-                            onMouseEnter={() => {
-                                setHoveredImage(post.img);
-                            }}
-                            onMouseLeave={() => {
-                                setHoveredImage(null);
-                            }}
-                            href={`/blog/${post.key}`}
-                            style={{ ...linkStyle, display: "flex", width: "100%" }}
-                        >
-                            <Item
-                                style={{
-                                    color: "grey",
-                                    fontSize: "0.6em",
-                                    width: "15%",
-                                    marginRight: "2%",
-                                }}
+                {postsByYear.map(([year, yearPosts]) => (
+                    <React.Fragment key={year}>
+                        <YearHeader>{year}</YearHeader>
+                        {yearPosts.map((post, index) => (
+                            <Box
+                                key={post.title}
+                                id={"itemsBlog" + index}
+                                p={[2]}
+                                m={[0]}
+                                width={[1, 1]}
+                                style={{ textAlign: "left", display: "flex", flexDirection: "row" }}
                             >
-                                {post["date"]}
-                            </Item>
-                            <div
-                                style={{ width: "30%", marginRight: "2%", marginTop: "0.6em" }}
-                            >
-                                <div
-                                    style={{
-                                        fontWeight: "",
-                                        fontSize: "0.8em",
-                                        color: "white",
-                                        textAlign: "left",
-                                        fontFamily: "Arial",
+                                <Link
+                                    onMouseEnter={() => {
+                                        setHoveredImage(post.img);
                                     }}
-                                >
-                                    {post["title"]}
-                                </div>
-                                <Item
-                                    style={{
-                                        color: "orange",
-                                        fontSize: "0.6em",
-                                        fontWeight: "bold",
+                                    onMouseLeave={() => {
+                                        setHoveredImage(null);
                                     }}
+                                    href={`/blog/${post.key}`}
+                                    style={{ ...linkStyle, display: "flex", width: "100%" }}
                                 >
-                                    {post["tags"].map(
-                                        (tag, index) =>
-                                            tag + (index < post["tags"].length - 1 ? ", " : ""),
-                                    )}
-                                </Item>
-                            </div>
-                            <div style={{ width: "46%" }}>
-                                <Item
-                                    style={{
-                                        fontSize: "0.6em",
-                                        color: "lightgrey",
-                                        fontFamily: "Arial",
-                                    }}
-                                >
-                                    {allMarkdowns[posts.findIndex((p) => p.key === post.key)]}
-                                    <span style={{ color: "grey" }}> ... continue reading</span>
-                                </Item>
-                            </div>
-                        </Link>
-                    </Box>
+                                    {/* <Item
+                                        style={{
+                                            color: "grey",
+                                            fontSize: "0.6em",
+                                            width: "15%",
+                                            marginRight: "2%",
+                                        }}
+                                    >
+                                        {post["date"]}
+                                    </Item> */}
+                                    <div
+                                        style={{ width: "50%", marginRight: "2%", marginTop: "0.6em" }}
+                                    >
+                                        <div
+                                            style={{
+                                                fontWeight: "",
+                                                fontSize: "0.8em",
+                                                color: "white",
+                                                textAlign: "left",
+                                                fontFamily: "Arial",
+                                            }}
+                                        >
+                                            {post["title"]}
+                                        </div>
+                                        <Item
+                                            style={{
+                                                color: "orange",
+                                                fontSize: "0.6em",
+                                                fontWeight: "bold",
+                                            }}
+                                        >
+                                            {post["tags"].map(
+                                                (tag, index) =>
+                                                    tag + (index < post["tags"].length - 1 ? ", " : ""),
+                                            )}
+                                        </Item>
+                                    </div>
+                                    <div style={{ width: "46%" }}>
+                                        <Item
+                                            style={{
+                                                fontSize: "0.6em",
+                                                color: "lightgrey",
+                                                fontFamily: "Arial",
+                                            }}
+                                        >
+                                            {allMarkdowns[posts.findIndex((p) => p.key === post.key)]}
+                                            <span style={{ color: "grey" }}> ... continue reading</span>
+                                        </Item>
+                                    </div>
+                                </Link>
+                            </Box>
+                        ))}
+                    </React.Fragment>
                 ))}
             </Flex>
         </div>

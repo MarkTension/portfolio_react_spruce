@@ -1,6 +1,6 @@
 # My favorite webgpu random function
 
-I thought it was worth sharing this for it's value, but also understanding the implementation gave me a more intimate understanding of some fundamental CS concepts: hashing, bitwise casting, and 32bit number layouts.
+I thought it was worth sharing this for its value, but also understanding the implementation gave me a more intimate understanding of some fundamental CS concepts: hashing, bitwise casting, and 32bit number layouts.
 
 ### What I did before
 The quickest and most prevalent way to get random values that are roughly uniform is using this fraction and sinus option with a random seed as input:

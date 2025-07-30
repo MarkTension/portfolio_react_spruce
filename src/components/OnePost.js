@@ -200,13 +200,23 @@ export default function OnePost({ slug }) {
                                         },
                                     },
                                 },
-
                                 ul: {
-                                    props: {
-                                        style: {
-                                            fontSize: "0.5em",
-                                        },
-                                    },
+                                    component: ({ children, ...props }) => (
+                                        <ul 
+                                            {...props} 
+                                            style={{ 
+                                                fontSize: "0.5em",
+                                                ...props.style 
+                                            }}
+                                        >
+                                            <style>{`
+                                                ul ul {
+                                                    font-size: 1.0em !important;
+                                                }
+                                            `}</style>
+                                            {children}
+                                        </ul>
+                                    ),
                                 },
                                 h3: {
                                     props: {
