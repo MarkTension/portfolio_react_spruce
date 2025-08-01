@@ -218,6 +218,11 @@ const AllPosts = () => {
                     </i>{" "}
                     - David Bohm
                 </Item>
+                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
+                        The purpose of this blog is to have a public repository for my ideas, notes and reflections.
+                        A set of markdown files that I can publish and keep track of.
+                        It's a "Memex"; a living document and archive of where one has been, and a tool that advises where one could go <a href="https://wiki.xxiivv.com/site/about.html">*</a>.
+                </Item>
 
                 <br />
 

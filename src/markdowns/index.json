@@ -6,9 +6,9 @@
             "key": "blogs-i-like",
             "slug": "",
             "tags": [
-                "ML",
-                "diffusion-models",
-                "meta"
+                "reflections",
+                "programming",
+                "ML"
             ],
             "date": "2025-07"
         },
@@ -272,8 +272,7 @@
             "key": "artificial-life-fireflies-and-music-production",
             "slug": "Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.",
             "tags": [
-                "Unity3D",
-                "computer-graphics",
+                "graphics",
                 "complex-systems",
                 "generative-art",
                 "artificial-life"
