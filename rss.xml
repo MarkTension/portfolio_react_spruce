@@ -4,9 +4,9 @@
         <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
         <link>https://marktension.nl</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 01 Aug 2025 06:28:04 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Aug 2025 06:41:11 GMT</lastBuildDate>
         <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 01 Aug 2025 06:28:04 GMT</pubDate>
+        <pubDate>Fri, 01 Aug 2025 06:41:11 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <ttl>60</ttl>
         <item>
@@ -232,7 +232,6 @@
             <description><![CDATA[On finding ways to automate discovery of interesting generative design.]]></description>
             <link>https://marktension.nl/blog/quantifying-interestingness-images-information-theory</link>
             <guid isPermaLink="true">https://marktension.nl/blog/quantifying-interestingness-images-information-theory</guid>
-            <category><![CDATA[information-theory]]></category>
             <category><![CDATA[generative-art]]></category>
             <category><![CDATA[complex-systems]]></category>
             <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
