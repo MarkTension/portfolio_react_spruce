@@ -3,6 +3,7 @@ import Markdown from "markdown-to-jsx";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useRouter } from 'next/navigation';
 import posts from "../markdowns/index.json";
 import { darcula as codeStyle } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
@@ -19,6 +20,7 @@ function Code({ className, children }) {
 
 
 export default function OnePost({ slug }) {
+    const router = useRouter();
     const [postContent, setPostContent] = useState("");
     const [relatedPosts, setRelatedPosts] = useState([]);
     const [relatedTag, setRelatedTag] = useState("");
@@ -69,7 +71,7 @@ export default function OnePost({ slug }) {
     }, [slug]);
 
     const handleHomeClick = () => {
-        window.location.href = "/";
+        router.push('/');
     };
 
     return (

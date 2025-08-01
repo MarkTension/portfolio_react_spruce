@@ -11,7 +11,7 @@ The following excerpt in the about section says a lot: "The aim of this wiki is 
 
 
 ### ML
-It's interesting to have some people who work at the pioneering companies who share their way of thinking, and especially the topics they're thinking about.
+I like following good writers who work at the pioneering companies, sharing their way of thinking, and especially the topics they're thinking about.
 Here are some of these that get regularly updated up until now.
 - Sander Dieleman's blog https://sander.ai/. He works at Google deepmind, and writes comprehensive articles about diffusion model. I work with that a lot and find his perspectives, angles, and nuances extremely insightful. Here are a couple of posts that stood out for me: 
   - [Generative modelling in latent space](https://sander.ai/2025/04/15/latents.html)
