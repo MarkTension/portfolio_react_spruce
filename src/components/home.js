@@ -5,9 +5,11 @@ import Landing from "./landing.js";
 import Music from "./music.js";
 
 function Home({ slug }) {
+  const isViewingBlogPost = slug && slug !== "blog";
+
   return (
     <div className="App">
-      <Landing style={{ background: "black", marginTop: "0%", }} />
+      {!isViewingBlogPost && <Landing style={{ background: "black", marginTop: "0%", }} />}
       <div
         id="home"
         style={{
@@ -20,7 +22,7 @@ function Home({ slug }) {
       >
         <Blog slug={slug} />
       </div>
-      <Music />
+      {!isViewingBlogPost && <Music />}
     </div>
   );
 }

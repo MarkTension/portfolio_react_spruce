@@ -74,13 +74,66 @@ export default function OnePost({ slug }) {
 
     return (
         <>
+            {relatedPosts.length > 0 && (
+                <div style={{
+                    position: 'fixed',
+                    width: '150px',
+                    maxWidth: '110px',
+                    right: '20px',
+                    top: '20px',
+                    display: window.innerWidth > 800 ? 'block' : 'none',
+                    zIndex: 1000,
+                    background: 'black',
+                    padding: '10px',
+                    border: '1px solid #333',
+                    borderRadius: '4px',
+                }}>
+                    <h3 style={{ fontSize: '0.6em', color: 'white', margin: '0 0 10px 0' }}>Related Posts</h3>
+                    <h3 style={{ fontSize: '0.4em', color: 'grey', margin: '0 0 10px 0' }}>{relatedTag}</h3>
+
+                    {relatedPosts.map(post => (
+                        <a
+                            key={post.key}
+                            href={`/blog/${post.key}`}
+                            style={{
+                                display: 'block',
+                                color: 'white',
+                                textDecoration: 'none',
+                                fontSize: '0.4em',
+                                marginBottom: '1em',
+                                textAlign: "left",
+                            }}
+                        >
+                            <span style={{ color: 'red' }}>-</span>{post.title}
+                        </a>
+                    ))}
+                    
+                    {/* Home button now inside the related posts box */}
+                    <button
+                        style={{
+                            padding: "5px",
+                            backgroundColor: "black",
+                            border: "1px solid white",
+                            borderRadius: "5px",
+                            cursor: "pointer",
+                            fontSize: "0.5em",
+                            color: "white",
+                            marginTop: "10px",
+                            width: "100%",
+                        }}
+                        onClick={handleHomeClick}
+                    >
+                        Home
+                    </button>
+                </div>
+            )}
+
             <div
                 id="onepost"
                 style={{
                     background: "black",
                     width: window.innerWidth < 500 ? "90vw" : "100%",
                     paddingBottom: "5em",
-                    // paddingLeft: "10%",
                     position: "relative",
                 }}
             >
@@ -105,67 +158,9 @@ export default function OnePost({ slug }) {
                         </>
                     )}
                 </Helmet>
-                <div
-                    style={{
-                        position: "fixed",
-                        left: "0px",
-                        paddingLeft: "20px",
-                        paddingTop: "20px",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        background: "black",
-                        alignItems: "left",
-                        alignContent: "left",
-                        textAlign: "left",
-                    }}
-                >
-                    <button
-                        style={{
-                            padding: "5px",
-                            backgroundColor: "white",
-                            border: "none",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                            fontSize: "0.5em",
-                            background: "black",
-                            color: "white",
-                            border: "1px solid white",
-                        }}
-                        onClick={handleHomeClick}
-                    >
-                        Home
-                    </button>
-                    {relatedPosts.length > 0 && (
-                        <div style={{
-                            width: '150px',
-                            maxWidth: '110px',
-                            right: '20px',
-                            top: '20px',
-                            display: window.innerWidth > 800 ? 'block' : 'none',
-                        }}>
-                            <h3 style={{ fontSize: '0.6em', color: 'white' }}>Related Posts</h3>
-                            <h3 style={{ fontSize: '0.4em', color: 'grey' }}>{relatedTag}</h3>
-
-                            {relatedPosts.map(post => (
-                                <a
-                                    key={post.key}
-                                    href={`/blog/${post.key}`}
-                                    style={{
-                                        display: 'block',
-                                        color: 'white',
-                                        textDecoration: 'none',
-                                        fontSize: '0.4em',
-                                        marginBottom: '1em',
-                                        textAlign: "left",
-                                        zIndex: 1000,
-                                    }}
-                                >
-                                    <span style={{ color: 'red' }}>-</span>{post.title}
-                                </a>
-                            ))}
-                        </div>
-                    )}
-                </div>
+                
+                {/* Remove the old Home button container */}
+                
                 <div style={{ flex: 1 }}>
                     <Markdown
                         style={{ maxWidth: "550px", textAlign: "left", margin: "3em", color: "white" }}
@@ -231,7 +226,6 @@ export default function OnePost({ slug }) {
                         {postContent}
                     </Markdown>
                 </div>
-
             </div>
         </>
     );

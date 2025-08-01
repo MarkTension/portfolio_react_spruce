@@ -1,4 +1,4 @@
-**# Neural Cellular Automata and Swarming
+# Neural Cellular Automata and Swarming
 
 Here's some documentation on my endeavors with putting [Neural Cellular Automata (NCA)](https://distill.pub/2020/growing-ca/) into a flock of BOIDS. Why? 
 - Artistic purposes
