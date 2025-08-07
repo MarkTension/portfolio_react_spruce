@@ -3,8 +3,8 @@
         {
             "title": "Blogs I like",
             "image": "",
-            "key": "blogs-i-like",
-            "slug": "",
+            "key": "23_blogs-i-like",
+            "slug": "blogs-i-like",
             "tags": [
                 "reflections",
                 "programming",
@@ -15,8 +15,8 @@
         {
             "title": "On Minimizing WGSL / WebGPU texture plumbing",
             "image": "",
-            "key": "minimizing-wgsl-texture-plumbing",
-            "slug": "",
+            "key": "22_minimizing-wgsl-texture-plumbing",
+            "slug": "minimizing-wgsl-texture-plumbing",
             "tags": [
                 "webgpu",
                 "programming",
@@ -28,8 +28,8 @@
         {
             "title": "Emergence vs 'unexpected' emergence in artificial life",
             "image": "",
-            "key": "unexpected-emergence-in-artificial-life",
-            "slug": "",
+            "key": "21_unexpected-emergence-in-artificial-life",
+            "slug": "unexpected-emergence-in-artificial-life",
             "tags": [
                 "artificial-life",
                 "complex-systems",
@@ -41,8 +41,8 @@
         {
             "title": "My favorite WebGPU random function",
             "image": "",
-            "key": "my_favorite_wgsl_random_func_so_far",
-            "slug": "",
+            "key": "20_my_favorite_wgsl_random_func_so_far",
+            "slug": "my_favorite_wgsl_random_func_so_far",
             "tags": [
                 "webgpu",
                 "programming",
@@ -54,8 +54,8 @@
         {
             "title": "Detecting NaNs in WebGPU",
             "image": "",
-            "key": "detecting-nans-on-webgpu",
-            "slug": "",
+            "key": "19_detecting-nans-on-webgpu",
+            "slug": "detecting-nans-on-webgpu",
             "tags": [
                 "webgpu",
                 "programming",
@@ -67,8 +67,8 @@
         {
             "title": "My iOS app Walk Walk Walk, and a more authentic internet",
             "image": "",
-            "key": "a-more-authentic-internet-and-my-walk-walk-app",
-            "slug": "",
+            "key": "18_a-more-authentic-internet-and-my-walk-walk-app",
+            "slug": "a-more-authentic-internet-and-my-walk-walk-app",
             "tags": [
                 "generative-art",
                 "reflections"
@@ -79,8 +79,8 @@
         {
             "title": "Can I use generative AI for animation and amplification of hand-drawn sprites",
             "image": "",
-            "key": "automating-2d-artwork-creation-and-animation",
-            "slug": "",
+            "key": "17_automating-2d-artwork-creation-and-animation",
+            "slug": "automating-2d-artwork-creation-and-animation",
             "tags": [
                 "reflections"
             ],
@@ -90,8 +90,8 @@
         {
             "title": "Neural Cellular Automata Swarming",
             "image": "",
-            "key": "neural-cellular-automata-swarming",
-            "slug": "",
+            "key": "16_neural-cellular-automata-swarming",
+            "slug": "neural-cellular-automata-swarming",
             "tags": [
                 "generative-art",
                 "artificial-life",
@@ -104,7 +104,7 @@
         {
             "title": "Reality-questioning Ideas before bed",
             "image": "",
-            "key": "reality-questioning-ideas-before-bed",
+            "key": "15_reality-questioning-ideas-before-bed",
             "slug": "reality-questioning-ideas-before-bed",
             "tags": [
                 "reflections"
@@ -115,8 +115,8 @@
         {
             "title": "Two collective-intelligence models for the internet: the Rhizome and the Borg",
             "image": "",
-            "key": "rhizome-vs-borg",
-            "slug": "two models for the internet: the rhizome and the borg",
+            "key": "14_rhizome-vs-borg",
+            "slug": "rhizome-vs-borg",
             "tags": [
                 "reflections"
             ],
@@ -126,8 +126,8 @@
         {
             "title": "Hierarchical BOIDS, Game of Life, recursion and a model for consciousness",
             "image": "",
-            "key": "hierarchical-boids-game-of-life-and-consciousness",
-            "slug": "boids game of life recursion",
+            "key": "13_hierarchical-boids-game-of-life-and-consciousness",
+            "slug": "hierarchical-boids-game-of-life-and-consciousness",
             "tags": [
                 "complex-systems",
                 "reflections",
@@ -141,8 +141,8 @@
         {
             "title": "Interview on music and technology with Griff Fulton on Delayed.com",
             "image": "",
-            "key": "tensen-park-delayed-interview",
-            "slug": "intverview with delayed on jurassimo",
+            "key": "12_tensen-park-delayed-interview",
+            "slug": "tensen-park-delayed-interview",
             "tags": [
                 "music",
                 "reflections",
@@ -154,8 +154,8 @@
         {
             "title": "Order of magnitude more boids while keeping global dynamics",
             "image": "",
-            "key": "order-of-magnitude-boids",
-            "slug": "Order of magnitude more boids while keeping global dynamics",
+            "key": "11_order-of-magnitude-boids",
+            "slug": "order-of-magnitude-boids",
             "tags": [
                 "graphics",
                 "complex-systems",
@@ -169,8 +169,8 @@
         {
             "title": "15 Questions music interview on my EP Jurassimo",
             "image": "",
-            "key": "15-questions-music-interview-on-my-ep-jurassimo",
-            "slug": "15 Questions music interview on production technology and creativity",
+            "key": "10_15-questions-music-interview-on-my-ep-jurassimo",
+            "slug": "15-questions-music-interview-on-my-ep-jurassimo",
             "tags": [
                 "reflections",
                 "music",
@@ -182,8 +182,8 @@
         {
             "title": "More raw websites please",
             "image": "",
-            "key": "more-raw-websites-please",
-            "slug": "In defense of ugly yet personal websites.",
+            "key": "09_more-raw-websites-please",
+            "slug": "more-raw-websites-please",
             "tags": [
                 "reflections"
             ],
@@ -192,8 +192,8 @@
         {
             "title": "Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX",
             "image": "/images/blogHeaders/prims2_sq.webp",
-            "key": "estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax",
-            "slug": "At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline.",
+            "key": "08_estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax",
+            "slug": "estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax",
             "tags": [
                 "graphics",
                 "ML",
@@ -206,8 +206,8 @@
         {
             "title": "MaxMSP learnings",
             "image": "/images/blogHeaders/max4lifeClean.png",
-            "key": "maxmsp-learnings",
-            "slug": "It is hella hard, but here's some lessons to be a little more effective.",
+            "key": "07_maxmsp-learnings",
+            "slug": "maxmsp-learnings",
             "tags": [
                 "music",
                 "generative-art",
@@ -219,8 +219,8 @@
         {
             "title": "MIDI Evolution - a generative music device",
             "image": "/images/blogHeaders/midi_evolution.jpg",
-            "key": "midi-evolution-generative-music-device",
-            "slug": "Making music using evolutionary algorithms, and a bit of chaos",
+            "key": "06_midi-evolution-generative-music-device",
+            "slug": "midi-evolution-generative-music-device",
             "tags": [
                 "music",
                 "generative-art",
@@ -231,8 +231,8 @@
         {
             "title": "Tensen Park - Reflections on my music",
             "image": "/images/blogHeaders/firefliesPoster.webp",
-            "key": "tensen-park-reflections-on-my-music",
-            "slug": "Making conscious what I've been unconsciously doing with sound. Reflections on un-wholesome-yoga-music, chaos, and beauty.",
+            "key": "05_tensen-park-reflections-on-my-music",
+            "slug": "tensen-park-reflections-on-my-music",
             "tags": [
                 "music",
                 "reflections"
@@ -242,8 +242,8 @@
         {
             "title": "Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship",
             "image": "/images/blogHeaders/rl_header.gif",
-            "key": "reinforcement-learning-applied-to-sculpting",
-            "slug": "How we tought an AI to do 3D sculpting with reinforcement learning",
+            "key": "04_reinforcement-learning-applied-to-sculpting",
+            "slug": "reinforcement-learning-applied-to-sculpting",
             "tags": [
                 "ML",
                 "Reinforcement-Learning",
@@ -255,8 +255,8 @@
         {
             "title": "Firefly Synchronizer, a chaotic system Max4Live device",
             "image": "/images/blogHeaders/firefly_synchronizer.png",
-            "key": "firefly-synchronizer-chaotic-system-max4live-device",
-            "slug": "I decided to build a native music device for Ableton, based on chaotic firefly synchronization simulations",
+            "key": "03_firefly-synchronizer-chaotic-system-max4live-device",
+            "slug": "firefly-synchronizer-chaotic-system-max4live-device",
             "tags": [
                 "MaxMSP",
                 "music",
@@ -269,8 +269,8 @@
         {
             "title": "Artificial life, fireflies and music production",
             "image": "/images/blogHeaders/fireflies.png",
-            "key": "artificial-life-fireflies-and-music-production",
-            "slug": "Firefly-synchronization is a biological phenomenon in which multiple oscillators follow a periodic cycle of flashing and rest. They oscillate.",
+            "key": "02_artificial-life-fireflies-and-music-production",
+            "slug": "artificial-life-fireflies-and-music-production",
             "tags": [
                 "graphics",
                 "complex-systems",
@@ -283,8 +283,8 @@
         {
             "title": "Quantifying interestingness in images using information theory",
             "image": "/images/blogHeaders/information.png",
-            "key": "quantifying-interestingness-images-information-theory",
-            "slug": "On finding ways to automate discovery of interesting generative design.",
+            "key": "01_quantifying-interestingness-images-information-theory",
+            "slug": "quantifying-interestingness-images-information-theory",
             "tags": [
                 "generative-art",
                 "complex-systems"
@@ -294,8 +294,8 @@
         {
             "title": "A primer on Reinforcement Learning, and its application to art",
             "image": "/images/blogHeaders/rl_header.gif",
-            "key": "primer-reinforcement-learning-application-to-art",
-            "slug": "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention",
+            "key": "00_primer-reinforcement-learning-application-to-art",
+            "slug": "primer-reinforcement-learning-application-to-art",
             "tags": [
                 "ML",
                 "Reinforcement-Learning",

@@ -27,27 +27,30 @@ export default function OnePost({ slug }) {
     useEffect(() => {
         if (slug) {
             const startTime = new Date();
-
-            import(`../markdowns/${decodeURIComponent(slug)}.md`)
-                .then((res) => {
-                    setPostContent(res.default);
-                    ReactGA.send({
-                        hitType: "pageview",
-                        page: `/blog/${slug}`,
-                        title: posts.files.find(post => post.key === slug)?.title || slug
-                    });
-                })
-                .catch((err) => console.log(err));
-
-            const currentPost = posts.files.find(post => post.key === slug);
+            
+            // Find the post by slug instead of key
+            const currentPost = posts.files.find(post => post.slug === slug);
+            
             if (currentPost) {
+                // Use the key (with number prefix) to load the markdown file
+                import(`../markdowns/${currentPost.key}.md`)
+                    .then((res) => {
+                        setPostContent(res.default);
+                        ReactGA.send({
+                            hitType: "pageview",
+                            page: `/blog/${slug}`,
+                            title: currentPost.title
+                        });
+                    })
+                    .catch((err) => console.log(err));
+
                 const currentPostTags = currentPost.tags.slice(0, 3);
                 const related = posts.files
                     .filter(post =>
-                        post.key !== slug && // Don't include current post
+                        post.slug !== slug && // Don't include current post (compare by slug)
                         post.tags.some(tag => currentPostTags.includes(tag))
                     )
-                    .slice(0, 6); // Limit to 5 related posts
+                    .slice(0, 6); // Limit to 6 related posts
                 console.log("tags", currentPostTags);
                 setRelatedPosts(related);
                 setRelatedTag(currentPostTags.map(tag => `[${tag}]`).join(", "));
@@ -62,7 +65,7 @@ export default function OnePost({ slug }) {
                     label: slug,
                     value: Math.round(timeSpent),
                     params: {
-                        post_title: posts.files.find(post => post.key === slug)?.title,
+                        post_title: currentPost?.title,
                         time_spent_seconds: Math.round(timeSpent)
                     }
                 });
@@ -96,7 +99,7 @@ export default function OnePost({ slug }) {
                     {relatedPosts.map(post => (
                         <a
                             key={post.key}
-                            href={`/blog/${post.key}`}
+                            href={`/blog/${post.slug}`}
                             style={{
                                 display: 'block',
                                 color: 'white',
@@ -141,20 +144,20 @@ export default function OnePost({ slug }) {
             >
                 <Helmet>
                     {/* Get the post metadata from your index.json */}
-                    {posts.files.find(post => post.key === slug) && (
+                    {posts.files.find(post => post.slug === slug) && (
                         <>
-                            <title>{posts.files.find(post => post.key === slug).title} - Mark Tensen's Blog</title>
+                            <title>{posts.files.find(post => post.slug === slug).title} - Mark Tensen's Blog</title>
                             <meta
                                 name="description"
-                                content={posts.files.find(post => post.key === slug).slug}
+                                content={posts.files.find(post => post.slug === slug).title}
                             />
                             <meta
                                 property="og:title"
-                                content={posts.files.find(post => post.key === slug).title}
+                                content={posts.files.find(post => post.slug === slug).title}
                             />
                             <meta
                                 property="og:description"
-                                content={posts.files.find(post => post.key === slug).slug}
+                                content={posts.files.find(post => post.slug === slug).title}
                             />
                             <link rel="canonical" href={`https://marktension.nl/blog/${slug}`} />
                         </>

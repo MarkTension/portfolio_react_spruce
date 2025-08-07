@@ -219,9 +219,9 @@ const AllPosts = () => {
                     - David Bohm
                 </Item>
                 <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
-                        The purpose of this blog is to have a public repository for my ideas, notes and reflections.
-                        A set of markdown files that I can publish and keep track of.
-                        It's a "Memex"; a living document and archive of where one has been, and a tool that advises where one could go <a href="https://wiki.xxiivv.com/site/about.html">*</a>.
+                        The purpose of this blog is to have a repository for my thinking, notes and projects.
+                        A set of markdown files that I can publish and keep track of, and can be adjusted to my needs over time.
+                        It's a "Memex"; a living document and archive of where I've been, and a tool that advises where to go <a href="https://wiki.xxiivv.com/site/about.html">*</a>.
                 </Item>
 
                 <br />
@@ -245,7 +245,7 @@ const AllPosts = () => {
                                     onMouseLeave={() => {
                                         setHoveredImage(null);
                                     }}
-                                    href={`/blog/${post.key}`}
+                                    href={`/blog/${post.slug}`}
                                     style={{ ...linkStyle, display: "flex", width: "100%", maxWidth: "100%", overflow: "hidden" }}
                                 >
                                     {/* <Item

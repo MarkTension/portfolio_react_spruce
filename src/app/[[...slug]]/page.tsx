@@ -5,7 +5,7 @@ export function generateStaticParams() {
   const homePath = [{ slug: [""] }];
   const blogPath = [{ slug: ["blog"] }];
   const blogPaths = posts.files.map((post) => ({
-    slug: ["blog", post.key],
+    slug: ["blog", post.slug],
   }));
 
   return [...homePath, ...blogPath, ...blogPaths];
