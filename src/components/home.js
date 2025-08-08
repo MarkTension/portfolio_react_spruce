@@ -3,9 +3,19 @@ import "../App.css";
 import Blog from "./blog";
 import Landing from "./landing.js";
 import Music from "./music.js";
+import AboutPage from "./AboutPage.js";
 
 function Home({ slug }) {
-  const isViewingBlogPost = slug && slug !== "blog";
+  const isViewingBlogPost = slug && slug !== "blog" && slug !== "about";
+  const isViewingAbout = slug === "about";
+
+  if (isViewingAbout) {
+    return (
+      <div className="App">
+        <AboutPage />
+      </div>
+    );
+  }
 
   return (
     <div className="App">

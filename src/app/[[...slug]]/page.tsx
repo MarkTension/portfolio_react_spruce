@@ -4,16 +4,19 @@ import posts from "../../markdowns/index.json";
 export function generateStaticParams() {
   const homePath = [{ slug: [""] }];
   const blogPath = [{ slug: ["blog"] }];
+  const aboutPath = [{ slug: ["about"] }];
   const blogPaths = posts.files.map((post) => ({
     slug: ["blog", post.slug],
   }));
 
-  return [...homePath, ...blogPath, ...blogPaths];
+  return [...homePath, ...blogPath, ...aboutPath, ...blogPaths];
 }
 
 export default function Page({ params }: { params: { slug?: string[] } }) {
   if (!params.slug || params.slug.length === 0) {
     return <ClientOnly slug={undefined} />;
+  } else if (params.slug[0] === "about") {
+    return <ClientOnly slug="about" />;
   } else if (params.slug[0] === "blog") {
     if (params.slug.length === 1) {
       // This handles the /blog route
