@@ -1,23 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
 import { useRouter } from 'next/navigation';
 import posts from "../markdowns/index.json";
-import { darcula as codeStyle } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-
-function Code({ className, children }) {
-    const language = className?.replace("lang-", "");
-    return (
-        <div className="codeBlock">
-            <SyntaxHighlighter language={language?.toLowerCase()} style={codeStyle}>
-                {children}
-            </SyntaxHighlighter>
-        </div>
-    );
-}
-
+import { getMarkdownOptions } from "../utils/markdownConfig";
 
 export default function OnePost({ slug }) {
     const router = useRouter();
@@ -169,64 +156,7 @@ export default function OnePost({ slug }) {
                 <div style={{ flex: 1 }}>
                     <Markdown
                         style={{ maxWidth: "550px", textAlign: "left", margin: "3em", color: "white" }}
-                        options={{
-                            overrides: {
-                                code: {
-                                    component: Code,
-                                },
-                                p: {
-                                    props: {
-                                        className: "markdown-p",
-                                        style: {
-                                            fontSize: "0.6em",
-                                        },
-                                    },
-                                },
-                                h1: {
-                                    props: {
-                                        style: {
-                                            fontSize: "1.5em",
-                                            fontWeight: "300",
-                                        },
-                                    },
-                                },
-                                pre: {
-                                    props: {
-                                        style: {
-                                            backgroundColor: "black",
-                                            padding: "0.5em",
-                                            borderRadius: "4px",
-                                            fontSize: "0.5em",
-                                        },
-                                    },
-                                },
-                                ul: {
-                                    component: ({ children, ...props }) => (
-                                        <ul 
-                                            {...props} 
-                                            style={{ 
-                                                fontSize: "0.5em",
-                                                ...props.style 
-                                            }}
-                                        >
-                                            <style>{`
-                                                ul ul {
-                                                    font-size: 1.0em !important;
-                                                }
-                                            `}</style>
-                                            {children}
-                                        </ul>
-                                    ),
-                                },
-                                h3: {
-                                    props: {
-                                        style: {
-                                            fontSize: "0.8em",
-                                        },
-                                    },
-                                },
-                            },
-                        }}
+                        options={getMarkdownOptions()}
                     >
                         {postContent}
                     </Markdown>
