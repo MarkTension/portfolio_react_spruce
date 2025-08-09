@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[444],{3636:function(e,i,t){t.r(i),i.default="# Should I still do creative coding with generative prompting?\n\nI love to code and make art, so creative coding is a very natural choice for me. I'll keep doing it because I like it.\n\nStill, there are some problems "}}]);
