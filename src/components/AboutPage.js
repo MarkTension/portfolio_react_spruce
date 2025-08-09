@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
-import { Helmet } from "react-helmet-async";
 import { useRouter } from 'next/navigation';
 import { getAboutPageMarkdownOptions } from "../utils/markdownConfig";
 
@@ -32,23 +31,6 @@ export default function AboutPage() {
                     minHeight: "100vh",
                 }}
             >
-                <Helmet>
-                    <title>About Mark Tensen - Software Engineer & Digital Artist</title>
-                    <meta
-                        name="description"
-                        content="Mark Tensen is a software engineer and digital artist exploring the intersection of technology, generative systems, and creative expression."
-                    />
-                    <meta
-                        property="og:title"
-                        content="About Mark Tensen - Software Engineer & Digital Artist"
-                    />
-                    <meta
-                        property="og:description"
-                        content="Exploring generative art, artificial life, electronic music production, and graphics programming."
-                    />
-                    <link rel="canonical" href="https://marktension.nl/about" />
-                </Helmet>
-
                 <div style={{
                     position: 'fixed',
                     right: '20px',

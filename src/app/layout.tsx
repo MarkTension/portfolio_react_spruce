@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import "../index.css";
 
 export const metadata: Metadata = {
-  title: "Mark Tension",
-  description: "Portfolio website and blog of Mark Tension",
+  title: "Mark Tensen's Blog: Exploring Software Engineering, Artificial Life, Electronic Music, and generative AI",
+  description: "Exploring the generative AI, Artificial Life, and electronic music production. Reflections on generative, MaxMSP devices, and creative workflows.",
+  openGraph: {
+    title: "Mark Tensen's Blog",
+    description: "Exploring the generative AI, Artificial Life, and electronic music production.",
+    url: "https://marktension.nl",
+    siteName: "Mark Tensen's Blog",
+  },
 };
 
 export default function RootLayout({

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import ReactGA from "react-ga4";
-import { Helmet } from "react-helmet-async";
 import { useRouter } from 'next/navigation';
 import posts from "../markdowns/index.json";
 import { getMarkdownOptions } from "../utils/markdownConfig";
@@ -129,30 +128,6 @@ export default function OnePost({ slug }) {
                     position: "relative",
                 }}
             >
-                <Helmet>
-                    {/* Get the post metadata from your index.json */}
-                    {posts.files.find(post => post.slug === slug) && (
-                        <>
-                            <title>{posts.files.find(post => post.slug === slug).title} - Mark Tensen's Blog</title>
-                            <meta
-                                name="description"
-                                content={posts.files.find(post => post.slug === slug).title}
-                            />
-                            <meta
-                                property="og:title"
-                                content={posts.files.find(post => post.slug === slug).title}
-                            />
-                            <meta
-                                property="og:description"
-                                content={posts.files.find(post => post.slug === slug).title}
-                            />
-                            <link rel="canonical" href={`https://marktension.nl/blog/${slug}`} />
-                        </>
-                    )}
-                </Helmet>
-                
-                {/* Remove the old Home button container */}
-                
                 <div style={{ flex: 1 }}>
                     <Markdown
                         style={{ maxWidth: "550px", textAlign: "left", margin: "3em", color: "white" }}

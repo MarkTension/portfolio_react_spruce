@@ -24,3 +24,5 @@ Here are some of these that get regularly updated.
 - Optimistic underground https://optimisticunderground.com/ . Discovered soo much new cool music via this blog. Has had a huge impact on my own music productions. [David James](https://x.com/funkentechno?lang=en), the creator of it is also cool to follow on X for album recommendations. His end of the year lists are also incredible. I just don't have enough time to actively dig into all the new music being released, so it's great to have a curator like him.
 - Delayed. https://www.delayed.nyc/ . Amazing music recommendations in the area of experimental, ambient, and techno music. Also a nice selection of soundcloud mixes to listen to, especially the 'Sundays are for'.
 
+### other
+- Paul Graham's blog. https://paulgraham.com/index.html . Extremely well writen posts/essays on various topics. I like his old startup war stories. But also how he thinks about programming (in LISP), writing, ethics, entrepeneurship, how to work hard, etc.. I once downloaded everything to my remarkable tablet and don't regret it.

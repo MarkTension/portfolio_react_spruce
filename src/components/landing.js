@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Image from "next/image";
 import ff0 from "../images/firefliesPoster.webp";
 import ff1 from "../images/fireflies1.webp";
@@ -7,30 +6,6 @@ import ff4 from "../images/fireflies2.webp";
 import nca from "../images/nca_swarming.webp";
 import { Item } from "./textConstants";
 import posts from "../markdowns/index.json";
-
-const Name = styled.h3`
-  font-size: 1.2em;
-  color: orange;
-  text-align: right;
-  align-self: center; /* Aligns the Name vertically centered */
-`;
-
-const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  
-  @media (max-width: 768px) {
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
 
 class Landing extends React.Component {
     constructor(props) {
@@ -78,17 +53,17 @@ class Landing extends React.Component {
                     boxSizing: "border-box",
                 }}
             >
-                <ImageContainer>
+                <div className="image-container">
                     <Image src={ff0.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff1.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={nca.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff4.src} alt="Logo" width={imageSize} height={imageSize} />
-                </ImageContainer>
+                </div>
                 <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%" }}>
                     <div style={{ width: "35%", minWidth: "0", flexShrink: 0 }}>
-                        <Name style={{ cursor: "pointer" }} onClick={() => window.location.href = "/"}>
+                        <h3 className="name" style={{ cursor: "pointer" }} onClick={() => window.location.href = "/"}>
                             Mark Tensen
-                        </Name>
+                        </h3>
                     </div>
                     <Item
                         style={{
@@ -114,7 +89,7 @@ class Landing extends React.Component {
                             whiteSpace: "pre-line",
                         }}
                     >
-                        <a href="/about">About</a>, <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>, <a href="/cv.pdf">CV</a>
+                        <a href="/about" style={{ color: "orange" }}>About me</a>, <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>, <a href="/cv.pdf">CV</a>
                     </Item>
                 </div>
             </div>

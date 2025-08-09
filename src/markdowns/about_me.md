@@ -1,49 +1,49 @@
 # About Me
 
-I'm Mark Tensen, a software engineer and digital artist exploring the intersection of technology, generative systems, and creative expression.
+HELLO!
+I go by the name of MarkTension or Tensen Park online. Tensen is the real name though.
 
-## What I Do
+A significant of my time is spent chasing [dynamic quality](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality#Dynamic_quality) on the computer; building things. I believe in craftsmanship, and an attention to detail. In life I follow many seemingly unrelated topics, and somehow (hope to) find ways to tie them together. Serendipitous discovery is a kind of central theme.
 
-My work spans several interconnected domains:
+You may enjoy some of the articles I've written about on this blog. 
+You'll find writings and documentation about:
+- artificial life
+- electronic (generative) music
+- computer graphics
+- WebGPU
+- machine learning
+- random thoughts and lists I find worth sharing
 
-### Software Engineering & Research
-I build tools and systems that push the boundaries of what's possible with code. From WebGPU compute shaders to reinforcement learning systems, I'm fascinated by the computational substrate that enables digital creativity.
+### Artificial life
+I have this dream of evolving open-ended systems, that _look_ impressive, that are lush ecosystems and authentic and unique expressions of life, hard to say whether it's less real than real biological systems.
 
-### Generative Art & Artificial Life
-I create digital organisms, cellular automata, and complex systems that exhibit emergent behaviors. My projects explore how simple rules can give rise to beautiful, unexpected patterns and dynamics.
+I think one of the important things the field of artificial life needs is more funding. Compared to some other fields it's more like hobbyist and academics. However, I also really like it as it is now: a few passionate true believers. No real money-making incentive at play yet, so it's propelled forward by pure curiosity. Could be a nice glimpse into doing AI back in the 90's, when the field was slowly pacing itself through the AI winters. 
+
 
 ### Electronic Music Production
-Under the name **Tensen Park**, I produce electronic music that bridges the gap between algorithmic composition and human expression. I build custom Max4Live devices and use evolutionary algorithms to generate musical material.
+Under the name **Tensen Park**, I've released a series of albums
+- Etherware (to be released on vinyl this year, 2025)
+- [Jurassimo](https://tensenpark.bandcamp.com/album/jurassimo)
+- [Futurebeats](https://tensenpark.bandcamp.com/album/futurebeats)
+- [Mostly Angels](https://tensenpark.bandcamp.com/album/mostly-angels)
+- [Spring Walk Collection](https://tensenpark.bandcamp.com/album/spring-walk-collection)
 
-### Graphics Programming
-I work extensively with WebGPU, WGSL shaders, and real-time graphics systems. From neural cellular automata to particle systems, I love bringing mathematical concepts to visual life.
+I use some algorithmic methods and old electronic equipment. Steve Reich's [methods](https://stevereich.com/oxford-university-press-steve-reich-writings-on-music/) to composition is a real inspiration for me. Also built and shared [a few well rated Max4Live devices](https://tensenpark.gumroad.com/) to facilitate creativity.
+
+### Writing
+I think by writing. Having this blog is amongst other things a way to incentivize me to think a little deeper about topics I care about. Paul Graham touches upon the importance of writing about ideas in one of his fantastic essays called [Putting Ideas Into Words](https://paulgraham.com/words.html).
+
+Also I have this quote on the website by David Bohm from "Thought as a System": _It's important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption_ . I think that's very true. The mind is so rigged to really believe into the ideas we have. As if we are attached to them and gladly ignore blind spots.
+
+In one of my favorite books, [Discognition](http://www.shaviro.com/Blog/?p=1306), Steven Shaviro explains really well how the act of fabulating (playing out a story from a specific starting condition) is an important way to come to truth, just as important as induction and deduction. He uses science fiction as an example for this, but I believe it's just as important when writing about our thoughts and the implications of them.
 
 ## Philosophy
 
 I believe in:
 - **Open exploration** over predetermined outcomes
 - **Raw authenticity** over polished perfection  
-- **Interdisciplinary thinking** that crosses traditional boundaries
 - **Tools that amplify human creativity** rather than replace it
-
-## Current Interests
-
-- Neural cellular automata and differentiable systems
-- WebGPU compute shaders for real-time simulations
-- The intersection of AI and creative practice
-- Building better tools for digital artists
-- Exploring consciousness through computational models
-
-## Background
-
-I have experience in machine learning, computer graphics, and full-stack development. I've worked on everything from reinforcement learning for 3D sculpting to building chaotic oscillator networks for music production.
-
-My blog serves as a "Memex" - a living archive of my explorations, discoveries, and evolving understanding of these interconnected fields.
+through computational models
 
 ## Connect
-
 Feel free to reach out if you're working on something at the intersection of art, technology, and emergence. I'm always interested in collaborative explorations and sharing ideas.
-
----
-
-*"It's important to get it into words, because otherwise you miss it - the brain is set up to hide the assumption"* - David Bohm

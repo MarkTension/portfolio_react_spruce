@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Box, Flex } from "rebass";
 import Link from "next/link";
 import indexData from "../markdowns/index.json";
-import styled from "styled-components";
+import "./textConstants.css";
 
 const linkStyle = {
     fontSize: "0.8em",
@@ -12,36 +11,6 @@ const linkStyle = {
     color: "grey",
     // background: "white"
 };
-
-const Item = styled.h3`
-  font-size: 0.7em;
-  text-align: left;
-  color: white;
-  font-weight: 100;
-`;
-
-const TaggButton = styled.button`
-    cursor: pointer;
-    font-size: 0.4em;
-    background: black;
-    color: white;
-    padding: 0.25em 1em;
-    margin:0.2em;
-    border: 1px solid white;
-    border-radius: 3px;
-    font-color: white
-    size: 2em;
-`;
-
-const YearHeader = styled.h2`
-    font-size: 1.2em;
-    color: #ccc;
-    margin: 40px 0 20px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #333;
-    font-weight: 300;
-    width: 100%;
-`;
 
 const AllPosts = () => {
     let posts = indexData.files;
@@ -148,11 +117,12 @@ const AllPosts = () => {
                 </div>
             )}
 
-            <Flex
+            <div
                 id="itemsBlog"
-                flexWrap="wrap"
-                width="100%"
                 style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    width: '100%',
                     marginBottom: "0%",
                     paddingBottom: "0px",
                     justifyContent: "flex-start",
@@ -164,7 +134,8 @@ const AllPosts = () => {
                 <div
                     style={{ display: "flex", alignItems: "center", marginTop: "60px" }}
                 >
-                    <Item
+                    <h3
+                        className="all-posts-item"
                         style={{
                             fontSize: "1.0em",
                             whiteSpace: "nowrap",
@@ -173,7 +144,7 @@ const AllPosts = () => {
                         }}
                     >
                         <b>Topics</b>
-                    </Item>
+                    </h3>
                     <div
                         style={{
                             display: "flex",
@@ -185,8 +156,9 @@ const AllPosts = () => {
                         }}
                     >
                         {allTags.map((tagg, index) => (
-                            <TaggButton
+                            <button
                                 key={index}
+                                className="tag-button"
                                 style={{
                                     color: tagFilter === tagg ? "red" : "white",
                                     marginRight: "1px",
@@ -195,12 +167,13 @@ const AllPosts = () => {
                                 onClick={() => handleTagChangeClick(tagg)}
                             >
                                 {tagg}
-                            </TaggButton>
+                            </button>
                         ))}
                     </div>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                    <TaggButton
+                    <button
+                        className="tag-button"
                         style={{
                             color: tagFilter === null ? "orange" : "white",
                             marginRight: "1px",
@@ -209,34 +182,40 @@ const AllPosts = () => {
                         onClick={() => handleTagChangeClick(null)}
                     >
                         All Posts
-                    </TaggButton>
+                    </button>
                 </div>
-                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
+                <h3 className="all-posts-item" style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
                     <i>
                         It's important to get it into words, because otherwise you miss it -
                         the brain is set up to hide the assumption
                     </i>{" "}
                     - David Bohm
-                </Item>
-                <Item style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
+                </h3>
+                <h3 className="all-posts-item" style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
                         The purpose of this blog is to have a repository for my thinking, notes and projects.
                         A set of markdown files that I can publish and keep track of, and can be adjusted to my needs over time.
                         It's a "Memex"; a living document and archive of where I've been, and a tool that advises where to go <a href="https://wiki.xxiivv.com/site/about.html">*</a>.
-                </Item>
+                </h3>
 
                 <br />
 
                 {postsByYear.map(([year, yearPosts]) => (
                     <React.Fragment key={year}>
-                        <YearHeader>{year}</YearHeader>
+                        <h2 className="year-header">{year}</h2>
                         {yearPosts.map((post, index) => (
-                            <Box
+                            <div
                                 key={post.title}
                                 id={"itemsBlog" + index}
-                                p={[2]}
-                                m={[0]}
-                                width={[1, 1]}
-                                style={{ textAlign: "left", display: "flex", flexDirection: "row", maxWidth: "100%", overflow: "hidden" }}
+                                style={{ 
+                                    padding: '16px', 
+                                    margin: '0', 
+                                    width: '100%',
+                                    textAlign: "left", 
+                                    display: "flex", 
+                                    flexDirection: "row", 
+                                    maxWidth: "100%", 
+                                    overflow: "hidden" 
+                                }}
                             >
                                 <Link
                                     onMouseEnter={() => {
@@ -272,7 +251,8 @@ const AllPosts = () => {
                                         >
                                             {post["title"]}
                                         </div>
-                                        <Item
+                                        <h3
+                                            className="all-posts-item"
                                             style={{
                                                 color: "orange",
                                                 fontSize: "0.6em",
@@ -283,10 +263,11 @@ const AllPosts = () => {
                                                 (tag, index) =>
                                                     tag + (index < post["tags"].length - 1 ? ", " : ""),
                                             )}
-                                        </Item>
+                                        </h3>
                                     </div>
                                     <div style={{ width: "46%", minWidth: "0", overflow: "hidden" }}>
-                                        <Item
+                                        <h3
+                                            className="all-posts-item"
                                             style={{
                                                 fontSize: "0.6em",
                                                 color: "lightgrey",
@@ -295,14 +276,14 @@ const AllPosts = () => {
                                         >
                                             {allMarkdowns[posts.findIndex((p) => p.key === post.key)]}
                                             <span style={{ color: "grey" }}> ... continue reading</span>
-                                        </Item>
+                                        </h3>
                                     </div>
                                 </Link>
-                            </Box>
+                            </div>
                         ))}
                     </React.Fragment>
                 ))}
-            </Flex>
+            </div>
         </div>
     );
 };

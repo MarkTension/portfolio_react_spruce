@@ -1,5 +1,18 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { darcula as codeStyle } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+// Import only the languages you actually use
+import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python';
+import hlsl from 'react-syntax-highlighter/dist/cjs/languages/prism/hlsl';
+import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
+import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript';
+import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json';
+
+// Register only the languages you need
+SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('hlsl', hlsl);
+SyntaxHighlighter.registerLanguage('javascript', javascript);
+SyntaxHighlighter.registerLanguage('typescript', typescript);
+SyntaxHighlighter.registerLanguage('json', json);
 
 function Code({ className, children }) {
     const language = className?.replace("lang-", "");
