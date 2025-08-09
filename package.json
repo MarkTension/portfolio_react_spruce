@@ -21,7 +21,7 @@
     "build": "npm run generate-rss && next build",
     "start": "npx serve@latest ./build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -t true"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

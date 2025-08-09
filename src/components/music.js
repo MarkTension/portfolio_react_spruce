@@ -18,8 +18,9 @@ class Music extends React.Component {
             backgroundColor: "black",
             height: "100vh",
             marginLeft: "0%",
-            marginTop: "0%",
+            marginTop: "2em",
             backgroundSize: "100%",
+
           }}
         >
           <Title>Music - Tensen Park</Title>
@@ -61,12 +62,11 @@ class Music extends React.Component {
               color: "white",
             }}
           >
-            Listen to it{" "}
+            Listen on{" "}
             <a href="https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=maU5dB7ZRSy00-uf5L6i2A">
               Spotify
-            </a>{" "}
-            or Soundcloud
-            <a href="https://soundcloud.com/tensen-park"> Soundcloud</a> or on{" "}
+            </a>{" / "}
+            <a href="https://soundcloud.com/tensen-park">Soundcloud</a> {" / "}
             <a href="https://tensenpark.bandcamp.com/"> Bandcamp</a>
           </Item>
         </section>

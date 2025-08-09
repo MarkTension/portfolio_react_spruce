@@ -59,7 +59,7 @@ class Landing extends React.Component {
                     <Image src={nca.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff4.src} alt="Logo" width={imageSize} height={imageSize} />
                 </div>
-                <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%" }}>
+                <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%", marginTop: "2em" }}>
                     <div style={{ width: "35%", minWidth: "0", flexShrink: 0 }}>
                         <h3 className="name" style={{ cursor: "pointer" }} onClick={() => window.location.href = "/"}>
                             Mark Tensen
@@ -80,7 +80,7 @@ class Landing extends React.Component {
                         design
                     </Item>
                 </div>
-                <div style={{ width: "100%" }}>
+                <div style={{ width: "100%", marginTop: "1em" }}>
                     <Item
                         style={{
                             width: "100%",
