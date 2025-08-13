@@ -1,23 +1,25 @@
 # About Me
 
 HELLO!
-I go by the name of MarkTension or Tensen Park online. Tensen is the real name though.
+Often I use the pseudonym MarkTension online. Tensen is the real name though.
 
-A significant of my time is spent chasing [dynamic quality](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality#Dynamic_quality) on the computer; building things. I believe in craftsmanship, and an attention to detail. In life I follow many seemingly unrelated topics, and somehow (hope to) find ways to tie them together. Serendipitous discovery is a kind of central theme.
+I was trained in (computational) neuroscience, but transitioned into ML/graphics. There remains a strong interest in bbiology and evolution, which manifests as ALife (artificial life) research in my spare time.
 
-You may enjoy some of the articles I've written about on this blog. 
-You'll find writings and documentation about:
-- artificial life
+A significant part of my time is spent chasing [dynamic quality](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality#Dynamic_quality) on the computer; building things. I believe in craftsmanship, and an attention to detail. In life I follow many seemingly unrelated topics, and somehow (hope to) find ways to tie them together. Serendipitous discovery is a kind of central theme.
+
+You may enjoy some of the things I've written on this blog. You'll find writings and project documentation about:
+- ALife
 - electronic (generative) music
 - computer graphics
 - WebGPU
 - machine learning
 - random thoughts and lists I find worth sharing
 
-### Artificial life
-I have this dream of evolving open-ended systems, that _look_ impressive, that are lush ecosystems and authentic and unique expressions of life, hard to say whether it's less real than real biological systems.
+### ALife
+I have this dream of evolving open-ended systems, that _look_ impressive, that are lush ecosystems and authentic and unique expressions of life, hard to say whether it's less real than real biological systems. That we can just tune into and study life as we know it and all the other forms of life that are also possible. 
+My prefered method is using the GPU with low-level instructions; (compute) shaders. Replicating biological systems is one thing, but ultimately being able to find the open ended functions to make life find its own path would be most interesting. 
 
-I think one of the important things the field of artificial life needs is more funding. Compared to some other fields it's more like hobbyist and academics. However, I also really like it as it is now: a few passionate true believers. No real money-making incentive at play yet, so it's propelled forward by pure curiosity. Could be a nice glimpse into doing AI back in the 90's, when the field was slowly pacing itself through the AI winters. 
+Probably one of the important things that ALife needs is more funding. It's more in the stage of hobbyist and academics. However, I really like it as it is now: a few passionate true believers, quick to find eager people to collaborate with. No real money-making incentive at play yet, so it's propelled forward by pure curiosity. Could be a nice glimpse into doing AI back in the 90's, when the field was slowly pacing itself through the AI winters.
 
 
 ### Electronic Music Production
@@ -37,13 +39,6 @@ Also I have this quote on the website by David Bohm from "Thought as a System": 
 
 In one of my favorite books, [Discognition](http://www.shaviro.com/Blog/?p=1306), Steven Shaviro explains really well how the act of fabulating (playing out a story from a specific starting condition) is an important way to come to truth, just as important as induction and deduction. He uses science fiction as an example for this, but I believe it's just as important when writing about our thoughts and the implications of them.
 
-## Philosophy
-
-I believe in:
-- **Open exploration** over predetermined outcomes
-- **Raw authenticity** over polished perfection  
-- **Tools that amplify human creativity** rather than replace it
-through computational models
 
 ## Connect
 Feel free to reach out if you're working on something at the intersection of art, technology, and emergence. I'm always interested in collaborative explorations and sharing ideas.

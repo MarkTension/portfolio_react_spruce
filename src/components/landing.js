@@ -12,7 +12,7 @@ class Landing extends React.Component {
         super(props);
         this.state = { titles: [], isMobile: false };
     }
-
+    
     componentDidMount() {
         this.state.titles = posts.files.map((post) => {
             return post.title;

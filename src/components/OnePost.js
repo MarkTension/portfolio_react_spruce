@@ -65,6 +65,44 @@ export default function OnePost({ slug }) {
 
     return (
         <>
+            <div
+                id="onepost"
+                style={{
+                    background: "black",
+                    width: window.innerWidth < 500 ? "90vw" : "100%",
+                    paddingBottom: "5em",
+                    position: "relative",
+                }}
+            >
+                {/* Header inside scrollable content, minimal style */}
+                <div
+                    style={{
+                        background: 'black',
+                        padding: '10px 18px 10px 18px',
+                        borderBottomRightRadius: '12px',
+                        cursor: 'pointer',
+                        fontSize: '1.1em',
+                        color: 'orange',
+                        fontWeight: 700,
+                        letterSpacing: '0.04em',
+                        width: 'fit-content',
+                        marginTop: 0,
+                        marginLeft: 0,
+                    }}
+                    onClick={handleHomeClick}
+                >
+                    Mark Tensen
+                </div>
+                <div style={{ flex: 1 }}>
+                    <Markdown
+                        style={{ maxWidth: "550px", textAlign: "left", margin: "3em", color: "white" }}
+                        options={getMarkdownOptions()}
+                    >
+                        {postContent}
+                    </Markdown>
+                </div>
+            </div>
+
             {relatedPosts.length > 0 && (
                 <div style={{
                     position: 'fixed',
@@ -98,7 +136,6 @@ export default function OnePost({ slug }) {
                             <span style={{ color: 'red' }}>-</span>{post.title}
                         </a>
                     ))}
-                    
                     {/* Home button now inside the related posts box */}
                     <button
                         style={{
@@ -118,25 +155,6 @@ export default function OnePost({ slug }) {
                     </button>
                 </div>
             )}
-
-            <div
-                id="onepost"
-                style={{
-                    background: "black",
-                    width: window.innerWidth < 500 ? "90vw" : "100%",
-                    paddingBottom: "5em",
-                    position: "relative",
-                }}
-            >
-                <div style={{ flex: 1 }}>
-                    <Markdown
-                        style={{ maxWidth: "550px", textAlign: "left", margin: "3em", color: "white" }}
-                        options={getMarkdownOptions()}
-                    >
-                        {postContent}
-                    </Markdown>
-                </div>
-            </div>
         </>
     );
 }

@@ -24,7 +24,7 @@ function Home({ slug }) {
         id="home"
         style={{
           margin: "0 auto",
-          maxWidth: "800px",
+          maxWidth: "650px",
           padding: "0%",
           display: "flex",
           justifyContent: "center"

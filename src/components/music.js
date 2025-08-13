@@ -27,18 +27,17 @@ class Music extends React.Component {
 
           <Item
             style={{
-              fontSize: "0.8em",
+              fontSize: "0.6em",
               textAlign: "center",
               paddingLeft: "15%",
               paddingRight: "15%",
               color: "white",
             }}
           >
-            <i>
-              After silence, that which comes nearest to expressing the
-              inexpressible is music. - Aldous Huxley
-            </i>
+            <i>After silence, that which comes nearest to expressing the
+              inexpressible is music. </i> - Aldous Huxley
           </Item>
+          
 
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px" }}>
             <a href="https://tensenpark.bandcamp.com/album/jurassimo">
@@ -69,7 +68,22 @@ class Music extends React.Component {
             <a href="https://soundcloud.com/tensen-park">Soundcloud</a> {" / "}
             <a href="https://tensenpark.bandcamp.com/"> Bandcamp</a>
           </Item>
+
+          <Item
+            style={{
+              fontSize: "0.6em",
+              textAlign: "left",
+              paddingLeft: "15%",
+              marginTop: "5%",
+              paddingRight: "15%",
+              color: "white",
+            }}
+          >
+            Besides making making music, friends and me also have an album recommendation newsletter.
+            It's called <a href="https://gardenwalkrecords.nl/#/listenings">Listenings</a>
+          </Item>
         </section>
+        
       </div>
     );
   }
