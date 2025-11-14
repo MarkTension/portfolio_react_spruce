@@ -4,9 +4,9 @@
         <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
         <link>https://marktension.nl</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 13 Oct 2025 00:31:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Nov 2025 16:11:29 GMT</lastBuildDate>
         <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 13 Oct 2025 00:31:47 GMT</pubDate>
+        <pubDate>Fri, 14 Nov 2025 16:11:29 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <ttl>60</ttl>
         <item>
@@ -226,7 +226,7 @@
             <category><![CDATA[complex-systems]]></category>
             <category><![CDATA[generative-art]]></category>
             <category><![CDATA[artificial-life]]></category>
-            <pubDate>Wed, 31 Aug 2022 15:00:00 GMT</pubDate>
+            <pubDate>Wed, 31 Aug 2022 22:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Quantifying interestingness in images using information theory]]></title>
@@ -235,7 +235,7 @@
             <guid isPermaLink="true">https://marktension.nl/blog/01_quantifying-interestingness-images-information-theory</guid>
             <category><![CDATA[generative-art]]></category>
             <category><![CDATA[complex-systems]]></category>
-            <pubDate>Thu, 31 Dec 2020 15:00:00 GMT</pubDate>
+            <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[A primer on Reinforcement Learning, and its application to art]]></title>
@@ -245,7 +245,7 @@
             <category><![CDATA[ML]]></category>
             <category><![CDATA[Reinforcement-Learning]]></category>
             <category><![CDATA[generative-art]]></category>
-            <pubDate>Thu, 31 Dec 2020 15:00:00 GMT</pubDate>
+            <pubDate>Thu, 31 Dec 2020 23:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
