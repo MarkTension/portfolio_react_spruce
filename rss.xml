@@ -4,11 +4,20 @@
         <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
         <link>https://marktension.nl</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 14 Nov 2025 16:11:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Nov 2025 20:03:41 GMT</lastBuildDate>
         <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 14 Nov 2025 16:11:29 GMT</pubDate>
+        <pubDate>Sun, 30 Nov 2025 20:03:41 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <ttl>60</ttl>
+        <item>
+            <title><![CDATA[My biggest pytorch workflow gripe]]></title>
+            <description><![CDATA[workflow-gripe-pytorch]]></description>
+            <link>https://marktension.nl/blog/25_biggest_worflow_gripe_in_pytorch</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/25_biggest_worflow_gripe_in_pytorch</guid>
+            <category><![CDATA[programming]]></category>
+            <category><![CDATA[ML]]></category>
+            <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Reflections on ALife 2025 conference]]></title>
             <description><![CDATA[alife-25-conference-reflections]]></description>
