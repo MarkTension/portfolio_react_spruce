@@ -1,0 +1,18 @@
+# Reflections on ALife 2025 conference
+
+Because of my collaboration with the ALife institute, I had the honor to get a ticket to ALife 2025 sponsored. It was my first conference, and I thought it was very impressive. The level of science, and density of top-tier scientists was insane. Here follow some reflections about it and how I can best continue contributing to the field.
+
+### Taking ideas to their limit
+There was a lot of impressive research presented that can have super interesting visual outputs, but I'd love to see the visual quality being taken to its limit. Visually, the quality is often (understandably) in proof-of-concept stage. I think the field would benefit from having the outputs of _viral_ papers get even more impressive. Not necessarily the authors should do it; they're probably already busy enough getting their reasoning and proofs watertight, but if someone works on that it'd be great. Anything to show the magic of ALife to the public might help with getting the field more attention and funding. 
+
+As an example, the presentation that won the best paper awards ([Automating the search for artificial life with foundational models, Kumar et al.](https://arxiv.org/html/2412.17799v2)) was also my favorite and I'd love to see it taken to its limit. Proxying human perception with a foundational model for meaningfully different outputs is quite smart. They searched for novelty in the embedding space. I think it should become a default metric / tool for exploring the expressive potential for any new CA, particle, or physics system. But I'd love to see larger textures, larger parameter spaces, and more expressive rendering. Besides the artisitic potential, it'd highlight the potential of the method even more.
+
+Also other research that was more on a more computational & fundamental level could've used some nice video material to show how computation forms and the beauty of it. The intuition would become more clear as a bonus. E.g. I saw reservoir computing using Boids as the reservoir (from the Ikegami lab), or various NCA innovations that could have shown the dynamic behavior in a video to get an intuition on how it produces the results.
+
+This is the space where I hope to contribute some more. Definitely scalable GPU programming, some artistic sensibilities and defining interesting options for conditional rendering could help.
+
+### Societal Good
+Besides learning about life and researching interesting lifeforms, I liked the angle on societal good as well. [Audrey Tang's](https://en.wikipedia.org/wiki/Audrey_Tang) thinking about collective intelligence to e.g. depolarize the internet and fix institutions seems like the way to go for me. Also [Softmax](https://softmax.com/)'s plan for organic aligment sounds important as well. Hopefully these goals can convince some researchers to switch sides from super-intelligence research to ALife research. I'm convinced already.
+
+### Conclusion
+All in all, after speaking with all these impressive researchers, and seeing the presentation, I think the field should have even more scientists and more funding. I'm quite convinced to keep contributing, and potentially ramp it up even more when a good opportunity arises. The current collaboration with the ALife institute, which officially opened during the conference, is going to be a quite exciting first work together with a research institution. I hope many more will follow.

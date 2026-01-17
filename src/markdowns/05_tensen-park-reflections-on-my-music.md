@@ -1,7 +1,7 @@
 # Tensen Park: Reflections on My Music
 
 <p align="center">
-<img width= "60%" src="/images/blogHeaders/firefliesPoster.webp" alt="ld image">
+<img width= "60%" src="/images/firefliesPoster.webp" alt="ld image">
 </p>
 
 In this post I'll reflect on the unreleased 'Molasses' music album I've been trying to finish as Tensen Park. I'll try to make conscious what I've been unconsciously trying to achieve, which helps me to focus, and hopefully throw some interesting thoughts into the world.

@@ -18,6 +18,7 @@ Here are some of these that get regularly updated.
   - [Noise Schedulers considered harmfull](https://sander.ai/2024/06/14/noise-schedules.html) 
 - Lilian Weng's blog https://lilianweng.github.io . She has good posts about large language models. I liked one post on inference/training efficiency of the transformer architecture.
 - Chris Olah's blog https://colah.github.io/ . Here I first learned about RNNs, but he's kept writing since. Really high quality tutorials.
+- Neel Nanda's blog https://www.neelnanda.io/ . Runs the Google DeepMind mechanistic interpretability team. Finding it really interesting to learn about what goes on under the hood in LLMs. It's pretty cool that we've evolved machines complex enough to require neuroscience research on.
 
 
 ### music

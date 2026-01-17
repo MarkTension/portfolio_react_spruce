@@ -89,7 +89,7 @@ class Landing extends React.Component {
                             whiteSpace: "pre-line",
                         }}
                     >
-                        <a href="/about" style={{ color: "orange" }}>About me</a>, <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>, <a href="/cv.pdf">CV</a>
+                        <a href="/about" style={{ color: "orange" }}>About me</a>, <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="https://www.linkedin.com/in/mark-tensen/">Linkedin</a>, <a href="/cv.pdf">CV</a>
                     </Item>
                 </div>
             </div>

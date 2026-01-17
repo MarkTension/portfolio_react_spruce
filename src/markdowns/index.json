@@ -1,6 +1,26 @@
 {
     "files": [
         {
+            "title": "My biggest pytorch workflow gripe",
+            "key": "25_biggest_worflow_gripe_in_pytorch",
+            "slug": "workflow-gripe-pytorch",
+            "tags": [
+                "programming",
+                "ML"
+            ],
+            "date": "2025-10"
+        },
+        {
+            "title": "Reflections on ALife 2025 conference",
+            "key": "24_alife-25-conference-reflections",
+            "slug": "alife-25-conference-reflections",
+            "tags": [
+                "reflections",
+                "artificial-life"
+            ],
+            "date": "2025-10"
+        },
+        {
             "title": "Blogs I like",
             "key": "23_blogs-i-like",
             "slug": "blogs-i-like",
@@ -70,17 +90,6 @@
             "slug": "a-more-authentic-internet-and-my-walk-walk-app",
             "tags": [
                 "generative-art",
-                "reflections"
-            ],
-            "date": "2025-01",
-            "img": "congi.webp"
-        },
-        {
-            "title": "Can I use generative AI for animation and amplification of hand-drawn sprites",
-            
-            "key": "17_automating-2d-artwork-creation-and-animation",
-            "slug": "automating-2d-artwork-creation-and-animation",
-            "tags": [
                 "reflections"
             ],
             "date": "2025-01",
@@ -227,7 +236,7 @@
         },
         {
             "title": "Tensen Park - Reflections on my music",
-            "image": "/images/blogHeaders/firefliesPoster.webp",
+            "image": "/images/firefliesPoster.webp",
             "key": "05_tensen-park-reflections-on-my-music",
             "slug": "tensen-park-reflections-on-my-music",
             "tags": [

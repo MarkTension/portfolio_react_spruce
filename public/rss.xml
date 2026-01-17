@@ -4,11 +4,29 @@
         <description><![CDATA[On finding synergies in programming, music, AI, artificial life, and design]]></description>
         <link>https://marktension.nl</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 Aug 2025 07:25:31 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Jan 2026 16:19:43 GMT</lastBuildDate>
         <atom:link href="https://marktension.nl/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 13 Aug 2025 07:25:31 GMT</pubDate>
+        <pubDate>Sat, 17 Jan 2026 16:19:43 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <ttl>60</ttl>
+        <item>
+            <title><![CDATA[My biggest pytorch workflow gripe]]></title>
+            <description><![CDATA[workflow-gripe-pytorch]]></description>
+            <link>https://marktension.nl/blog/25_biggest_worflow_gripe_in_pytorch</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/25_biggest_worflow_gripe_in_pytorch</guid>
+            <category><![CDATA[programming]]></category>
+            <category><![CDATA[ML]]></category>
+            <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Reflections on ALife 2025 conference]]></title>
+            <description><![CDATA[alife-25-conference-reflections]]></description>
+            <link>https://marktension.nl/blog/24_alife-25-conference-reflections</link>
+            <guid isPermaLink="true">https://marktension.nl/blog/24_alife-25-conference-reflections</guid>
+            <category><![CDATA[reflections]]></category>
+            <category><![CDATA[artificial-life]]></category>
+            <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Blogs I like]]></title>
             <description><![CDATA[blogs-i-like]]></description>
@@ -65,14 +83,6 @@
             <link>https://marktension.nl/blog/18_a-more-authentic-internet-and-my-walk-walk-app</link>
             <guid isPermaLink="true">https://marktension.nl/blog/18_a-more-authentic-internet-and-my-walk-walk-app</guid>
             <category><![CDATA[generative-art]]></category>
-            <category><![CDATA[reflections]]></category>
-            <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Can I use generative AI for animation and amplification of hand-drawn sprites]]></title>
-            <description><![CDATA[automating-2d-artwork-creation-and-animation]]></description>
-            <link>https://marktension.nl/blog/17_automating-2d-artwork-creation-and-animation</link>
-            <guid isPermaLink="true">https://marktension.nl/blog/17_automating-2d-artwork-creation-and-animation</guid>
             <category><![CDATA[reflections]]></category>
             <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
         </item>
