@@ -80,7 +80,7 @@ class Music extends React.Component {
             }}
           >
             Besides making making music, friends and me also have an album recommendation newsletter.
-            It's called <a href="https://gardenwalkrecords.nl/#/listenings">Listenings</a>
+            It's called <a href="https://listenings.nl">Listenings</a>
           </Item>
         </section>
         
