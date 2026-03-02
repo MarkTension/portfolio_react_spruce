@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import Home from "./components/home.js";
-import ReactGA from "react-ga4";
-ReactGA.initialize("G-33GQEY07L1");
 
 function App({ slug }) {
   return (

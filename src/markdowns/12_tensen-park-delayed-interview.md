@@ -1,7 +1,7 @@
 # Delayed Interview on music technology with Griff Fulton
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/jurassimo.jpg" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/jurassimo.webp" alt="ld image">
 </p>
 
 This interview was originally posted on delayed on occasion of my new EP Jurassimo [link](https://www.itsdelayed.com/delayed-blog/artist-of-the-moment-tensen-park)

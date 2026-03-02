@@ -9,25 +9,13 @@ const linkStyle = {
     alignText: "left",
     textDecoration: "none",
     color: "grey",
-    // background: "white"
 };
 
 const AllPosts = () => {
     let posts = indexData.files;
     const [tagFilter, setTagFilter] = useState(null);
     const [filteredPosts, setFilteredPosts] = useState(posts);
-    const [allMarkdowns, setAllMarkdowns] = useState([]);
     const [hoveredImage, setHoveredImage] = useState(false);
-
-    useEffect(() => {
-        const fetchAllMarkdowns = async () => {
-            const markdowns = await Promise.all(
-                posts.map((post) => fetchMarkdownSlugs(post.key)),
-            );
-            setAllMarkdowns(markdowns);
-        };
-        fetchAllMarkdowns();
-    }, []);
 
     useEffect(() => {
         setFilteredPosts(
@@ -39,35 +27,6 @@ const AllPosts = () => {
 
     const handleTagChangeClick = (taggValue) => {
         setTagFilter(taggValue);
-    };
-
-    const fetchMarkdownSlugs = async (slug) => {
-        try {
-            let blogContent = await import(`../markdowns/${slug}.md`).then(
-                (res) => res.default,
-            );
-
-            // Remove markdown H1 title if present
-            if (blogContent.startsWith("# ")) {
-                blogContent = blogContent.substring(blogContent.indexOf("\n") + 1);
-            }
-
-            if (blogContent.includes("<p>")) {
-                blogContent = blogContent.split("</p>")[1]
-            }
-            blogContent = blogContent.split(" ").slice(0, 30).join(" ");
-            blogContent = blogContent.replace(/<[^>]*>?/gm, "");
-            blogContent = blogContent.replace(/\[([^\]]+)\]\([^\)]+\)/gm, "$1");
-            blogContent = blogContent.replace(/#/g, "");
-            return blogContent;
-
-        } catch (error) {
-            const text = await import(`../markdowns/${slug}.md`).then(
-                (res) => res.default,
-            );
-            console.error(text);
-            console.error("Error fetching markdown: ", error);
-        }
     };
 
     const onlyUnique = (value, index, self) => {
@@ -106,6 +65,7 @@ const AllPosts = () => {
                     <img
                         src={`/images/${hoveredImage}`}
                         alt=""
+                        loading="lazy"
                         style={{
                             maxWidth: '300px',
                             maxHeight: '300px',
@@ -274,7 +234,7 @@ const AllPosts = () => {
                                                 fontFamily: "Arial",
                                             }}
                                         >
-                                            {allMarkdowns[posts.findIndex((p) => p.key === post.key)]}
+                                            {post.summary}
                                             <span style={{ color: "grey" }}> ... continue reading</span>
                                         </h3>
                                     </div>

@@ -1,7 +1,7 @@
 # 15 Questions Music Interview on My EP Jurassimo
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/jurassimo.jpg" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/jurassimo.webp" alt="ld image">
 </p>
 
 This interview was originally posted on 15 questions https://15questions.net/interview/tensen-park-production-technology-and-creativity/ with music and images

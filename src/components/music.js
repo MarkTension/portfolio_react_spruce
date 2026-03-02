@@ -41,16 +41,16 @@ class Music extends React.Component {
 
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px" }}>
             <a href="https://tensenpark.bandcamp.com/album/jurassimo">
-              <img src={jurassimo.src} alt="Album - Jurassimo" style={{ width: "150px", height: "150px" }} />
+              <img src={jurassimo.src} alt="Album - Jurassimo" loading="lazy" style={{ width: "150px", height: "150px" }} />
             </a>
             <a href="https://tensenpark.bandcamp.com/album/futurebeats">
-              <img src={fbs.src} alt="Album - FBS" style={{ width: "150px", height: "150px" }} />
+              <img src={fbs.src} alt="Album - FBS" loading="lazy" style={{ width: "150px", height: "150px" }} />
             </a>
             <a href="https://tensenpark.bandcamp.com/album/mostly-angels">
-              <img src={mostly_angels.src} alt="Album - Mostly Angels" style={{ width: "150px", height: "150px" }} />
+              <img src={mostly_angels.src} alt="Album - Mostly Angels" loading="lazy" style={{ width: "150px", height: "150px" }} />
             </a>
             <a href="https://tensenpark.bandcamp.com/album/spring-walk-collection">
-              <img src={swc.src} alt="Album - SWC" style={{ width: "150px", height: "150px" }} />
+              <img src={swc.src} alt="Album - SWC" loading="lazy" style={{ width: "150px", height: "150px" }} />
             </a>
           </div>
 

@@ -1,7 +1,7 @@
 # MaxMSP Learnings: Preventing a Mess in Max for Live
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/max4lifeClean.png" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/max4lifeClean.webp" alt="ld image">
 </p>
 
 # Reflections on preventing a mess in MaxMSP/Max for Live
@@ -39,8 +39,8 @@ What works for me sometimes though, is asking to never give a patch (because it'
 It _is_ nice ofcourse as github co-pilot for Javascript (not the LOM though). But you gotta tell it that it's Javascript ES5. Many suggestions are ES6 and will not work.
 
 <p align="center">
-<img width= "50%" src="/images/max4lLifeUgly.jpg" alt="information image">
-<img width= "50%" src="/images/blogHeaders/max4lifeClean.png" alt="information image">
+<img width= "50%" src="/images/max4lLifeUgly.webp" alt="information image">
+<img width= "50%" src="/images/blogHeaders/max4lifeClean.webp" alt="information image">
 </p>
 **Left**: Oops Spagett, **Right**: Refactored
 

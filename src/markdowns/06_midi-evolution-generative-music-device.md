@@ -1,7 +1,7 @@
 # MIDI Evolution: A Generative Music Device
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/midi_evolution.jpg" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/midi_evolution.webp" alt="ld image">
 </p>
 
 Excited to have released a new MaxMSP Ableton device called Midi Evolution that's been quite central in the way I make music. The device is called MIDI Evolution, and it gives a way to generatively create long sequences of MIDI based on an evolutionary algorithm.

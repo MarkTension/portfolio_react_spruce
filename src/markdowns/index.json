@@ -8,7 +8,8 @@
                 "programming",
                 "ML"
             ],
-            "date": "2025-10"
+            "date": "2025-10",
+            "summary": "When I'm developing/debugging in pytorch, for years, I encounter the following annoyance all the time: A debug session is open, I highlight a line or number of lines and hit"
         },
         {
             "title": "Reflections on ALife 2025 conference",
@@ -18,7 +19,8 @@
                 "reflections",
                 "artificial-life"
             ],
-            "date": "2025-10"
+            "date": "2025-10",
+            "summary": "Because of my collaboration with the ALife institute, I had the honor to get a ticket to ALife 2025 sponsored. It was my first conference, and I thought it"
         },
         {
             "title": "Blogs I like",
@@ -29,11 +31,11 @@
                 "programming",
                 "ML"
             ],
-            "date": "2025-07"
+            "date": "2025-07",
+            "summary": "I like personal blogs specifically because they're less 'designed by commitee'. Less tailored, more opinionated. Higher chance also to stumble into a writer's other interests you'd otherwise not encounter;"
         },
         {
             "title": "On Minimizing WGSL / WebGPU texture plumbing",
-            
             "key": "22_minimizing-wgsl-texture-plumbing",
             "slug": "minimizing-wgsl-texture-plumbing",
             "tags": [
@@ -42,11 +44,11 @@
                 "gpugpu"
             ],
             "date": "2025-06",
-            "img": "nca_swarming.webp"
+            "img": "nca_swarming.webp",
+            "summary": "Here's a quick and powerful thing I learned during the development of our aritificial life project/paper from my collaborator Grisha Szep. Buffers are really powerful, because they're easy to"
         },
         {
             "title": "Emergence vs 'unexpected' emergence in artificial life",
-            
             "key": "21_unexpected-emergence-in-artificial-life",
             "slug": "unexpected-emergence-in-artificial-life",
             "tags": [
@@ -55,11 +57,11 @@
                 "reflections"
             ],
             "date": "2025-05",
-            "img": "nca_swarming.webp"
+            "img": "nca_swarming.webp",
+            "summary": "I liked Michael Levin's definition of emergence in a podcast with Kurt Jaimungal. According to him, central to emergence is an unexpected outcome. My simple working definition was always"
         },
         {
             "title": "My favorite WebGPU random function",
-            
             "key": "20_my_favorite_wgsl_random_func_so_far",
             "slug": "my_favorite_wgsl_random_func_so_far",
             "tags": [
@@ -68,11 +70,11 @@
                 "gpugpu"
             ],
             "date": "2025-05",
-            "img": "nca_swarming_2.webp"
+            "img": "nca_swarming_2.webp",
+            "summary": "I thought it was worth sharing this for its value, but also understanding the implementation gave me a more intimate understanding of some fundamental CS concepts: hashing, bitwise casting,"
         },
         {
             "title": "Detecting NaNs in WebGPU",
-            
             "key": "19_detecting-nans-on-webgpu",
             "slug": "detecting-nans-on-webgpu",
             "tags": [
@@ -81,11 +83,11 @@
                 "gpugpu"
             ],
             "date": "2025-04",
-            "img": "nca_swarming.webp"
+            "img": "nca_swarming.webp",
+            "summary": "NaNs can sometimes arise in WebGPU / WGSL when doing normalizations or divisions. Most important is setting up guardrails to safely do this, but sometimes it's nice to have"
         },
         {
             "title": "My iOS app Walk Walk Walk, and a more authentic internet",
-            
             "key": "18_a-more-authentic-internet-and-my-walk-walk-app",
             "slug": "a-more-authentic-internet-and-my-walk-walk-app",
             "tags": [
@@ -93,11 +95,11 @@
                 "reflections"
             ],
             "date": "2025-01",
-            "img": "congi.webp"
+            "img": "congi.webp",
+            "summary": "WalkWalkWalk as an example The app: https://apps.apple.com/nl/app/walkwalkwalk/id6742700740?l=en-GB The iOS app I've developed called WalkWalkWalk is more a creative outlet and artistic endeavor than it is its logic. It's"
         },
         {
             "title": "Neural Cellular Automata Swarming",
-            
             "key": "16_neural-cellular-automata-swarming",
             "slug": "neural-cellular-automata-swarming",
             "tags": [
@@ -107,33 +109,33 @@
                 "gpugpu"
             ],
             "date": "2024-12",
-            "img": "nca_swarming.webp"
+            "img": "nca_swarming.webp",
+            "summary": "So how does it work? I started with my standard flocking code. Then added a new buffer containing for each boid the 4-number state, which is also each boids'"
         },
         {
             "title": "Reality-questioning Ideas before bed",
-            
             "key": "15_reality-questioning-ideas-before-bed",
             "slug": "reality-questioning-ideas-before-bed",
             "tags": [
                 "reflections"
             ],
             "date": "2024-11",
-            "img": "nca_swarming_2.webp"
+            "img": "nca_swarming_2.webp",
+            "summary": "My day-to-day grind means singular focus, lots of screen-time, programming, and discussions around the ideas I'm working on. I love the grind, but the world can feel quite small"
         },
         {
             "title": "Two collective-intelligence models for the internet: the Rhizome and the Borg",
-            
             "key": "14_rhizome-vs-borg",
             "slug": "rhizome-vs-borg",
             "tags": [
                 "reflections"
             ],
             "date": "2024-11",
-            "img": "boidsJelly.webp"
+            "img": "boidsJelly.webp",
+            "summary": "This post was originally deployed on escherthink.com, a startup I'm co-founding. Escher Think reduces entropy in teams with ideas from collective intelligence. This post explores two analogies for the"
         },
         {
             "title": "Hierarchical BOIDS, Game of Life, recursion and a model for consciousness",
-            
             "key": "13_hierarchical-boids-game-of-life-and-consciousness",
             "slug": "hierarchical-boids-game-of-life-and-consciousness",
             "tags": [
@@ -144,11 +146,11 @@
                 "gpugpu"
             ],
             "date": "2024-11",
-            "img": "boidsCircle.webp"
+            "img": "boidsCircle.webp",
+            "summary": "This post explores a research idea that's been on my mind. It continues on my earlier research on how to simulate an order of magnitude more boids, but it's"
         },
         {
             "title": "Interview on music and technology with Griff Fulton on Delayed.com",
-            
             "key": "12_tensen-park-delayed-interview",
             "slug": "tensen-park-delayed-interview",
             "tags": [
@@ -157,7 +159,8 @@
                 "generative-art"
             ],
             "date": "2024-10",
-            "img": "blogHeaders/jurassimo.jpg"
+            "img": "blogHeaders/jurassimo.webp",
+            "summary": "This interview was originally posted on delayed on occasion of my new EP Jurassimo link We are so pleased to introduce you to Tensen Park, the mastermind behind the"
         },
         {
             "title": "Order of magnitude more boids while keeping global dynamics",
@@ -171,11 +174,11 @@
                 "gpugpu"
             ],
             "date": "2024-09",
-            "img": "blogHeaders/more_boids.webp"
+            "img": "blogHeaders/more_boids.webp",
+            "summary": "Here's some new results simulating an order of magnitude more boids, while keeping global interactivity accross the canvas. I'll share more what that means in this article, and how"
         },
         {
             "title": "15 Questions music interview on my EP Jurassimo",
-            
             "key": "10_15-questions-music-interview-on-my-ep-jurassimo",
             "slug": "15-questions-music-interview-on-my-ep-jurassimo",
             "tags": [
@@ -184,7 +187,8 @@
                 "generative-art"
             ],
             "date": "2024-09",
-            "img": "blogHeaders/jurassimo.jpg"
+            "img": "blogHeaders/jurassimo.webp",
+            "summary": "This interview was originally posted on 15 questions https://15questions.net/interview/tensen-park-production-technology-and-creativity/ with music and images Name: Mark Tensen aka Tensen Park Nationality: Dutch Occupation: Producer Current release: Tensen Park's Jurassimo EP"
         },
         {
             "title": "More raw websites please",
@@ -193,7 +197,8 @@
             "tags": [
                 "reflections"
             ],
-            "date": "2024-09"
+            "date": "2024-09",
+            "summary": "I loved the 00's internet as a kid. The sites were often ugly, the styling inconsistent, yet they were very personal to the creators, and really pulled you into"
         },
         {
             "title": "Estimating a 3D scene with primitives using raymarching and differentiable rendering in JAX",
@@ -207,11 +212,12 @@
                 "gpugpu"
             ],
             "date": "2024-07",
-            "img": "primitives_fer_gif.gif"
+            "img": "primitives_fer_gif.gif",
+            "summary": "At hypothetic we had a series of R&D projects focussing on providing tools for the 3D asset creation pipeline. One of these projects was on differentiable volume rendering. We"
         },
         {
             "title": "MaxMSP learnings",
-            "image": "/images/blogHeaders/max4lifeClean.png",
+            "image": "/images/blogHeaders/max4lifeClean.webp",
             "key": "07_maxmsp-learnings",
             "slug": "maxmsp-learnings",
             "tags": [
@@ -220,11 +226,12 @@
                 "reflections"
             ],
             "date": "2024-06",
-            "img": "blogHeaders/max4lifeClean.png"
+            "img": "blogHeaders/max4lifeClean.webp",
+            "summary": "Reflections on preventing a mess in MaxMSP/Max for Live  TLDR. It's hella hard to avoid Spaghetti. But I alleviated some of my suffering with the points in"
         },
         {
             "title": "MIDI Evolution - a generative music device",
-            "image": "/images/blogHeaders/midi_evolution.jpg",
+            "image": "/images/blogHeaders/midi_evolution.webp",
             "key": "06_midi-evolution-generative-music-device",
             "slug": "midi-evolution-generative-music-device",
             "tags": [
@@ -232,7 +239,8 @@
                 "generative-art",
                 "reflections"
             ],
-            "date": "2024-01"
+            "date": "2024-01",
+            "summary": "Excited to have released a new MaxMSP Ableton device called Midi Evolution that's been quite central in the way I make music. The device is called MIDI Evolution, and"
         },
         {
             "title": "Tensen Park - Reflections on my music",
@@ -243,11 +251,12 @@
                 "music",
                 "reflections"
             ],
-            "date": "2022-11"
+            "date": "2022-11",
+            "summary": "In this post I'll reflect on the unreleased 'Molasses' music album I've been trying to finish as Tensen Park. I'll try to make conscious what I've been unconsciously trying"
         },
         {
             "title": "Reinforcement Learning applied to sculpting - A technical story of AI craftsmanship",
-            "image": "/images/blogHeaders/rl_header.gif",
+            "image": "/images/blogHeaders/rl_header.webp",
             "key": "04_reinforcement-learning-applied-to-sculpting",
             "slug": "reinforcement-learning-applied-to-sculpting",
             "tags": [
@@ -256,11 +265,12 @@
                 "generative-art"
             ],
             "date": "2022-11",
-            "img": "blogHeaders/sculptgif.gif"
+            "img": "blogHeaders/sculptgif.webp",
+            "summary": "This is a technical overview of our reinforcement learning sculpting project. We will go into the reinforcement learning part, but also some additional technical details. Comprises work by: onformative.com"
         },
         {
             "title": "Firefly Synchronizer, a chaotic system Max4Live device",
-            "image": "/images/blogHeaders/firefly_synchronizer.png",
+            "image": "/images/blogHeaders/firefly_synchronizer.webp",
             "key": "03_firefly-synchronizer-chaotic-system-max4live-device",
             "slug": "firefly-synchronizer-chaotic-system-max4live-device",
             "tags": [
@@ -270,7 +280,8 @@
                 "generative-art"
             ],
             "date": "2022-10",
-            "img": "blogHeaders/header_firefly_device.webp"
+            "img": "blogHeaders/header_firefly_device.webp",
+            "summary": "**Introduction** Earlier on I shared about my work with firefly synchronization, or pulse-coupled oscillators. The mechanism is basically that we have a group of fireflies/oscillators, that emit pulses, each"
         },
         {
             "title": "Artificial life, fireflies and music production",
@@ -284,22 +295,24 @@
                 "artificial-life"
             ],
             "date": "2022-9",
-            "img": "fireflies1aa.webp"
+            "img": "fireflies1aa.webp",
+            "summary": "Complexity of nature, and simulations I'm interested in the emergence of intelligence, and replicating the beautiful complexity of nature. Often, these systems have a level of organization that"
         },
         {
             "title": "Quantifying interestingness in images using information theory",
-            "image": "/images/blogHeaders/information.png",
+            "image": "/images/blogHeaders/information.webp",
             "key": "01_quantifying-interestingness-images-information-theory",
             "slug": "quantifying-interestingness-images-information-theory",
             "tags": [
                 "generative-art",
                 "complex-systems"
             ],
-            "date": "2021-1"
+            "date": "2021-1",
+            "summary": "Making art with generative systems often involves a lot of parameter settings, randomness, and fine-tuning to get to a nice result. It’s a lot of work! Especially when dealing"
         },
         {
             "title": "A primer on Reinforcement Learning, and its application to art",
-            "image": "/images/blogHeaders/rl_header.gif",
+            "image": "/images/blogHeaders/rl_header.webp",
             "key": "00_primer-reinforcement-learning-application-to-art",
             "slug": "primer-reinforcement-learning-application-to-art",
             "tags": [
@@ -308,7 +321,8 @@
                 "generative-art"
             ],
             "date": "2021-1",
-            "img": "blogHeaders/sculptgif.gif"
+            "img": "blogHeaders/sculptgif.webp",
+            "summary": "In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention. This was largely due to its spectacular success of"
         }
     ]
 }

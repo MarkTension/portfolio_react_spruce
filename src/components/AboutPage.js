@@ -25,7 +25,7 @@ export default function AboutPage() {
                 id="aboutpage"
                 style={{
                     background: "black",
-                    width: window.innerWidth < 500 ? "90vw" : "100%",
+                    width: typeof window !== 'undefined' && window.innerWidth < 500 ? "90vw" : "100%",
                     paddingBottom: "5em",
                     position: "relative",
                     minHeight: "100vh",
@@ -36,7 +36,7 @@ export default function AboutPage() {
                     right: '20px',
                     top: '20px',
                     zIndex: 1000,
-                    display: window.innerWidth > 800 ? 'block' : 'none',
+                    display: typeof window !== 'undefined' && window.innerWidth > 800 ? 'block' : 'none',
                 }}>
                     <button
                         style={{

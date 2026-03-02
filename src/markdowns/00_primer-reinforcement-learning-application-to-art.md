@@ -1,7 +1,7 @@
 # A Primer on Reinforcement Learning and Its Application to Art
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/rl_header.gif" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/rl_header.webp" alt="ld image">
 </p>
 In recent years, Reinforcement Learning (RL), once a small branch within the field of AI, has gotten quite some attention. This was largely due to its spectacular success of achieving superhuman-performance on difficult games such as Go, Chess, DOTA 2, and Starcraft II.
 
@@ -20,7 +20,7 @@ This specific domain of problems brings us to RL. Generally speaking, the goal i
 Each time-step in the environment, the agent gets presented with an observation, and it should learn which action to perform at that moment. If the actions make the agent reach its goal, it gets rewarded (and the set of actions that lead to the reward get reinforced). For the Pacman example: Pacman (agent) needs to do actions within the maze (environment) to eat food (get reward), and not get eaten by ghosts (negative reward).
 
 <p align="center">
-<img width= "40%" src="/images/rlIm0.png" alt="ld image">
+<img width= "40%" src="/images/rlIm0.webp" alt="ld image">
 </p>
 
 So what is this agent exactly? Well, there are many forms, but in most modern use-cases with complex environments it is a neural network, with inputs that effectively summarize the environment’s state, and outputs that are the actions the agent chooses.
@@ -43,8 +43,8 @@ One of the shortcomings with reinforcement learning is that it isn’t as mature
 In short, RL is already having some success in industry, but it is comparatively small-scale, and not expected to reach the impact of e.g. supervised learning anytime soon. ML-guru Andrew Ng stated that “the hype around ML is a bit disproportionate to the value that’s delivered today”. See the graph below, and compare with google n-gram graph for the RL hype in literature. In the latter, also notice how deep-RL has made its entrance into literature since ~2014.
 
 <p align="center">
-<img width= "40%" src="/images/rlIm1.png" alt="ld image">
-<img width= "40%" src="/images/rlIm2.png" alt="ld image">
+<img width= "40%" src="/images/rlIm1.webp" alt="ld image">
+<img width= "40%" src="/images/rlIm2.webp" alt="ld image">
 </p>
 
 
@@ -73,7 +73,7 @@ To give an example of applying RL to art/generative design, I’ll cover a perso
 This project was focused on make a sculpting in a 3D environment. Which means, getting from a 3D block to a predefined target shape by removing mass from the initial block in a smart way. The agent needs to decide how to navigate the space, which parts to remove and how. It’s basically a simulation environment with infinite data and a clear reward structure, and therefore an excellent use-case for RL. The way to make the agent learn is rewarding it the right way: give reward when extraneous mass is removed, and penalty when mass that ought to be part of the final sculpture is removed.
 
 <p align="center">
-<img width= "40%" src="/images/rlIm4.png" alt="ld image">
+<img width= "40%" src="/images/rlIm4.webp" alt="ld image">
 </p>
 
 _RL-sculpting by Onformative_

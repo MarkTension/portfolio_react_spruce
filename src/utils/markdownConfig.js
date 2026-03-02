@@ -1,27 +1,26 @@
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { darcula as codeStyle } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-// Import only the languages you actually use
-import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python';
-import hlsl from 'react-syntax-highlighter/dist/cjs/languages/prism/hlsl';
-import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
-import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript';
-import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json';
+import React, { Suspense } from 'react';
 
-// Register only the languages you need
-SyntaxHighlighter.registerLanguage('python', python);
-SyntaxHighlighter.registerLanguage('hlsl', hlsl);
-SyntaxHighlighter.registerLanguage('javascript', javascript);
-SyntaxHighlighter.registerLanguage('typescript', typescript);
-SyntaxHighlighter.registerLanguage('json', json);
+const LazyHighlighter = React.lazy(() => import('./SyntaxHighlighterWrapper'));
 
 function Code({ className, children }) {
     const language = className?.replace("lang-", "");
     return (
-        <div className="codeBlock">
-            <SyntaxHighlighter language={language?.toLowerCase()} style={codeStyle}>
-                {children}
-            </SyntaxHighlighter>
-        </div>
+        <Suspense fallback={
+            <div className="codeBlock">
+                <pre style={{
+                    backgroundColor: "#2b2b2b",
+                    color: "#a9b7c6",
+                    padding: "1em",
+                    borderRadius: "4px",
+                    fontSize: "0.9em",
+                    overflow: "auto",
+                }}>
+                    <code>{children}</code>
+                </pre>
+            </div>
+        }>
+            <LazyHighlighter language={language}>{children}</LazyHighlighter>
+        </Suspense>
     );
 }
 

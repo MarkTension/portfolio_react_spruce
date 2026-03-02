@@ -25,7 +25,7 @@ I believe people will increasingly care more about authenticity, an artisinal/ha
 As a sidenote: the narrative of AI taking the artistic stuff away from creatives is not entirely true in this case, because it gives creative-minded people a new medium as well.
 
 <p align="center">
-<img width= "50%" src="/images/walkwalk1.PNG" alt="congi im">
+<img width= "50%" src="/images/walkwalk1.webp" alt="congi im">
 </p>
 
 ### WalkWalkWalk as an example
@@ -39,7 +39,7 @@ We really loved the daily walks, and once he was gone our walks stopped too.
 The app is a way to get those walks back into our daily life again. 
 
 <p align="center">
-<img width= "50%" src="/images/walkwalk4.jpg" alt="congi im">
+<img width= "50%" src="/images/walkwalk4.webp" alt="congi im">
 </p>
 
 The app-logic is fun, but already done before by a combination of other apps. 
@@ -54,7 +54,7 @@ I'm not necessarily predicting this app will be a big hit.
 But in this post it serves as a good example how combining creative freedom with technology could look like.
 
 <p align="center">
-<img width= "50%" src="/images/walkwalk3.jpg" alt="congi im">
+<img width= "50%" src="/images/walkwalk3.webp" alt="congi im">
 </p>
 
 In conclusion: 

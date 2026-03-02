@@ -1,7 +1,7 @@
 # Quantifying Interestingness in Images Using Information Theory
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/information.png" alt="information image">
+<img width= "40%" src="/images/blogHeaders/information.webp" alt="information image">
 </p>
 
 Making art with generative systems often involves a lot of parameter settings, randomness, and fine-tuning to get to a nice result. It’s a lot of work! Especially when dealing with random/complex systems that could under the same starting state generate thousands of different results. What if you can somehow automate this trial-and-error process?
@@ -49,14 +49,14 @@ The down-sampling took some playing around. In the end, down-sampling by roundin
 Shown beneath are the result. Each figure has an original image, down-sampled image, and a sophistication score at the bottom. It ranges from 70 to 97. This score comes from the compression efficiency on the down-sampled image. (a bit on the small side, sorry about that). I hope you think they speak for themselves:
 
 <p align="center">
-<img width= "10%" src="/images/info0.png" alt="information image">
-<img width= "10%" src="/images/info1.png" alt="information image">
-<img width= "10%" src="/images/info2.png" alt="information image">
-<img width= "10%" src="/images/info3.png" alt="information image">
-<img width= "10%" src="/images/info4.png" alt="information image">
-<img width= "10%" src="/images/info5.png" alt="information image">
-<img width= "10%" src="/images/info6.png" alt="information image">
-<img width= "10%" src="/images/info7.png" alt="information image">
+<img width= "10%" src="/images/info0.webp" alt="information image">
+<img width= "10%" src="/images/info1.webp" alt="information image">
+<img width= "10%" src="/images/info2.webp" alt="information image">
+<img width= "10%" src="/images/info3.webp" alt="information image">
+<img width= "10%" src="/images/info4.webp" alt="information image">
+<img width= "10%" src="/images/info5.webp" alt="information image">
+<img width= "10%" src="/images/info6.webp" alt="information image">
+<img width= "10%" src="/images/info7.webp" alt="information image">
 </p>
 
 #### Next steps

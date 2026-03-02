@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
-import ReactGA from "react-ga4";
 import { useRouter } from 'next/navigation';
 import posts from "../markdowns/index.json";
 import { getMarkdownOptions } from "../utils/markdownConfig";
+import { sendPageView, sendEvent } from "../utils/analytics";
 
 export default function OnePost({ slug }) {
     const router = useRouter();
@@ -22,11 +22,7 @@ export default function OnePost({ slug }) {
                 import(`../markdowns/${currentPost.key}.md`)
                     .then((res) => {
                         setPostContent(res.default);
-                        ReactGA.send({
-                            hitType: "pageview",
-                            page: `/blog/${slug}`,
-                            title: currentPost.title
-                        });
+                        sendPageView(`/blog/${slug}`, currentPost.title);
                     })
                     .catch((err) => console.log(err));
 
@@ -45,16 +41,16 @@ export default function OnePost({ slug }) {
             return () => {
                 const endTime = new Date();
                 const timeSpent = (endTime - startTime) / 1000; // in seconds
-                ReactGA.event({
-                    category: "Blog",
-                    action: "Time on Page",
-                    label: slug,
-                    value: Math.round(timeSpent),
-                    params: {
+                sendEvent(
+                    "Blog",
+                    "Time on Page",
+                    slug,
+                    Math.round(timeSpent),
+                    {
                         post_title: currentPost?.title,
                         time_spent_seconds: Math.round(timeSpent)
                     }
-                });
+                );
             };
         }
     }, [slug]);
@@ -69,7 +65,7 @@ export default function OnePost({ slug }) {
                 id="onepost"
                 style={{
                     background: "black",
-                    width: window.innerWidth < 500 ? "90vw" : "100%",
+                    width: typeof window !== 'undefined' && window.innerWidth < 500 ? "90vw" : "100%",
                     paddingBottom: "5em",
                     position: "relative",
                 }}
@@ -110,7 +106,7 @@ export default function OnePost({ slug }) {
                     maxWidth: '110px',
                     right: '20px',
                     top: '20px',
-                    display: window.innerWidth > 800 ? 'block' : 'none',
+                    display: typeof window !== 'undefined' && window.innerWidth > 800 ? 'block' : 'none',
                     zIndex: 1000,
                     background: 'black',
                     padding: '10px',

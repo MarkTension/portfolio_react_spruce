@@ -15,8 +15,9 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate-summaries": "node scripts/generate-summaries.js",
+    "dev": "node scripts/generate-summaries.js && next dev",
+    "build": "node scripts/generate-summaries.js && next build",
     "start": "npx serve@latest ./build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

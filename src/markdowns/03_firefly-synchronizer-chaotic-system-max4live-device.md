@@ -1,7 +1,7 @@
 # Firefly Synchronizer: A Chaotic System Max4Live Device
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/firefly_synchronizer.png" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/firefly_synchronizer.webp" alt="ld image">
 </p>
 
 **Introduction**
@@ -21,7 +21,7 @@ Therefore I made a Max for Live device with MaxMSP so that it can be natively us
 Max MSP is quite an interesting visual programming language. It can look a bit clunky if you're used to coding, especially when you encounter patches made by me. But it actually works quite well.
 
 <p align="center">
-<img width= "40%" src="/images/blogHeaders/maxmsp_hell.png" alt="ld image">
+<img width= "40%" src="/images/blogHeaders/maxmsp_hell.webp" alt="ld image">
 </p>
 
 Before I got started in MaxMSP, in which I'm a total beginner, I had to make an efficient version based on matrix-multiplications instead of my custom GPU method. I used python and numpy for that, and my code is available on github [link](https://github.com/MarkTension/fireflies_vectormath). With this as a reference, I felt confident to replicate it in the unknown territories in max.

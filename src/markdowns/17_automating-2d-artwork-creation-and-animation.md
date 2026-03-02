@@ -48,7 +48,7 @@ Probably the best bet for great animations with these foundational models are im
 ### Conclusion - animation
 For now I'm sticking with some wonderfully low-tech lo-fi animations.
 <p align="center">
-<img width= "40%" src="/images/congi/c8.gif" alt="congi im">
+<img width= "40%" src="/images/congi/c8.webp" alt="congi im">
 </p>
 
 I found no out-of-the box methods to animate quadripedal. Probably in a year or so we'd be there.

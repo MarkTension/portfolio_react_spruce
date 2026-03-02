@@ -1,7 +1,7 @@
 # Artificial Life, Fireflies, and Music Production
 
 <p align="center">
-<img width= "90%" src="/images/fireflies1.png" alt="ld image">
+<img width= "90%" src="/images/fireflies1.webp" alt="ld image">
 </p>
 
 #### Complexity of nature, and simulations
@@ -30,13 +30,13 @@ The paper I used for reference was called [Firefly-inspired Heartbeat Synchroniz
 Then I plotted the synchronization over time. The below figure shows the results, with on the x-axis time, and the y-axis is each firefly (800 in total). Every time a spike happens, a blue dot is plotted in the graph. As you can see, over time the random firing converges into synchronized firing. The [code is on github](https://github.com/MarkTension/FireflySimulationErmentraut). As a bonus, there's a midi module in the code that allows using the firing behavior as a midi device to use e.g. in Ableton. However, a real Max for Live device is in the making and almost done, so better wait for that if interested in using with ableton.
 
 <p align="center">
-<img width= "70%" src="/images/fireflies0.png" alt="ld image">
+<img width= "70%" src="/images/fireflies0.webp" alt="ld image">
 </p>
 
 Also you can plot how the phases converge of all the oscillators. In the graph below are all the phases relative to one other phase. Note that we get three clusters, which is quite cool.
 
 <p align="center">
-<img width= "70%" src="/images/fireflies2.png" alt="ld image">
+<img width= "70%" src="/images/fireflies2.webp" alt="ld image">
 </p>
 
 #### Replicating this in Unity
@@ -62,8 +62,8 @@ Each firefly is one pixel on the y-axis, and a little white dot is plotted when 
 I forgot that the sorting algorithm was continually shuffling the agent buffer based on their positions, ,which made the graph accidentally take the location of the agent into account. The result shows the fireflies flocking together as well, and moving through the space. Here's some results that show the effect:
 
 <p align="center">
-<img width= "90%" src="/images/fireflies1.png" alt="ld image">
-<img width= "90%" src="/images/fireflies3.png" alt="ld image">
+<img width= "90%" src="/images/fireflies1.webp" alt="ld image">
+<img width= "90%" src="/images/fireflies3.webp" alt="ld image">
 </p>
 
 Here you see how at the start the agents are still randomly divided in the map, but slowly flock together. Also you see that certain groups over time start firing in synchrony. Because there's different species, and one with a ver low frequency that never fully synchronizes, you can see the differerent gradient windows that form. I really liked the result. They have a weird wood-pattern like structure.
