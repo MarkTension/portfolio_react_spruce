@@ -1,6 +1,18 @@
 {
     "files": [
         {
+            "title": "Future of digital art is diffusion models or code?",
+            "key": "26_future-of-digital-art-is-diffusion-models-or-code",
+            "slug": "future-of-digital-art",
+            "tags": [
+                "reflections",
+                "generative-art"
+            ],
+            "date": "2025-10",
+            "img": "mythstream.webp",
+            "summary": "From generative design to generative models When starting my carreer from around 2019, I really believed in creative coding and commiting to the art of generative design through"
+        },
+        {
             "title": "My biggest pytorch workflow gripe",
             "key": "25_biggest_worflow_gripe_in_pytorch",
             "slug": "workflow-gripe-pytorch",
