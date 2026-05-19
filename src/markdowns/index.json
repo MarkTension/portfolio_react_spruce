@@ -1,6 +1,19 @@
 {
     "files": [
         {
+            "title": "Locomotion by Actin Polymerization",
+            "key": "27_webgpu-actin-locomotion",
+            "slug": "future-of-digital-art",
+            "tags": [
+                "webgpu",
+                "programming",
+                "generative-art"
+            ],
+            "date": "2026-05",
+            "img": "actin_header.png",
+            "summary": "This project was done together by Grisha Szep and me (Mark Tensen) in 2025, from spring to autumn. Our goal was to explore working together on a"
+        },
+        {
             "title": "Future of digital art is diffusion models or code?",
             "key": "26_future-of-digital-art-is-diffusion-models-or-code",
             "slug": "future-of-digital-art",

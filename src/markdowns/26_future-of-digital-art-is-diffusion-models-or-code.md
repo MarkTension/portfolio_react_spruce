@@ -24,7 +24,7 @@ What changed my thinking was what happened acouple day ago. I was making video m
 This would create a database of frames. 
 Step 2 was orchestrating them together into a video by randomly sampling frames, a consistent color scheme, pixelating, working on a time-grid to create rhythmic transitions, making distinct sections to keep things interesting, quantized noise, and matching the music's BPM.
 
-The video is to be [here](https://www.instagram.com/reel/DYUkl9DihCc/?igsh=b3RlcDNidGR5NGdr) found on my Instagram
+The video is to be found [here](https://www.instagram.com/reel/DYUkl9DihCc/?igsh=b3RlcDNidGR5NGdr) on my Instagram. Code is [here](https://github.com/MarkTension/mythstream_video_editor) 
 
 This project only took a couple of evenings using AI assisted coding. It's cool that this swiftness to create software on demand completely bypassed the need for a video-editor, or other software (except for the libraries I used (big shoutout)). And even more, it is accessible for anyone that is not technical who just wants to make cool unique stuff.
 

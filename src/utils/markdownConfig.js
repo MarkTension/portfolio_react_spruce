@@ -45,6 +45,14 @@ export const getMarkdownOptions = () => ({
                 },
             },
         },
+        h2: {
+            props: {
+                style: {
+                    fontSize: "1.15em",
+                    fontWeight: "200",
+                },
+            },
+        },
         pre: {
             props: {
                 style: {
