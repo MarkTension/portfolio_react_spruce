@@ -31,6 +31,24 @@ export default function AboutPage() {
                     minHeight: "100vh",
                 }}
             >
+                <div
+                    style={{
+                        background: 'black',
+                        padding: '10px 18px 10px 18px',
+                        borderBottomRightRadius: '12px',
+                        cursor: 'pointer',
+                        fontSize: '1.1em',
+                        color: 'orange',
+                        fontWeight: 700,
+                        letterSpacing: '0.04em',
+                        width: 'fit-content',
+                        marginTop: 0,
+                        marginLeft: 0,
+                    }}
+                    onClick={handleHomeClick}
+                >
+                    Mark Tensen
+                </div>
                 <div style={{
                     position: 'fixed',
                     right: '20px',
