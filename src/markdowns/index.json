@@ -1,6 +1,17 @@
 {
     "files": [
         {
+            "title": "New album - MythStream",
+            "key": "28_mythstream",
+            "slug": "tensen-park-mythstream",
+            "tags": [
+                "music"
+            ],
+            "date": "2026-05",
+            "img": "mythstream.jpeg",
+            "summary": "MythStream got released yesterday, May 29'th 2026. For all IDM nerds out there, May 29 shares the release day with Boards of"
+        },
+        {
             "title": "Locomotion by Actin Polymerization",
             "key": "27_webgpu-actin-locomotion",
             "slug": "cell-locomotion-through-actin-polymerization",

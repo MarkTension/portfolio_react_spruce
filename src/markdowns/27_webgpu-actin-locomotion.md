@@ -5,7 +5,7 @@
 ## Preface
 This project was done together by [Grisha Szep](https://gszep.com/en/) and me in 2025, from spring to autumn.
 Our goal was to work together, and create an interesting looking interactive simulation of emergent cell locomotion with WebGPU.
-Grisha has background in physics and a PhD in computational biology, and both of us love artistic projects.
+Grisha has a background in physics and a PhD in computational biology, and both of us love artistic projects.
 Looking back, the way we handled self-assembly via texture writing feels like the heart of the project. It wasn't the most obvious approach, but it ended up being the most rewarding puzzle to solve. 
 
 Beyond the code, it was great to tackle this together. Working with Grisha taught me things about the intersection of biology and physics that I never would have picked up on my own.
@@ -67,3 +67,21 @@ The membrane is a circular chain of segments that deforms under pressure from po
 We even did an extra segway into vesicle budding, by letting membrane segments also detect other segments nearby via texture lookup. This could split the cell (mitosis) or break off a vesical, all by the basic mechanism of splitting one loop into two.
 
 Anyway, It’s been an incredible deep-dive into biology and emergent systems—thanks for reading!
+
+## Citation
+
+If you'd like to reference this work, you can cite it as:
+
+> Szep, G., & Tensen, M. (2026). *Emergent 2D Cell Locomotion with Actin Polymerization*. Retrieved from https://marktension.nl/blog/cell-locomotion-through-actin-polymerization
+
+BibTeX:
+
+```bibtex
+@misc{szep_tension_2026_actin,
+  author       = {Szep, Grisha and Tensen, Mark},
+  title        = {Emergent 2D Cell Locomotion with Actin Polymerization},
+  year         = {2026},
+  howpublished = {\url{https://marktension.nl/blog/cell-locomotion-through-actin-polymerization}},
+  note         = {Accessed: \today}
+}
+```
