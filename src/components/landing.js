@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ff0 from "../images/firefliesPoster.webp";
 import ff1 from "../images/fireflies1.webp";
 import ff4 from "../images/fireflies2.webp";
 import nca from "../images/nca_swarming.webp";
@@ -54,8 +53,17 @@ class Landing extends React.Component {
                 }}
             >
                 <div className="image-container">
-                    <Image src={ff0.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff1.src} alt="Logo" width={imageSize} height={imageSize} />
+                    <video
+                        src="/images/hero_video.webm"
+                        width={imageSize}
+                        height={imageSize}
+                        style={{ objectFit: "cover" }}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    />
                     <Image src={nca.src} alt="Logo" width={imageSize} height={imageSize} />
                     <Image src={ff4.src} alt="Logo" width={imageSize} height={imageSize} />
                 </div>
