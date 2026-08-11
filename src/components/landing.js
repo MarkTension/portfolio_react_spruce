@@ -1,8 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import ff1 from "../images/fireflies1.webp";
-import ff4 from "../images/fireflies2.webp";
-import nca from "../images/nca_swarming.webp";
 import { Item } from "./textConstants";
 import posts from "../markdowns/index.json";
 
@@ -53,9 +49,8 @@ class Landing extends React.Component {
                 }}
             >
                 <div className="image-container">
-                    <Image src={ff1.src} alt="Logo" width={imageSize} height={imageSize} />
                     <video
-                        src="/images/hero_video.webm"
+                        src="/images/grid.webm"
                         width={imageSize}
                         height={imageSize}
                         style={{ objectFit: "cover" }}
@@ -64,8 +59,26 @@ class Landing extends React.Component {
                         loop
                         playsInline
                     />
-                    <Image src={nca.src} alt="Logo" width={imageSize} height={imageSize} />
-                    <Image src={ff4.src} alt="Logo" width={imageSize} height={imageSize} />
+                    <video
+                        src="/images/steric.webm"
+                        width={imageSize}
+                        height={imageSize}
+                        style={{ objectFit: "cover" }}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    />
+                    <video
+                        src="/images/swimming.webm"
+                        width={imageSize}
+                        height={imageSize}
+                        style={{ objectFit: "cover" }}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    />
                 </div>
                 <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%", marginTop: "2em" }}>
                     <div style={{ width: "35%", minWidth: "0", flexShrink: 0 }}>

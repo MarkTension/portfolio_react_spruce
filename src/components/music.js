@@ -4,6 +4,7 @@ import fbs from "../images/album_fbs.jpg";
 import jurassimo from "../images/album_jurassimo.jpg";
 import mostly_angels from "../images/album_mostly_angels.jpg";
 import swc from "../images/album_swc.jpg";
+import mythstream from "../images/album_mythstream.webp";
 
 class Music extends React.Component {
   constructor(props) {
@@ -39,7 +40,10 @@ class Music extends React.Component {
           </Item>
           
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px" }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 10px", flexWrap: "wrap" }}>
+            <a href="https://tensenpark.bandcamp.com/album/mythstream">
+              <img src={mythstream.src} alt="Album - Mythstream" loading="lazy" style={{ width: "150px", height: "150px" }} />
+            </a>
             <a href="https://tensenpark.bandcamp.com/album/jurassimo">
               <img src={jurassimo.src} alt="Album - Jurassimo" loading="lazy" style={{ width: "150px", height: "150px" }} />
             </a>
