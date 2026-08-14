@@ -20,7 +20,7 @@ Just like creatives had an instagram portfolio of images. Now your ig wall could
 Utility mixed with artistic taste is actually a very interesting thing in my opinion: Sparking some joy in mundane daily life things.
 
 The new web will have to over-compensate for all the middle of the road, formulaic stuff out there. 
-I believe people will increasingly care more about authenticity, an artisinal/hand-made feeling, novelty, and the sense that you're entering someone's world when you enter a webpage or app.
+I believe people will increasingly care more about authenticity, an artisinal/hand-made feeling, novelty, and the sense that you're entering someone's world when you enter a webpage or app. I made the website version of this argument in [more raw websites, please](/blog/more-raw-websites-please).
 
 As a sidenote: the narrative of AI taking the artistic stuff away from creatives is not entirely true in this case, because it gives creative-minded people a new medium as well.
 

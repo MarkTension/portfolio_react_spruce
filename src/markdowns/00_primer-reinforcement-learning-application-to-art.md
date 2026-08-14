@@ -7,7 +7,7 @@ In recent years, Reinforcement Learning (RL), once a small branch within the fie
 
 Why now? Same as all machine learning since 2016: Increased computational power! This allowed RL to benefit from the latest deep-learning developments, and thereby starting its sub-branch called deep-RL. But are there any other applications in industry beyond gaming? Absolutely! As some of these will be covered in this post, I’ll also share one of my own use-cases within the digital arts.
 
-See the project website [here](https://onformative.com/work/ai-sculpting/)
+See the project website [here](https://onformative.com/work/ai-sculpting/), and [Reinforcement learning applied to sculpting](/blog/reinforcement-learning-applied-to-sculpting) for the full technical write-up of that project.
 
 ## **A quick primer on RL**
 

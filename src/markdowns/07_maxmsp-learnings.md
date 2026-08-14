@@ -10,6 +10,8 @@
 
 It's hella hard to avoid Spaghetti. But I alleviated some of my suffering with the points in the 'Some general learnings' paragraph in the bottom.
 
+These learnings come from building two devices in particular: the [Firefly Synchronizer](/blog/firefly-synchronizer-chaotic-system-max4live-device) and [MIDI Evolution](/blog/midi-evolution-generative-music-device).
+
 ### Intro
 
 Every day I code.

@@ -1,6 +1,6 @@
 # On minimizing WGSL / WebGPU texture plumbing
 
-Here's a quick and powerful thing I learned during the development of our aritificial life project/paper from my collaborator [Grisha Szep](https://gszep.com/). 
+Here's a quick and powerful thing I learned during the development of our aritificial life project/paper on [cell locomotion through actin polymerization](/blog/cell-locomotion-through-actin-polymerization), from my collaborator [Grisha Szep](https://gszep.com/). 
 
 Buffers are really powerful, because they're easy to read from and write to in any form or size (int32,float32,struct).
 

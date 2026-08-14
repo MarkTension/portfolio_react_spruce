@@ -6,6 +6,8 @@
 
 This is a technical overview of our reinforcement learning sculpting project. We will go into the reinforcement learning part, but also some additional technical details. Comprises work by: onformative.com - Mark Tensen, Alexander Hahn, Cedric Kiefer.
 
+If you wanna read a more basic introduction, here's [my primer on reinforcement learning and its application to art](/blog/primer-reinforcement-learning-application-to-art) 
+
 See the project website [here](https://onformative.com/work/ai-sculpting/)
 
 ## Glossary

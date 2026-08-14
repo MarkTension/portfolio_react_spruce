@@ -69,6 +69,8 @@ Ultimately making it into a quantifiable visual-interest library would be great.
 
 I’d also like to expand Aaronson’s metric by applying it on multiple scales. Not only with a down-sampling factor of e.g. x16, but also of x4, x32, x64. This could indicate that on different levels of detail there are interesting variations; x64 shows more a global variation with higher contrast between bigger areas. But variations on a smaller scale are also interesting, thus the x4 down-sampling.
 
+I've kept returning to this criticality idea since: as the thing I steer my flocking systems towards in [an order of magnitude more boids](/blog/order-of-magnitude-boids), as a complexity metric in [hierarchical BOIDS and Game of Life](/blog/hierarchical-boids-game-of-life-and-consciousness), and as the musical sweet spot behind [the Firefly Synchronizer](/blog/firefly-synchronizer-chaotic-system-max4live-device) and [MIDI Evolution](/blog/midi-evolution-generative-music-device).
+
 Originally posted on my website. Follow me on [Twitter](https://twitter.com/Mark_Tension) for more updates on this.
 
 #### References:

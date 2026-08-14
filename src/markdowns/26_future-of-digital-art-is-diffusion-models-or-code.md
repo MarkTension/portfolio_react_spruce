@@ -11,7 +11,7 @@
 When starting my carreer from around 2019, I really believed in creative coding and commiting to the art of generative design through creative coding.
 My heroes were (and still are) [Zach Lieberman](http://zach.li/), [Arsiliath](https://www.youtube.com/@arsiliath/videos), [Manoloide](https://x.com/manoloidee), [Tyler Hobbs](https://x.com/tylerxhobbs), and many more. Some popular frameworks at the time were Processing, OpenFrameworks, Touchdesigner and P5.js. Or directly programming the lower level graphics APIs, through WebGL, GLSL, WGSL etc..
 
-I worked a super fun job at the time, at [Onformative](https://onformative.com/) making a 3D [Reinforcement learning sculpting agent](https://onformative.com/work/ai-sculpting), while learning more about generative art.
+I worked a super fun job at the time, at [Onformative](https://onformative.com/) making a 3D [Reinforcement learning sculpting agent](https://onformative.com/work/ai-sculpting), while learning more about generative art. I wrote that project up in detail in [Reinforcement learning applied to sculpting](/blog/reinforcement-learning-applied-to-sculpting), with the background theory in [a primer on RL and its application to art](/blog/primer-reinforcement-learning-application-to-art).
 
 The peak for me was somewhere around 2021, with a lot of sudden interest in it coming in via the NFT wave.
 
@@ -24,7 +24,7 @@ However a big problem with using prompts for images is that it is still a bit cl
 This was the strength of creative coding. Being in total control of every layer in the process: Any single color value, noise probability distribution and physics dynamics are precisely tuned by the creator. And ofcourse the fun of undpredictable things happening with small errors was a really powerful interface for making interesting art.
 
 ### A comeback
-What changed my thinking was what happened acouple day ago. I was making video material to accompany my new music release [Mythstream](https://tensenpark.bandcamp.com/album/mythstream). It was a simple idea: sample frames from videos created when working on "Microcosmos" at the Artificial life institute.
+What changed my thinking was what happened acouple day ago. I was making video material to accompany my new music release [Mythstream](/blog/tensen-park-mythstream). It was a simple idea: sample frames from videos created when working on ["Microcosmos"](/blog/microcosmos-differentiable-artificial-life) at the Artificial life institute.
 This would create a database of frames. 
 Step 2 was orchestrating them together into a video by randomly sampling frames, a consistent color scheme, pixelating, working on a time-grid to create rhythmic transitions, making distinct sections to keep things interesting, quantized noise, and matching the music's BPM.
 

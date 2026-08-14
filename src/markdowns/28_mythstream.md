@@ -14,6 +14,8 @@ But then tied together with what I love about the music from now: Purelink’s m
 
 The label it's released on, Never Late, is quite new and covers a really fun corner of music.
 
+The accompanying video was made by sampling frames from my [Microcosmos](/blog/microcosmos-differentiable-artificial-life) simulations and cutting them to the music with a small config-driven editor. That process is what changed my mind about where digital art is heading, which I wrote about in [Future of digital art is generative models or code?](/blog/future-of-digital-art).
+
 Hope you will enjoy
 
 Listen on [Bandcamp](https://tensenpark.bandcamp.com/album/mythstream) or [elsewhere](https://album.link/i/1891231467)

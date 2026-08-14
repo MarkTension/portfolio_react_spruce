@@ -18,3 +18,5 @@ Therefore I built my portfolio website without a website builder. A website buil
 The added upsides for me are 0 hosting costs using github pages. And I can write my blog in markdown files directly in the code editor, and deploy a new version with one command 'npm run deploy'. This makes the barrier quite low for me to write my thoughts down, or document a project.
 
 I hope this inspires someone to build their own raw and slightly ugly website and thereby create their unique corner of the internet.
+
+Some of the corners I keep coming back to are collected in [blogs I like](/blog/blogs-i-like). I've also argued the same thing about apps rather than websites in [a more authentic internet and my WalkWalkWalk app](/blog/a-more-authentic-internet-and-my-walk-walk-app), and about who ends up controlling those corners in [the Rhizome and the Borg](/blog/rhizome-vs-borg).

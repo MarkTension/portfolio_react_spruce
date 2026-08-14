@@ -6,9 +6,9 @@
 
 **Introduction**
 
-Earlier on I shared about [my work](https://marktension.nl/#/blog/Artificial%20life,%20fireflies%20and%20music%20production) with firefly synchronization, or pulse-coupled oscillators. The mechanism is basically that we have a group of fireflies/oscillators, that emit pulses, each in their own frequency. The firing is random and chaotic at first. However, the synchronization algorithm makes the fireflies synchronize with another over time.
+Earlier on I shared about [my work](/blog/artificial-life-fireflies-and-music-production) with firefly synchronization, or pulse-coupled oscillators. The mechanism is basically that we have a group of fireflies/oscillators, that emit pulses, each in their own frequency. The firing is random and chaotic at first. However, the synchronization algorithm makes the fireflies synchronize with another over time.
 
-Besides [cool computer graphics simulations](https://www.youtube.com/shorts/xAIEW4pQowA), I'm even more interested in applying it to music. The firefly complex system is perfectly suitable for this because it finds itself often in states between chaos and order. This point is refered to as criticality, and these states have potential for interesting patterns/rhythms, that I often look for when creating my own music with [Tensen Park](https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=B-hhMFm8R56Xb_Miz4bybQ). In a way it can be seen as a sequencer that continuously changing the sequence and timing over time. The rest of this article covers the technical journey of buildinging it.
+Besides [cool computer graphics simulations](https://www.youtube.com/shorts/xAIEW4pQowA), I'm even more interested in applying it to music. The firefly complex system is perfectly suitable for this because it finds itself often in states between chaos and order. This point is refered to as criticality — the same property I tried to measure directly in [quantifying interestingness in images](/blog/quantifying-interestingness-images-information-theory) — and these states have potential for interesting patterns/rhythms, that I often look for when creating my own music as [Tensen Park](https://open.spotify.com/artist/1lB15Q7MjR8s2j7TzeMP9Y?si=B-hhMFm8R56Xb_Miz4bybQ). In a way it can be seen as a sequencer that continuously changing the sequence and timing over time. The rest of this article covers the technical journey of buildinging it.
 
 **First implementation**
 
@@ -18,7 +18,7 @@ Therefore I made a Max for Live device with MaxMSP so that it can be natively us
 
 **Making it work in MaxMSP**
 
-Max MSP is quite an interesting visual programming language. It can look a bit clunky if you're used to coding, especially when you encounter patches made by me. But it actually works quite well.
+Max MSP is quite an interesting visual programming language. It can look a bit clunky if you're used to coding, especially when you encounter patches made by me. But it actually works quite well. (I later collected what I learned about keeping these patches sane in [MaxMSP learnings](/blog/maxmsp-learnings).)
 
 <p align="center">
 <img width= "40%" src="/images/blogHeaders/maxmsp_hell.webp" alt="ld image">

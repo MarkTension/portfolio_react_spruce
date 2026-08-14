@@ -8,12 +8,12 @@ I was trained in (computational) neuroscience, but transitioned into ML/graphics
 A significant part of my time is spent chasing [dynamic quality](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality#Dynamic_quality) on the computer; building things. I believe in craftsmanship, and an attention to detail. In life I follow many seemingly unrelated topics, and somehow (hope to) find ways to tie them together. Serendipitous discovery is a kind of central theme.
 
 You may enjoy some of the things I've written on this blog. You'll find writings and project documentation about:
-- ALife
-- electronic (generative) music
-- computer graphics
-- WebGPU
-- machine learning
-- random thoughts and lists I find worth sharing
+- ALife — [Microcosmos](/blog/microcosmos-differentiable-artificial-life), [cell locomotion through actin polymerization](/blog/cell-locomotion-through-actin-polymerization), [an order of magnitude more boids](/blog/order-of-magnitude-boids), [emergence vs 'unexpected' emergence](/blog/unexpected-emergence-in-artificial-life)
+- electronic (generative) music — [MIDI Evolution](/blog/midi-evolution-generative-music-device), [the Firefly Synchronizer device](/blog/firefly-synchronizer-chaotic-system-max4live-device), [reflections on my music](/blog/tensen-park-reflections-on-my-music)
+- computer graphics — [estimating a 3D scene with raymarching and differentiable rendering](/blog/estimating-3d-scene-primitives-raymarching-differentiable-rendering-jax), [neural cellular automata swarming](/blog/neural-cellular-automata-swarming)
+- WebGPU — [minimizing WGSL texture plumbing](/blog/minimizing-wgsl-texture-plumbing), [my favorite WGSL random function](/blog/my_favorite_wgsl_random_func_so_far), [detecting NaNs in WebGPU](/blog/detecting-nans-on-webgpu)
+- machine learning — [a primer on reinforcement learning and its application to art](/blog/primer-reinforcement-learning-application-to-art), [RL applied to sculpting](/blog/reinforcement-learning-applied-to-sculpting)
+- random thoughts and lists I find worth sharing — [blogs I like](/blog/blogs-i-like), [more raw websites please](/blog/more-raw-websites-please), [reality-questioning ideas before bed](/blog/reality-questioning-ideas-before-bed)
 
 ### ALife
 I have this dream of evolving open-ended systems, that _look_ impressive, that are lush ecosystems and authentic and unique expressions of life, hard to say whether it's less real than real biological systems. That we can just tune into and study life as we know it and all the other forms of life that are also possible. 

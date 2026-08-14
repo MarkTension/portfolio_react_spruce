@@ -10,7 +10,7 @@ Here's some documentation on my endeavors with putting [Neural Cellular Automata
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BYt77BIho1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-So how does it work? I started with my standard flocking code. 
+So how does it work? I started with my standard flocking code, the same GPU setup I describe in [an order of magnitude more boids](/blog/order-of-magnitude-boids). 
 Then added a new buffer containing for each boid the 4-number state, which is also each boids' color.
 
 Normally NCA updates each pixel/state by looking at that of the 8 neighboring pixels. 

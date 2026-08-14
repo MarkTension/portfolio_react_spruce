@@ -33,7 +33,7 @@ Each time, it mutates the original clip a little furter to evolve it one step cl
 The user can aim for e.g. swapping 5 random notes each mutation.
 Or swapping from start of the clip to the end e.g. 1 note each time. The latter results in a slower convergence, so a longer final MIDI clip. (i needs more iterations to get to the target state).
 
-I added an extra function to create a random state from a target MIDI clip. This random state can be used to start an evolutionary sequence from, so that device can create some nice beats that create interesting rhythms between chaos and order. Touching the same space of criticallity that I wrote earlier about in other articles.
+I added an extra function to create a random state from a target MIDI clip. This random state can be used to start an evolutionary sequence from, so that device can create some nice beats that create interesting rhythms between chaos and order. Touching the same space of criticallity that I wrote earlier about in [quantifying interestingness in images](/blog/quantifying-interestingness-images-information-theory) and in the [Firefly Synchronizer device](/blog/firefly-synchronizer-chaotic-system-max4live-device).
 
 ### Further thoughts and future work
 

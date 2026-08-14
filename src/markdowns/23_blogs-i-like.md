@@ -1,6 +1,6 @@
 # Blogs I like
 
-I like personal blogs specifically because they're less 'designed by commitee'. Less tailored, more opinionated. Higher chance also to stumble into a writer's other interests you'd otherwise not encounter; more serendipitous discovery. 
+I like personal blogs specifically because they're less 'designed by commitee'. Less tailored, more opinionated. Higher chance also to stumble into a writer's other interests you'd otherwise not encounter; more serendipitous discovery. It's the same thing I was getting at in [more raw websites, please](/blog/more-raw-websites-please).
 
 I'm updating the list every now and then.
 

@@ -56,7 +56,7 @@ Once segments form chains, they need to behave like stiff filaments. We use exte
 
 ### Spatial lookup via textures
 
-The classic bottleneck in particle simulations is neighbor-finding. Rather than building spatial hash tables, we use the GPU's texture hardware directly. Each frame, every segment writes its ID into a 2D index texture at its position. Lookups become O(1): to find what's near a point, just sample the texture. Toroidal wrapping handles boundaries.
+The classic bottleneck in particle simulations is neighbor-finding. Rather than building spatial hash tables, we use the GPU's texture hardware directly. Each frame, every segment writes its ID into a 2D index texture at its position. Lookups become O(1): to find what's near a point, just sample the texture. Toroidal wrapping handles boundaries. This is the same stigmergic trick I leaned on to get [an order of magnitude more boids](/blog/order-of-magnitude-boids), where agents wrote to a texture instead of reading the global agent buffer. Keeping all these fields manageable came down to texture arrays, which I wrote up separately in [minimizing WGSL texture plumbing](/blog/minimizing-wgsl-texture-plumbing).
 
 A second set of texture layers tracks steric density: How crowded each region is with monomers, polymers, or membrane. These fields are Gaussian-blurred each frame, which makes particles repel each other at short range without explicit pairwise force calculations.
 

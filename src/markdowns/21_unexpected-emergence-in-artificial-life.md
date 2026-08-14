@@ -5,14 +5,14 @@ The more complete Cambridge dictionary defines it as "the development of particu
 
 However, adding the element of unexpectedness in the definition forces a stricter and more useful guiding principle when researching biology / artificial life. I'll call it Levin-emergence for now.
 
-An example is the BOIDS / swarming simulation that I've worked on. From the start I knew what was going to happen - swarming. The approach was top-down: how do I get swarming from lower level agents. Not much unexpectedness in replicating an existing system. 
+An example is the [BOIDS / swarming simulation](/blog/order-of-magnitude-boids) that I've worked on. From the start I knew what was going to happen - swarming. The approach was top-down: how do I get swarming from lower level agents. Not much unexpectedness in replicating an existing system. 
 The Levin-emergence part in this work was exploring the parameter space, where you find unexpected patterns from random configurations of the system's natural constants. And the addition of new factors that could influence the system. E.g. the constant pulsing of a certain parameter that put the system in an interesting new state of constant flux.
 
 ### Locomotion
-Currently I'm working on a real-time model of cell locomotion. Also here I'm sometimes questioning where the Levin-emergence is. I'm operating with a top-down aim for replicatng cell locomotion. Even though it's never been done in a real-time particle system, I know how the cell will end up moving. This wrotomg is sort of a thinking pad to legitimize and give some relevance to my reverse engineering cell locomotion project.
+Currently I'm working on a real-time model of cell locomotion. Also here I'm sometimes questioning where the Levin-emergence is. I'm operating with a top-down aim for replicatng cell locomotion. Even though it's never been done in a real-time particle system, I know how the cell will end up moving. This wrotomg is sort of a thinking pad to legitimize and give some relevance to my reverse engineering cell locomotion project. (That project has since been written up in full: [Emergent 2D cell locomotion with actin polymerization](/blog/cell-locomotion-through-actin-polymerization).)
 
 ### The final frontier: Open ended evolution
-The most intersting aproach to Levin-emergence is modeling open-ended evolution. Nice article with definition, objectives and challenges [here](https://alife.org/encyclopedia/introduction/open-ended-evolution/).
+The most intersting aproach to Levin-emergence is modeling open-ended evolution. Nice article with definition, objectives and challenges [here](https://alife.org/encyclopedia/introduction/open-ended-evolution/). This is the direction I eventually took with [Microcosmos](/blog/microcosmos-differentiable-artificial-life), where creatures are evolved rather than designed.
 Open endedness describes an evolving system that will never settle into a single stable equilibrium. Its results automatically satisfy levin-emergence because there are no top-down goals except open-endedness, and therefore no expectations.
 
 Another frame to distinguish this is the classic research paradigm distinction: Top-down (reverse engineering) and bottom up (open-endedness). (This system is inconsistent when counting reverse engineering evolution as top-down, but let's ignore that)
