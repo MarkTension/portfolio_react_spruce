@@ -1,6 +1,17 @@
 {
     "files": [
         {
+            "title": "Microcosmos: evolving swimmers in a differentiable fluid",
+            "key": "29_microcosmos",
+            "slug": "microcosmos-differentiable-artificial-life",
+            "tags": [
+                "artificial-life",
+                "gpgpu"
+            ],
+            "date": "2026-08",
+            "summary": "We released Microcosmos, a GPU artificial life platform where creatures are elastic filaments swimming in a viscous fluid. It's work I did with the ALife Institute together with Ciaran"
+        },
+        {
             "title": "New album - MythStream",
             "key": "28_mythstream",
             "slug": "tensen-park-mythstream",

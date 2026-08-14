@@ -51,10 +51,10 @@ export async function generateMetadata({
       if (post) {
         return {
           title: `${post.title} - Mark Tensen's Blog`,
-          description: post.title,
+          description: post.summary ?? post.title,
           openGraph: {
             title: post.title,
-            description: post.title,
+            description: post.summary ?? post.title,
           },
           alternates: {
             canonical: `https://marktension.nl/blog/${post.slug}`,

@@ -2,6 +2,10 @@
 <p align="center">
 <img width= "60%" src="/images/blogHeaders/mythstream.webp" alt="mythstream">
 </p>
+<div style="display: flex; gap: 0.5em; justify-content: center; flex-wrap: wrap;">
+<video src="/images/grid.webm" style="width: 45%; max-width: 230px; object-fit: cover;" autoplay muted loop playsInline></video>
+<video src="/images/steric.webm" style="width: 45%; max-width: 230px; object-fit: cover;" autoplay muted loop playsInline></video>
+</div>
 
 ### From generative design to generative models
 When starting my carreer from around 2019, I really believed in creative coding and commiting to the art of generative design through creative coding.

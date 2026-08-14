@@ -98,7 +98,7 @@ class Landing extends React.Component {
                         }}
                     >
                         On finding synergies in programming, music, AI, artificial life, and
-                        design
+                        design. Researcher at the Artificial Life Institute & Motorica.
                     </Item>
                 </div>
                 <div style={{ width: "100%", marginTop: "1em" }}>

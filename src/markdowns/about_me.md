@@ -3,7 +3,7 @@
 HELLO!
 Often I use the pseudonym MarkTension online. Tensen is the real name though.
 
-I was trained in (computational) neuroscience, but transitioned into ML/graphics. There remains a strong interest in bbiology and evolution, which manifests as ALife (artificial life) research in my spare time.
+I was trained in (computational) neuroscience, but transitioned into ML/graphics. There remains a strong interest in bbiology and evolution, which manifests as ALife (artificial life) research in my at the Artificial Life Institute.
 
 A significant part of my time is spent chasing [dynamic quality](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality#Dynamic_quality) on the computer; building things. I believe in craftsmanship, and an attention to detail. In life I follow many seemingly unrelated topics, and somehow (hope to) find ways to tie them together. Serendipitous discovery is a kind of central theme.
 
@@ -24,7 +24,7 @@ Probably one of the important things that ALife needs is more funding. It's more
 
 ### Electronic Music Production
 Under the name **Tensen Park**, I've released a series of albums
-- Etherware (to be released on vinyl this year, 2025)
+- [Mythstream](https://tensenpark.bandcamp.com/album/mythstream)
 - [Jurassimo](https://tensenpark.bandcamp.com/album/jurassimo)
 - [Futurebeats](https://tensenpark.bandcamp.com/album/futurebeats)
 - [Mostly Angels](https://tensenpark.bandcamp.com/album/mostly-angels)
@@ -41,4 +41,4 @@ In one of my favorite books, [Discognition](http://www.shaviro.com/Blog/?p=1306)
 
 
 ## Connect
-Feel free to reach out if you're working on something at the intersection of art, technology, and emergence. I'm always interested in collaborative explorations and sharing ideas.
+Feel free to reach out if you're working on something at the intersection of art, technology, and emergence. I'm always interested in collaborative explorations, implementing my artworks somewhere and sharing ideas
