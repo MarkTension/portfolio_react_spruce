@@ -15,25 +15,17 @@ indexData.files = indexData.files.map(post => {
     content = content.substring(content.indexOf('\n') + 1);
   }
 
-  // Skip leading HTML block (e.g. <p align="center">...</p>)
-  if (content.includes('<p>') || content.includes('<p ')) {
-    const closingTag = '</p>';
-    const idx = content.indexOf(closingTag);
-    if (idx !== -1) {
-      content = content.substring(idx + closingTag.length);
-    }
-  }
-
-  // Take first 30 words
-  content = content.split(/\s+/).slice(0, 30).join(' ');
-  // Strip HTML tags
+  // Strip HTML tags (leading blocks like <p align="center">, <div>, <video> ...)
   content = content.replace(/<[^>]*>?/gm, '');
   // Strip markdown links, keep text
   content = content.replace(/\[([^\]]+)\]\([^)]+\)/gm, '$1');
   // Strip heading markers
   content = content.replace(/#/g, '');
 
-  post.summary = content.trim();
+  // Take first 20 words
+  content = content.trim().split(/\s+/).slice(0, 20).join(' ');
+
+  post.summary = content;
   return post;
 });
 

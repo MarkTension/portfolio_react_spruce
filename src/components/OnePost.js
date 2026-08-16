@@ -77,6 +77,7 @@ export default function OnePost({ slug }) {
                         padding: '10px 18px 10px 18px',
                         borderBottomRightRadius: '12px',
                         cursor: 'pointer',
+                        fontFamily: '"Brier", "Inconsolata", sans-serif',
                         fontSize: '1.1em',
                         color: 'orange',
                         fontWeight: 700,

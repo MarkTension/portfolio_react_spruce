@@ -206,7 +206,7 @@ const AllPosts = () => {
                                                 fontSize: "0.8em",
                                                 color: "white",
                                                 textAlign: "left",
-                                                fontFamily: "Arial",
+                                                fontFamily: '"Brier", Arial, sans-serif',
                                             }}
                                         >
                                             {post["title"]}

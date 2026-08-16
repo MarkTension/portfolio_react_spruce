@@ -81,6 +81,7 @@
 
 /* Landing page styles */
 .name {
+  font-family: "Brier", "Inconsolata", sans-serif;
   font-size: 1.2em;
   color: orange;
   text-align: right;
@@ -128,6 +129,7 @@
 }
 
 .year-header {
+  font-family: "Brier", "Inconsolata", sans-serif;
   font-size: 1.2em;
   color: #ccc;
   margin: 40px 0 20px 0;

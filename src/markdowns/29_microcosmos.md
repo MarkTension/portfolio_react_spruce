@@ -1,5 +1,10 @@
 # Microcosmos: evolving swimmers in a differentiable fluid
 
+<div style="display: flex; gap: 0.5em; justify-content: center; flex-wrap: wrap;">
+<video src="/images/worm_v0_001_fluid_web.webm" style="width: 45%; max-width: 230px; object-fit: cover;" autoplay muted loop playsInline></video>
+<video src="/images/swimmer_2.webm" style="width: 45%; max-width: 230px; object-fit: cover;" autoplay muted loop playsInline></video>
+</div>
+
 We released Microcosmos, a GPU artificial life platform where creatures are elastic filaments swimming in a viscous fluid. It's work I did for the ALife Institute together with Ciaran Regan, Bert Wang-Chak Chan, Mizuki Oka, Kenneth O. Stanley and [Grisha Szep](https://gszep.com/en/). The real blogpost with interactive demo, and videos is on the Artificial Life Institute website:
 
 **[Read the full release post at the ALife Institute →](https://alife.institute/en/blog/microcosmos-release/)**

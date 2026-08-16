@@ -40,6 +40,7 @@ export const getMarkdownOptions = () => ({
         h1: {
             props: {
                 style: {
+                    fontFamily: '"Brier", "Inconsolata", sans-serif',
                     fontSize: "1.5em",
                     fontWeight: "300",
                 },

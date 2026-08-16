@@ -19,6 +19,14 @@ html {
     U+FEFF, U+FFFD;
 } */
 
+@font-face {
+  font-family: "Brier";
+  src: url("/fonts/Brier-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: "Inconsolata", -apple-system, sans-serif;

@@ -5,21 +5,35 @@ import posts from "../markdowns/index.json";
 class Landing extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { titles: [], isMobile: false };
+        this.state = {
+            titles: [],
+            isMobile: typeof window !== "undefined" && window.innerWidth <= 768,
+        };
+        this.videoRefs = [React.createRef(), React.createRef(), React.createRef()];
     }
-    
+
     componentDidMount() {
         this.state.titles = posts.files.map((post) => {
             return post.title;
         });
-        
+
         // Check if mobile
         this.setState({ isMobile: window.innerWidth <= 768 });
-        
+
         // Add resize listener
         window.addEventListener('resize', this.handleResize);
-        
+
         this.forceUpdate();
+
+        // iOS Safari sometimes ignores the autoPlay attribute, so trigger play() manually
+        this.videoRefs.forEach((ref) => {
+            if (ref.current) {
+                const playPromise = ref.current.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {});
+                }
+            }
+        });
     }
 
     componentWillUnmount() {
@@ -50,35 +64,40 @@ class Landing extends React.Component {
             >
                 <div className="image-container">
                     <video
+                        ref={this.videoRefs[0]}
                         src="/images/grid.webm"
                         width={imageSize}
                         height={imageSize}
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover", filter: "grayscale(1)", opacity: 0.6 }}
                         autoPlay
                         muted
                         loop
                         playsInline
                     />
                     <video
+                        ref={this.videoRefs[1]}
                         src="/images/steric.webm"
                         width={imageSize}
                         height={imageSize}
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover", filter: "grayscale(1)", opacity: 0.6 }}
                         autoPlay
                         muted
                         loop
                         playsInline
                     />
-                    <video
-                        src="/images/swimming.webm"
-                        width={imageSize}
-                        height={imageSize}
-                        style={{ objectFit: "cover" }}
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    />
+                    {!isMobile && (
+                        <video
+                            ref={this.videoRefs[2]}
+                            src="/images/swimming.webm"
+                            width={imageSize}
+                            height={imageSize}
+                            style={{ objectFit: "cover", filter: "grayscale(1)", opacity: 0.6 }}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                        />
+                    )}
                 </div>
                 <div style={{ display: "flex", alignItems: "center", width: "100%", maxWidth: "100%", marginTop: "2em" }}>
                     <div style={{ width: "35%", minWidth: "0", flexShrink: 0 }}>
@@ -104,13 +123,28 @@ class Landing extends React.Component {
                 <div style={{ width: "100%", marginTop: "1em" }}>
                     <Item
                         style={{
-                            width: "100%",
-                            textAlign: "center",
-                            fontSize: "0.6em",
+                            width: "fit-content",
+                            margin: "0 auto",
+                            textAlign: "left",
+                            fontSize: "0.72em",
                             whiteSpace: "pre-line",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "flex-start",
+                            gap: "0.4em",
                         }}
                     >
-                        <a href="/about" style={{ color: "orange" }}>About me</a>, <a href="https://twitter.com/Mark_Tension">X</a>, <a href="https://www.instagram.com/tensen.park/">Instagram</a>, <a href="https://tensenpark.bandcamp.com/">Bandcamp</a>, <a href="https://www.linkedin.com/in/mark-tensen/">Linkedin</a>, <a href="/cv.pdf">CV</a>
+                        {[
+                            { href: "/about", label: "About me" },
+                            { href: "https://www.instagram.com/tensen.park/", label: "Instagram" },
+                            { href: "https://tensenpark.bandcamp.com/", label: "Bandcamp" },
+                            { href: "https://www.linkedin.com/in/mark-tensen/", label: "Linkedin" },
+                            { href: "https://twitter.com/Mark_Tension", label: "X/twitter" },
+                        ].map((link, i) => (
+                            <a key={link.href} href={link.href} style={{ marginLeft: `${i * 2.2}em` }}>
+                                {link.label}
+                            </a>
+                        ))}
                     </Item>
                 </div>
             </div>
