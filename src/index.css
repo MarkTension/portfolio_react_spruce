@@ -1,7 +1,7 @@
 :root {
   /* the one red used site-wide (links, accents) */
-  --red: #e02929;
-  --red-rgb: 224, 41, 41;
+  --red: #e91818;
+  --red-rgb: 233, 24, 24;
 }
 
 /* Global box-sizing and overflow fixes */

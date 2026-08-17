@@ -149,8 +149,8 @@ class Landing extends React.Component {
                             wordWrap: "break-word",
                         }}
                     >
-                        On finding synergies in programming, music, AI, artificial life, and
-                        design. Researcher at the Artificial Life Institute & Motorica.
+                        On finding synergies in artificial life, ML, music, and
+                        visual arts. Researcher at the Artificial Life Institute & Motorica.
                     </Item>
                 </div>
                 <div
@@ -163,14 +163,14 @@ class Landing extends React.Component {
                             width: "fit-content",
                             margin: "0 auto",
                             textAlign: "left",
-                            fontSize: "0.9em",
+                            fontSize: isMobile ? "1.4em" : "0.9em",
                             whiteSpace: "pre-line",
                             display: "flex",
-                            flexDirection: "row",
-                            flexWrap: "wrap",
+                            flexDirection: isMobile ? "column" : "row",
+                            flexWrap: isMobile ? "nowrap" : "wrap",
                             justifyContent: "center",
-                            alignItems: "center",
-                            gap: "0.0em",
+                            alignItems: isMobile ? "flex-start" : "center",
+                            gap: isMobile ? "0.5em" : "0.0em",
                         }}
                     >
                         {this.links.map((link, i) => {
@@ -183,11 +183,13 @@ class Landing extends React.Component {
                                 href={link.href}
                                 ref={this.linkRefs[i]}
                                 style={{
-                                    // wiggle across three rows (see `row` in this.links)
                                     position: "relative",
-                                    top: `${link.row * 1.3}em`,
-                                    // negative margin lets neighbours tuck in / overlap
-                                    marginLeft: i === 0 ? 0 : "-0.6em",
+                                    // desktop: wiggle across three rows (see `row` in this.links)
+                                    // mobile: step diagonally from top-left to bottom-right
+                                    top: isMobile ? 0 : `${link.row * 1.4}em`,
+                                    marginLeft: isMobile
+                                        ? `${i * 1.5}em`
+                                        : i === 0 ? 0 : "-0.6em",
                                     display: "inline-block",
                                     fontFamily: '"Brier", "Inconsolata", sans-serif',
                                     fontWeight: 200,
