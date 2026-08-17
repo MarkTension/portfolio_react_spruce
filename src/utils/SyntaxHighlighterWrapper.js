@@ -16,7 +16,7 @@ SyntaxHighlighter.registerLanguage('json', json);
 
 export default function HighlightedCode({ language, children }) {
     return (
-        <div className="codeBlock">
+        <div className="codeBlock" style={{ maxWidth: "100%", minWidth: 0, overflowX: "auto" }}>
             <SyntaxHighlighter language={language?.toLowerCase()} style={codeStyle}>
                 {children}
             </SyntaxHighlighter>

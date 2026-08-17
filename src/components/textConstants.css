@@ -17,7 +17,7 @@
 .text {
   text-align: left;
   font-size: 1em;
-  color: #ff8484;
+  color: var(--red);
   font-weight: 100;
 }
 
@@ -47,7 +47,7 @@
   right: 5%;
   font-size: 1.7em;
   text-align: center;
-  color: indianred;
+  color: var(--red);
   z-index: 100;
   background: white;
   margin: 0;
@@ -65,7 +65,7 @@
 .button {
   font-size: 1em;
   text-align: center;
-  color: indianred;
+  color: var(--red);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -82,7 +82,7 @@
 /* Landing page styles */
 .name {
   font-family: "Brier", "Inconsolata", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: orange;
   text-align: right;
   align-self: center;
@@ -126,6 +126,23 @@
   margin: 0.2em;
   border: 1px solid white;
   border-radius: 3px;
+  transition: color 100ms ease-in-out, border-color 100ms ease-in-out;
+}
+
+.tag-button:hover {
+  color: orange;
+  border-color: orange;
+}
+
+.tag-button.active {
+  color: orange;
+  border-color: orange;
+}
+
+/* already orange -> hovering washes it out toward white */
+.tag-button.active:hover {
+  color: #ffdc9b;
+  border-color: #ffdc9b;
 }
 
 .year-header {

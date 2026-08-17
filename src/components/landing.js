@@ -10,7 +10,40 @@ class Landing extends React.Component {
             isMobile: typeof window !== "undefined" && window.innerWidth <= 768,
         };
         this.videoRefs = [React.createRef(), React.createRef(), React.createRef()];
+        // `row` is the vertical step for each link: negative is up, positive is down
+        this.links = [
+            { href: "/about", label: "About me", row: -1 },
+            { href: "https://www.instagram.com/tensen.park/", label: "Instagram", row: 0 },
+            { href: "https://tensenpark.bandcamp.com/", label: "Bandcamp", row: -1 },
+            { href: "https://www.linkedin.com/in/mark-tensen/", label: "Linkedin", row: 0 },
+            { href: "https://twitter.com/Mark_Tension", label: "X/twitter", row: -1 },
+        ];
+        this.linkRefs = this.links.map(() => React.createRef());
+        // proximity of the cursor to each link, 0 (far) .. 1 (right on it)
+        this.state.linkProximity = this.links.map(() => 0);
     }
+
+    // Mac-dock style magnification: each link swells, and warms towards the
+    // "Mark Tensen" orange, based on how close the cursor is to its center.
+    handleLinkAreaMove = (e) => {
+        if (this.state.isMobile) return;
+        const sigma = 30; // falloff radius in px
+        const x = e.clientX;
+        const y = e.clientY;
+        const linkProximity = this.linkRefs.map((ref) => {
+            if (!ref.current) return 0;
+            const r = ref.current.getBoundingClientRect();
+            const dx = x - (r.left + r.width / 2);
+            const dy = y - (r.top + r.height / 2);
+            const d2 = dx * dx + dy * dy;
+            return Math.exp(-d2 / (2 * sigma * sigma));
+        });
+        this.setState({ linkProximity });
+    };
+
+    handleLinkAreaLeave = () => {
+        this.setState({ linkProximity: this.links.map(() => 0) });
+    };
 
     componentDidMount() {
         this.state.titles = posts.files.map((post) => {
@@ -120,31 +153,58 @@ class Landing extends React.Component {
                         design. Researcher at the Artificial Life Institute & Motorica.
                     </Item>
                 </div>
-                <div style={{ width: "100%", marginTop: "1em" }}>
+                <div
+                    style={{ width: "100%", marginTop: "1em", padding: "2.5em 0 2em" }}
+                    onMouseMove={this.handleLinkAreaMove}
+                    onMouseLeave={this.handleLinkAreaLeave}
+                >
                     <Item
                         style={{
                             width: "fit-content",
                             margin: "0 auto",
                             textAlign: "left",
-                            fontSize: "0.72em",
+                            fontSize: "0.9em",
                             whiteSpace: "pre-line",
                             display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            gap: "0.4em",
+                            flexDirection: "row",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            gap: "0.0em",
                         }}
                     >
-                        {[
-                            { href: "/about", label: "About me" },
-                            { href: "https://www.instagram.com/tensen.park/", label: "Instagram" },
-                            { href: "https://tensenpark.bandcamp.com/", label: "Bandcamp" },
-                            { href: "https://www.linkedin.com/in/mark-tensen/", label: "Linkedin" },
-                            { href: "https://twitter.com/Mark_Tension", label: "X/twitter" },
-                        ].map((link, i) => (
-                            <a key={link.href} href={link.href} style={{ marginLeft: `${i * 2.2}em` }}>
+                        {this.links.map((link, i) => {
+                            const t = this.state.linkProximity[i];
+                            // red -> the "Mark Tensen" orange, by proximity
+                            const mix = (from, to) => Math.round(from + (to - from) * t);
+                            return (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                ref={this.linkRefs[i]}
+                                style={{
+                                    // wiggle across three rows (see `row` in this.links)
+                                    position: "relative",
+                                    top: `${link.row * 1.3}em`,
+                                    // negative margin lets neighbours tuck in / overlap
+                                    marginLeft: i === 0 ? 0 : "-0.6em",
+                                    display: "inline-block",
+                                    fontFamily: '"Brier", "Inconsolata", sans-serif',
+                                    fontWeight: 200,
+                                    textDecoration: "none",
+                                    transformOrigin: "center center",
+                                    transform: `scale(${1 + 0.3 * t})`,
+                                    color: `rgb(${mix(214, 255)}, ${mix(54, 165)}, ${mix(54, 0)})`,
+                                    // the magnified link paints above its overlapping neighbours
+                                    zIndex: Math.round(100 + t * 100),
+                                    transition: "transform 90ms ease-out, color 90ms ease-out",
+                                    willChange: "transform, color",
+                                }}
+                            >
                                 {link.label}
                             </a>
-                        ))}
+                            );
+                        })}
                     </Item>
                 </div>
             </div>

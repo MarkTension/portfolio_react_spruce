@@ -61,6 +61,9 @@ export const getMarkdownOptions = () => ({
                     padding: "0.5em",
                     borderRadius: "4px",
                     fontSize: "0.5em",
+                    // long lines scroll instead of widening the post column
+                    maxWidth: "100%",
+                    overflowX: "auto",
                 },
             },
         },

@@ -1,3 +1,9 @@
+:root {
+  /* the one red used site-wide (links, accents) */
+  --red: #e02929;
+  --red-rgb: 224, 41, 41;
+}
+
 /* Global box-sizing and overflow fixes */
 *, *::before, *::after {
   box-sizing: border-box;

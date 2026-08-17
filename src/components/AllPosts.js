@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import indexData from "../markdowns/index.json";
 import "./textConstants.css";
+import { Title } from "./textConstants";
 
 const linkStyle = {
     fontSize: "0.8em",
@@ -13,20 +14,27 @@ const linkStyle = {
 
 const AllPosts = () => {
     let posts = indexData.files;
-    const [tagFilter, setTagFilter] = useState(null);
+    const [tagFilter, setTagFilter] = useState([]);
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [hoveredImage, setHoveredImage] = useState(false);
 
     useEffect(() => {
         setFilteredPosts(
             posts.filter(
-                (post) => post["tags"].includes(tagFilter) || tagFilter == null,
+                (post) =>
+                    tagFilter.length === 0 ||
+                    tagFilter.some((tag) => post["tags"].includes(tag)),
             ),
         );
     }, [tagFilter]);
 
+    // toggle a tag on/off; multiple tags can be active at once (OR filter)
     const handleTagChangeClick = (taggValue) => {
-        setTagFilter(taggValue);
+        setTagFilter((current) =>
+            current.includes(taggValue)
+                ? current.filter((tag) => tag !== taggValue)
+                : [...current, taggValue],
+        );
     };
 
     const onlyUnique = (value, index, self) => {
@@ -90,9 +98,8 @@ const AllPosts = () => {
                     overflow: "hidden",
                 }}
             >
-
                 <div
-                    style={{ display: "flex", alignItems: "center", marginTop: "60px" }}
+                    style={{ display: "flex", alignItems: "center", marginTop: "26px", marginBottom: "30px" }}
                 >
                     <h3
                         className="all-posts-item"
@@ -100,7 +107,6 @@ const AllPosts = () => {
                             fontSize: "1.0em",
                             whiteSpace: "nowrap",
                             marginRight: "20px",
-                            marginBottom: "60px",
                         }}
                     >
                         <b>Topics</b>
@@ -118,12 +124,11 @@ const AllPosts = () => {
                         {allTags.map((tagg, index) => (
                             <button
                                 key={index}
-                                className="tag-button"
-                                style={{
-                                    color: tagFilter === tagg ? "red" : "white",
-                                    marginRight: "1px",
-                                    marginBottom: "1px",
-                                }}
+                                className={
+                                    "tag-button" +
+                                    (tagFilter.includes(tagg) ? " active" : "")
+                                }
+                                style={{ margin: "1px" }}
                                 onClick={() => handleTagChangeClick(tagg)}
                             >
                                 {tagg}
@@ -133,18 +138,19 @@ const AllPosts = () => {
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                     <button
-                        className="tag-button"
+                        className={
+                            "tag-button" + (tagFilter.length === 0 ? " active" : "")
+                        }
                         style={{
-                            color: tagFilter === null ? "orange" : "white",
                             marginRight: "1px",
                             marginBottom: "1px",
                         }}
-                        onClick={() => handleTagChangeClick(null)}
+                        onClick={() => setTagFilter([])}
                     >
                         All Posts
                     </button>
                 </div>
-                <h3 className="all-posts-item" style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
+                {/* <h3 className="all-posts-item" style={{ marginTop: "5%", color: "lightgrey", fontSize: "0.5em" }}>
                     <i>
                         It's important to get it into words, because otherwise you miss it -
                         the brain is set up to hide the assumption
@@ -155,7 +161,7 @@ const AllPosts = () => {
                         The purpose of this blog is to have a repository for my thinking, notes and projects.
                         A set of markdown files that I can publish and keep track of, and can be adjusted to my needs over time.
                         It's a "Memex"; a living document and archive of where I've been, and a tool that advises where to go <a href="https://wiki.xxiivv.com/site/about.html">*</a>.
-                </h3>
+                </h3> */}
 
                 <br />
 
@@ -203,7 +209,7 @@ const AllPosts = () => {
                                         <div
                                             style={{
                                                 fontWeight: "",
-                                                fontSize: "0.8em",
+                                                fontSize: "1.0em",
                                                 color: "white",
                                                 textAlign: "left",
                                                 fontFamily: '"Brier", Arial, sans-serif',
