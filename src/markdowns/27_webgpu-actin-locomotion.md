@@ -1,6 +1,6 @@
 # Emergent 2D Cell Locomotion with Actin Polymerization
 
-<img width= "90%" src="/images/actin_header.png" alt="actin polymerization header">
+<video width="90%" src="/images/video_polymerition.webm" autoplay muted loop playsInline></video>
 
 ## Preface
 This project was done together by [Grisha Szep](https://gszep.com/en/) and me in 2025, from spring to autumn.

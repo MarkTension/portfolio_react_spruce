@@ -9,7 +9,8 @@
                 "gpgpu"
             ],
             "date": "2026-08",
-            "summary": "We released Microcosmos, a GPU artificial life platform where creatures are elastic filaments swimming in a viscous fluid. It's work"
+            "summary": "We released Microcosmos, a GPU artificial life platform where creatures are elastic filaments swimming in a viscous fluid. It's work",
+            "video": "swimmer_2.webm"
         },
         {
             "title": "New album - MythStream",
@@ -33,6 +34,7 @@
             ],
             "date": "2026-05",
             "img": "actin_header.png",
+            "video": "video_polymerition.webm",
             "summary": "Preface This project was done together by Grisha Szep and me in 2025, from spring to autumn. Our goal was"
         },
         {
@@ -45,6 +47,7 @@
             ],
             "date": "2026-05",
             "img": "blogHeaders/mythstream.webp",
+            "video": "steric.webm",
             "summary": "From generative design to generative models When starting my carreer from around 2019, I really believed in creative coding and"
         },
         {
@@ -279,6 +282,7 @@
         {
             "title": "MIDI Evolution - a generative music device",
             "image": "/images/blogHeaders/midi_evolution.webp",
+            "img": "blogHeaders/midi_evolution.webp",
             "key": "06_midi-evolution-generative-music-device",
             "slug": "midi-evolution-generative-music-device",
             "tags": [

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "../index.css";
 
+const dtt = "Exploring Artificial Life, ML, digital art and electronic music production";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://marktension.nl'),
-  title: "Mark Tensen's Blog: Exploring Software Engineering, Artificial Life, Electronic Music, and generative AI",
-  description: "Exploring the generative AI, Artificial Life, and electronic music production. Reflections on generative, MaxMSP devices, and creative workflows.",
+  title: "Mark Tensen's Blog: "+dtt,
+  description: dtt,
     keywords: [
     "artificial life",
     "generative AI",
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     title: "Mark Tensen's Blog",
-    description: "Exploring the generative AI, Artificial Life, and electronic music production.",
+    description: dtt,
     url: "https://marktension.nl",
     siteName: "Mark Tensen's Blog",
     images: [
@@ -38,8 +40,8 @@ export const metadata: Metadata = {
     twitter: {
     card: "summary_large_image",
     title: "Mark Tensen's Blog",
-    description: "Exploring the generative AI, Artificial Life, and electronic music production.",
-    creator: "@marktension", // Add your Twitter handle if you have one
+    description: dtt,
+    creator: "@marktension",
     images: ["/images/nca_swarming.webp"],
   },
   robots: {

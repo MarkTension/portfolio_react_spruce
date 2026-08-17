@@ -16,7 +16,7 @@ const AllPosts = () => {
     let posts = indexData.files;
     const [tagFilter, setTagFilter] = useState([]);
     const [filteredPosts, setFilteredPosts] = useState(posts);
-    const [hoveredImage, setHoveredImage] = useState(false);
+    const [hoveredPost, setHoveredPost] = useState(false);
 
     useEffect(() => {
         setFilteredPosts(
@@ -62,7 +62,7 @@ const AllPosts = () => {
 
     return (
         <div>
-            {hoveredImage && (
+            {hoveredPost && (hoveredPost.video || hoveredPost.img) && (
                 <div style={{
                     position: 'fixed',
                     right: '20px',
@@ -70,18 +70,35 @@ const AllPosts = () => {
                     zIndex: 1000,
                     pointerEvents: 'none',
                 }}>
-                    <img
-                        src={`/images/${hoveredImage}`}
-                        alt=""
-                        loading="lazy"
-                        style={{
-                            maxWidth: '300px',
-                            maxHeight: '300px',
-                            border: '1px solid white',
-                            borderRadius: '4px',
-                            objectFit: 'contain'
-                        }}
-                    />
+                    {hoveredPost.video ? (
+                        <video
+                            src={`/images/${hoveredPost.video}`}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            style={{
+                                maxWidth: '300px',
+                                maxHeight: '300px',
+                                border: '1px solid white',
+                                borderRadius: '4px',
+                                objectFit: 'contain'
+                            }}
+                        />
+                    ) : (
+                        <img
+                            src={`/images/${hoveredPost.img}`}
+                            alt=""
+                            loading="lazy"
+                            style={{
+                                maxWidth: '300px',
+                                maxHeight: '300px',
+                                border: '1px solid white',
+                                borderRadius: '4px',
+                                objectFit: 'contain'
+                            }}
+                        />
+                    )}
                 </div>
             )}
 
@@ -185,10 +202,10 @@ const AllPosts = () => {
                             >
                                 <Link
                                     onMouseEnter={() => {
-                                        setHoveredImage(post.img);
+                                        setHoveredPost(post);
                                     }}
                                     onMouseLeave={() => {
-                                        setHoveredImage(null);
+                                        setHoveredPost(null);
                                     }}
                                     href={`/blog/${post.slug}`}
                                     style={{ ...linkStyle, display: "flex", width: "100%", maxWidth: "100%", overflow: "hidden" }}
